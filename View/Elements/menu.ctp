@@ -1,0 +1,170 @@
+<style type="text/css">
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+.submenu{
+      background-color: black;
+}
+</style>
+
+  <?php $user = $this->UserAuth->getUser(); ?>
+<!--MENU OPEN-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <?php if($this->UserAuth->getUserId() == 1){ ?>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Destinations</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'destinations/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'destinations'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Terminals</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'terminals/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'terminals'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Users</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'users/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'users'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Clients</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'clients/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'clients'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Groups</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'groups/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'groups'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Services</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'services/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'services'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Promotions</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'promotions/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'promotions'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Categories</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'categories/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'categories'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Forum Questions</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'forumq/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'forumq'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Forum Answers</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'foruma/add'; ?>">Nuevo</a></li>
+                    <li><a href="<?php echo $this->webroot.'foruma'; ?>">Todos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a tabindex="-1" href="<?php echo $this->webroot.'start/balance'; ?>">Balance</a>
+                </li>
+              </ul>
+            </li>
+            <?php } ?>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones <span class="caret"></span></a>
+              <?php if($this->UserAuth->getUserId()): ?>
+                <ul class="dropdown-menu">
+                  <li><a href="<?php echo $this->webroot; ?>">Ir a la página</a></li>
+                  <li><a href="<?php echo $this->webroot; ?>changePassword">Cambiar Contraseña</a></li>
+                  <li><a href="<?php echo $this->webroot.'logout'; ?>">Cerrar Sesión</a></li>
+                </ul>
+              <?php else: ?>
+                <ul class="dropdown-menu">
+                  <li><a href="<?php echo $this->webroot.'login'; ?>">Identificarse</a></li>
+                </ul>
+              <?php endIf ;?>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--MENU CLOSE-->

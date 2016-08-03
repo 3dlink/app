@@ -5,6 +5,8 @@ App::uses('AppModel', 'Model');
  *
  * @property Service $Service
  * @property Promotion $Promotion
+ * @property Destination $Destination
+ * @property Terminal $Terminal
  */
 class Client extends AppModel {
 
@@ -51,6 +53,41 @@ class Client extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		)
+	);
+
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Destination' => array(
+			'className' => 'Destination',
+			'joinTable' => 'clients_destinations',
+			'foreignKey' => 'client_id',
+			'associationForeignKey' => 'destination_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
+		'Terminal' => array(
+			'className' => 'Terminal',
+			'joinTable' => 'clients_terminals',
+			'foreignKey' => 'client_id',
+			'associationForeignKey' => 'terminal_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
 		)
 	);
 

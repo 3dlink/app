@@ -8,6 +8,8 @@ App::uses('AppModel', 'Model');
  * @property Forumq $Forumq
  * @property Group $Group
  * @property Point $Point
+ * @property Client $Client
+ * @property Terminal $Terminal
  */
 class Destination extends AppModel {
 
@@ -93,6 +95,41 @@ class Destination extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		)
+	);
+
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Client' => array(
+			'className' => 'Client',
+			'joinTable' => 'clients_destinations',
+			'foreignKey' => 'destination_id',
+			'associationForeignKey' => 'client_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
+		'Terminal' => array(
+			'className' => 'Terminal',
+			'joinTable' => 'destinations_terminals',
+			'foreignKey' => 'destination_id',
+			'associationForeignKey' => 'terminal_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
 		)
 	);
 

@@ -15,7 +15,12 @@ class ForumaTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.foruma',
 		'app.user',
-		'app.forumq'
+		'app.comment',
+		'app.destination',
+		'app.category',
+		'app.forumq',
+		'app.group',
+		'app.point'
 	);
 
 /**

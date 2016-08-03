@@ -15,7 +15,12 @@ class CommentTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.comment',
 		'app.destination',
-		'app.user'
+		'app.category',
+		'app.forumq',
+		'app.user',
+		'app.foruma',
+		'app.group',
+		'app.point'
 	);
 
 /**

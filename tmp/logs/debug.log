@@ -1,0 +1,12 @@
+2016-08-03 20:23:51 Debug: Notice (8): Undefined variable: personals in [C:\xampp\htdocs\isia\View\Users\index.ctp, line 111]
+Trace:
+include - APP\View\Users\index.ctp, line 111
+View::_evaluate() - APP\cakephp\lib\Cake\View\View.php, line 954
+View::_render() - APP\cakephp\lib\Cake\View\View.php, line 916
+View::render() - APP\cakephp\lib\Cake\View\View.php, line 473
+Controller::render() - APP\cakephp\lib\Cake\Controller\Controller.php, line 959
+Dispatcher::_invoke() - APP\cakephp\lib\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - APP\cakephp\lib\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 109
+
+2016-08-03 14:39:58 Debug: permission: actionUrl-users/index

@@ -15,7 +15,18 @@ class PromotionTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.promotion',
 		'app.client',
-		'app.service'
+		'app.service',
+		'app.destination',
+		'app.category',
+		'app.comment',
+		'app.user',
+		'app.foruma',
+		'app.forumq',
+		'app.group',
+		'app.point',
+		'app.clients_destination',
+		'app.terminal',
+		'app.clients_terminal'
 	);
 
 /**

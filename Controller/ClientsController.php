@@ -56,7 +56,9 @@ class ClientsController extends AppController {
 			}
 		}
 		$services = $this->Client->Service->find('list');
-		$this->set(compact('services'));
+		$destinations = $this->Client->Destination->find('list');
+		$terminals = $this->Client->Terminal->find('list');
+		$this->set(compact('services', 'destinations', 'terminals'));
 	}
 
 /**
@@ -82,7 +84,9 @@ class ClientsController extends AppController {
 			$this->request->data = $this->Client->find('first', $options);
 		}
 		$services = $this->Client->Service->find('list');
-		$this->set(compact('services'));
+		$destinations = $this->Client->Destination->find('list');
+		$terminals = $this->Client->Terminal->find('list');
+		$this->set(compact('services', 'destinations', 'terminals'));
 	}
 
 /**

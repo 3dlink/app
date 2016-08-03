@@ -15,7 +15,18 @@ class ClientsControllerTest extends ControllerTestCase {
 	public $fixtures = array(
 		'app.client',
 		'app.service',
-		'app.promotion'
+		'app.promotion',
+		'app.destination',
+		'app.category',
+		'app.comment',
+		'app.user',
+		'app.foruma',
+		'app.forumq',
+		'app.group',
+		'app.point',
+		'app.clients_destination',
+		'app.terminal',
+		'app.clients_terminal'
 	);
 
 /**

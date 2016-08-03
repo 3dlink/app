@@ -14,7 +14,19 @@ class ServiceTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.service',
-		'app.client'
+		'app.client',
+		'app.promotion',
+		'app.destination',
+		'app.category',
+		'app.comment',
+		'app.user',
+		'app.foruma',
+		'app.forumq',
+		'app.group',
+		'app.point',
+		'app.clients_destination',
+		'app.terminal',
+		'app.clients_terminal'
 	);
 
 /**

@@ -47,3 +47,1404 @@ Stack Trace:
 #1 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 C:\xampp\htdocs\prueba\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-08-03 19:00:04 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 19:00:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:00:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:06:03 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 19:06:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:06:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:06:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:06:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:06:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:06:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:06:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:06:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:03 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 19:10:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:08 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:10:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:12:18 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/destinations
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 19:12:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:12:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:12:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:12:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:12:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:12:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:12:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:12:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:01 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /isia/admin
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:41 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/destinations
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 19:26:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:48 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 19:26:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:26:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:25 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 19:27:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 19:27:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:29 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(46): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 20:13:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/main.css
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/jquery.mask.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/moment.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/bootstrap-datetimepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:13:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/js/multiple-select.js
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:21:49 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(38): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 20:22:55 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(38): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 20:23:51 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\isia\View\Users\index.ctp, line 111]
+Trace:
+include - APP\View\Users\index.ctp, line 111
+View::_evaluate() - APP\cakephp\lib\Cake\View\View.php, line 954
+View::_render() - APP\cakephp\lib\Cake\View\View.php, line 916
+View::render() - APP\cakephp\lib\Cake\View\View.php, line 473
+Controller::render() - APP\cakephp\lib\Cake\Controller\Controller.php, line 959
+Dispatcher::_invoke() - APP\cakephp\lib\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - APP\cakephp\lib\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 109
+
+2016-08-03 20:23:51 Error: [MissingHelperException] Helper class UserAuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthHelper',
+  'plugin' => false,
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('UserAuth')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('UserAuth')
+#2 C:\xampp\htdocs\isia\View\Elements\menu.ctp(54): View->__get('UserAuth')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(1221): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\isia\View\Layouts\admin.ctp(38): View->element('menu')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'admin')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-03 20:28:55 Error: [MissingPluginException] Plugin Usermgmt could not be found.
+Exception Attributes: array (
+  'plugin' => 'Usermgmt',
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(227): CakePlugin::path('Usermgmt')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Usermgmt')
+#2 [internal function]: App::load('UserAuthCompone...')
+#3 [internal function]: spl_autoload_call('UserAuthCompone...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\ComponentCollection.php(110): class_exists('UserAuthCompone...')
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Usermgmt.UserAu...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-03 20:30:28 Error: [MissingPluginException] Plugin Usermgmt could not be found.
+Exception Attributes: array (
+  'plugin' => 'Usermgmt',
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(227): CakePlugin::path('Usermgmt')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Usermgmt')
+#2 [internal function]: App::load('UserAuthCompone...')
+#3 [internal function]: spl_autoload_call('UserAuthCompone...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\ComponentCollection.php(110): class_exists('UserAuthCompone...')
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Usermgmt.UserAu...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-03 20:32:16 Error: Fatal Error (1): Call to undefined function UsermgmtInIt() in [C:\xampp\htdocs\isia\Plugin\Usermgmt\Controller\Component\UserAuthComponent.php, line 53]
+2016-08-03 20:32:16 Error: [FatalErrorException] Call to undefined function UsermgmtInIt()
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 53, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 53, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-03 20:34:25 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /isia/admin
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 20:37:59 Error: [MissingPluginException] Plugin Usermgmt could not be found.
+Exception Attributes: array (
+  'plugin' => 'Usermgmt',
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(227): CakePlugin::path('Usermgmt')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Usermgmt')
+#2 [internal function]: App::load('UserAuthCompone...')
+#3 [internal function]: spl_autoload_call('UserAuthCompone...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\ComponentCollection.php(110): class_exists('UserAuthCompone...')
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Usermgmt.UserAu...', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-03 14:38:39 Error: [MissingTableException] Table user_group_permissions for model UserGroupPermission was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'user_group_permissions',
+  'class' => 'UserGroupPermission',
+  'ds' => 'default',
+)
+Request URL: /isia/users
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(3573): Model->setSource('user_group_perm...')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): Model->getDataSource()
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\isia\Plugin\Usermgmt\Model\UserGroup.php(122): Model->find('all', Array)
+#4 C:\xampp\htdocs\isia\Plugin\Usermgmt\Model\UserGroup.php(87): UserGroup->getPermissions(3, false)
+#5 C:\xampp\htdocs\isia\Plugin\Usermgmt\Model\UserGroup.php(104): UserGroup->isUserGroupAccess('users', 'index', 3)
+#6 C:\xampp\htdocs\isia\Plugin\Usermgmt\Controller\Component\UserAuthComponent.php(72): UserGroup->isGuestAccess('users', 'index')
+#7 C:\xampp\htdocs\isia\Controller\AppController.php(10): UserAuthComponent->beforeFilter(Object(UsersController))
+#8 C:\xampp\htdocs\isia\Controller\AppController.php(7): AppController->userAuth()
+#9 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-08-03 14:40:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+Request URL: /isia/admin
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(808): DboSource->query('findByUsername', Array, Object(User))
+#8 C:\xampp\htdocs\isia\Plugin\Usermgmt\Controller\UsersController.php(127): Model->__call('findByUsername', Array)
+#9 C:\xampp\htdocs\isia\Plugin\Usermgmt\Controller\UsersController.php(127): User->findByUsername('admin')
+#10 [internal function]: UsersController->login()
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-08-03 14:41:28 Error: [MissingTableException] Table login_tokens for model LoginToken was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'login_tokens',
+  'class' => 'LoginToken',
+  'ds' => 'default',
+)
+Request URL: /isia/admin
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(3573): Model->setSource('login_tokens')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1731): DboSource->fields(Object(UserMgmtAppModel), 'LoginToken', '')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1233): DboSource->generateAssociationQuery(Object(User), Object(UserMgmtAppModel), 'hasMany', 'LoginToken', Array, Array, true)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1137): DboSource->queryAssociation(Object(User), Object(UserMgmtAppModel), 'hasMany', 'LoginToken', Array, Array, true, Array, 1, Array)
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(User), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('first', Array)
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(808): DboSource->query('findByUsername', Array, Object(User))
+#10 C:\xampp\htdocs\isia\Plugin\Usermgmt\Controller\UsersController.php(127): Model->__call('findByUsername', Array)
+#11 C:\xampp\htdocs\isia\Plugin\Usermgmt\Controller\UsersController.php(127): User->findByUsername('admin')
+#12 [internal function]: UsersController->login()
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#16 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2016-08-03 20:41:50 Error: [MissingControllerException] Controller class WorksController could not be found.
+Exception Attributes: array (
+  'class' => 'WorksController',
+  'plugin' => NULL,
+)
+Request URL: /isia/works
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:00:45 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:00:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:00:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:03:41 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:03:41 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:03:41 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:41:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:41:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:41:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:49:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:52:31 Error: [MissingControllerException] Controller class StartController could not be found.
+Exception Attributes: array (
+  'class' => 'StartController',
+  'plugin' => NULL,
+)
+Request URL: /isia/start/upload/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:52:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 21:56:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 22:03:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 23:50:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 23:50:46 Error: [MissingControllerException] Controller class StartController could not be found.
+Exception Attributes: array (
+  'class' => 'StartController',
+  'plugin' => NULL,
+)
+Request URL: /isia/start/upload/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-04 00:25:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-04 00:25:13 Error: [MissingControllerException] Controller class StartController could not be found.
+Exception Attributes: array (
+  'class' => 'StartController',
+  'plugin' => NULL,
+)
+Request URL: /isia/start/upload/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-04 00:25:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-04 00:25:42 Error: [MissingControllerException] Controller class StartController could not be found.
+Exception Attributes: array (
+  'class' => 'StartController',
+  'plugin' => NULL,
+)
+Request URL: /isia/start/upload/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-04 00:28:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-04 00:28:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-04 00:29:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-03 18:29:40 Error: [NotFoundException] Invalid user
+Request URL: /isia/users/edit/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: UsersController->edit('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

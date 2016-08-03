@@ -21,6 +21,7 @@ class DestinationsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Destination->recursive = 0;
 		$this->set('destinations', $this->Paginator->paginate());
 	}

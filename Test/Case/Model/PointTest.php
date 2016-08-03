@@ -18,8 +18,8 @@ class PointTest extends CakeTestCase {
 		'app.category',
 		'app.comment',
 		'app.user',
-		'app.forumq',
 		'app.foruma',
+		'app.forumq',
 		'app.group'
 	);
 

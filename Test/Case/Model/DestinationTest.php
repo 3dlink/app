@@ -17,6 +17,7 @@ class DestinationTest extends CakeTestCase {
 		'app.category',
 		'app.comment',
 		'app.user',
+		'app.foruma',
 		'app.forumq',
 		'app.group',
 		'app.point'

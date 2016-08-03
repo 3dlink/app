@@ -18,9 +18,9 @@ class ForumqTest extends CakeTestCase {
 		'app.category',
 		'app.comment',
 		'app.user',
+		'app.foruma',
 		'app.group',
-		'app.point',
-		'app.foruma'
+		'app.point'
 	);
 
 /**
