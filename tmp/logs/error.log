@@ -1,0 +1,49 @@
+2016-03-07 22:47:42 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\prueba\Controller\EstudiantesController.php, line 59]
+2016-03-07 22:47:42 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prueba/Estudiantes/add
+Stack Trace:
+#0 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 59, Array)
+#2 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 59, Array)
+#3 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-07 22:50:09 Error: [NotFoundException] Invalid materia
+Request URL: /prueba/materias/delete/0
+Stack Trace:
+#0 [internal function]: MateriasController->delete('0')
+#1 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MateriasController), Array)
+#2 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\prueba\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-03-07 22:50:14 Error: [NotFoundException] Invalid materia
+Request URL: /prueba/materias/delete/0
+Stack Trace:
+#0 [internal function]: MateriasController->delete('0')
+#1 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MateriasController), Array)
+#2 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\prueba\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-03-08 19:32:53 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\xampp\htdocs\prueba\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2016-03-08 19:32:54 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /prueba/estudiantes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 178, Array)
+#2 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 178, Array)
+#3 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-02 19:39:50 Error: [MissingActionException] Action AppController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+)
+Request URL: /prueba/app
+Stack Trace:
+#0 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\prueba\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 C:\xampp\htdocs\prueba\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
