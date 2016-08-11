@@ -16,6 +16,11 @@
 			<?php echo $this->Html->link($state['Region']['name'], array('controller' => 'regions', 'action' => 'view', $state['Region']['id'])); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Country Id'); ?></dt>
+		<dd>
+			<?php echo h($state['State']['country_id']); ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">
@@ -193,6 +198,7 @@
 		<th><?php echo __('Created'); ?></th>
 		<th><?php echo __('Modified'); ?></th>
 		<th><?php echo __('Phone'); ?></th>
+		<th><?php echo __('Commentary Id'); ?></th>
 		<th><?php echo __('Country Id'); ?></th>
 		<th><?php echo __('State Id'); ?></th>
 		<th><?php echo __('City Id'); ?></th>
@@ -219,6 +225,7 @@
 			<td><?php echo $user['created']; ?></td>
 			<td><?php echo $user['modified']; ?></td>
 			<td><?php echo $user['phone']; ?></td>
+			<td><?php echo $user['commentary_id']; ?></td>
 			<td><?php echo $user['country_id']; ?></td>
 			<td><?php echo $user['state_id']; ?></td>
 			<td><?php echo $user['city_id']; ?></td>

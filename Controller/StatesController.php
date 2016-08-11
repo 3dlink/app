@@ -21,6 +21,7 @@ class StatesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->State->recursive = 0;
 		$this->set('states', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class StatesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->State->exists($id)) {
 			throw new NotFoundException(__('Invalid state'));
 		}
@@ -46,6 +48,7 @@ class StatesController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->State->create();
 			if ($this->State->save($this->request->data)) {
@@ -56,7 +59,8 @@ class StatesController extends AppController {
 			}
 		}
 		$regions = $this->State->Region->find('list');
-		$this->set(compact('regions'));
+		$countries = $this->State->Country->find('list');
+		$this->set(compact('regions','countries'));
 	}
 
 /**
@@ -67,6 +71,7 @@ class StatesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->State->exists($id)) {
 			throw new NotFoundException(__('Invalid state'));
 		}

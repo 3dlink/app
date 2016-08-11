@@ -4,6 +4,7 @@ App::uses('AppModel', 'Model');
  * State Model
  *
  * @property Region $Region
+ * @property Country $Country
  * @property City $City
  * @property Destination $Destination
  * @property Terminal $Terminal
@@ -30,6 +31,13 @@ class State extends AppModel {
 		'Region' => array(
 			'className' => 'Region',
 			'foreignKey' => 'region_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Country' => array(
+			'className' => 'Country',
+			'foreignKey' => 'country_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

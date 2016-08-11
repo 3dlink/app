@@ -5,6 +5,7 @@ App::uses('AppModel', 'Model');
  *
  * @property Destination $Destination
  * @property Region $Region
+ * @property State $State
  * @property Terminal $Terminal
  * @property User $User
  */
@@ -41,6 +42,19 @@ class Country extends AppModel {
 		),
 		'Region' => array(
 			'className' => 'Region',
+			'foreignKey' => 'country_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'State' => array(
+			'className' => 'State',
 			'foreignKey' => 'country_id',
 			'dependent' => false,
 			'conditions' => '',

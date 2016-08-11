@@ -21,6 +21,7 @@ class CountriesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Country->recursive = 0;
 		$this->set('countries', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class CountriesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Country->exists($id)) {
 			throw new NotFoundException(__('Invalid country'));
 		}
@@ -46,6 +48,7 @@ class CountriesController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Country->create();
 			if ($this->Country->save($this->request->data)) {
@@ -65,6 +68,7 @@ class CountriesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Country->exists($id)) {
 			throw new NotFoundException(__('Invalid country'));
 		}

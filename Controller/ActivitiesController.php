@@ -21,6 +21,7 @@ class ActivitiesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Activity->recursive = 0;
 		$this->set('activities', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class ActivitiesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Activity->exists($id)) {
 			throw new NotFoundException(__('Invalid activity'));
 		}
@@ -46,6 +48,7 @@ class ActivitiesController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Activity->create();
 			if ($this->Activity->save($this->request->data)) {
@@ -65,6 +68,7 @@ class ActivitiesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Activity->exists($id)) {
 			throw new NotFoundException(__('Invalid activity'));
 		}
