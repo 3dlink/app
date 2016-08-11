@@ -1,4 +1,4 @@
-<!-- <div class="users view">
+<div class="users view">
 <h2><?php echo __('User'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
@@ -6,9 +6,24 @@
 			<?php echo h($user['User']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Name'); ?></dt>
+		<dt><?php echo __('User Group'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['name']); ?>
+			<?php echo $this->Html->link($user['UserGroup']['name'], array('controller' => 'user_groups', 'action' => 'view', $user['UserGroup']['id'])); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Username'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['username']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Password'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['password']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Salt'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['salt']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Email'); ?></dt>
@@ -16,24 +31,64 @@
 			<?php echo h($user['User']['email']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('First Name'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['first_name']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Last Name'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['last_name']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Email Verified'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['email_verified']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Active'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['active']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Ip Address'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['ip_address']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Created'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['created']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Modified'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['modified']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Phone'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['phone']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Commentary'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($user['Commentary']['id'], array('controller' => 'commentaries', 'action' => 'view', $user['Commentary']['id'])); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Country'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['country']); ?>
+			<?php echo $this->Html->link($user['Country']['name'], array('controller' => 'countries', 'action' => 'view', $user['Country']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('State'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['state']); ?>
+			<?php echo $this->Html->link($user['State']['name'], array('controller' => 'states', 'action' => 'view', $user['State']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('City'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['city']); ?>
+			<?php echo $this->Html->link($user['City']['name'], array('controller' => 'cities', 'action' => 'view', $user['City']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Ranking'); ?></dt>
@@ -70,19 +125,29 @@
 		<li><?php echo $this->Form->postLink(__('Delete User'), array('action' => 'delete', $user['User']['id']), array(), __('Are you sure you want to delete # %s?', $user['User']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List User Groups'), array('controller' => 'user_groups', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User Group'), array('controller' => 'user_groups', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Commentaries'), array('controller' => 'commentaries', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Commentary'), array('controller' => 'commentaries', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Countries'), array('controller' => 'countries', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Country'), array('controller' => 'countries', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List States'), array('controller' => 'states', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New State'), array('controller' => 'states', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Cities'), array('controller' => 'cities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New City'), array('controller' => 'cities', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Forumas'), array('controller' => 'forumas', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Foruma'), array('controller' => 'forumas', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Forumqs'), array('controller' => 'forumqs', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Forumq'), array('controller' => 'forumqs', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Login Tokens'), array('controller' => 'login_tokens', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Login Token'), array('controller' => 'login_tokens', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Comments'); ?></h3>
-	<?php if (!empty($user['Comment'])): ?>
+	<h3><?php echo __('Related Commentaries'); ?></h3>
+	<?php if (!empty($user['Commentary'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
@@ -94,19 +159,19 @@
 		<th><?php echo __('Budget'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
-	<?php foreach ($user['Comment'] as $comment): ?>
+	<?php foreach ($user['Commentary'] as $commentary): ?>
 		<tr>
-			<td><?php echo $comment['id']; ?></td>
-			<td><?php echo $comment['comment']; ?></td>
-			<td><?php echo $comment['destination_id']; ?></td>
-			<td><?php echo $comment['user_id']; ?></td>
-			<td><?php echo $comment['security']; ?></td>
-			<td><?php echo $comment['environment']; ?></td>
-			<td><?php echo $comment['budget']; ?></td>
+			<td><?php echo $commentary['id']; ?></td>
+			<td><?php echo $commentary['comment']; ?></td>
+			<td><?php echo $commentary['destination_id']; ?></td>
+			<td><?php echo $commentary['user_id']; ?></td>
+			<td><?php echo $commentary['security']; ?></td>
+			<td><?php echo $commentary['environment']; ?></td>
+			<td><?php echo $commentary['budget']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'comments', 'action' => 'view', $comment['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'comments', 'action' => 'edit', $comment['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'comments', 'action' => 'delete', $comment['id']), array(), __('Are you sure you want to delete # %s?', $comment['id'])); ?>
+				<?php echo $this->Html->link(__('View'), array('controller' => 'commentaries', 'action' => 'view', $commentary['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'commentaries', 'action' => 'edit', $commentary['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'commentaries', 'action' => 'delete', $commentary['id']), array(), __('Are you sure you want to delete # %s?', $commentary['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -115,7 +180,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('New Commentary'), array('controller' => 'commentaries', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>
@@ -228,97 +293,42 @@
 		</ul>
 	</div>
 </div>
- -->
+<div class="related">
+	<h3><?php echo __('Related Login Tokens'); ?></h3>
+	<?php if (!empty($user['LoginToken'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('User Id'); ?></th>
+		<th><?php echo __('Token'); ?></th>
+		<th><?php echo __('Duration'); ?></th>
+		<th><?php echo __('Used'); ?></th>
+		<th><?php echo __('Created'); ?></th>
+		<th><?php echo __('Expires'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($user['LoginToken'] as $loginToken): ?>
+		<tr>
+			<td><?php echo $loginToken['id']; ?></td>
+			<td><?php echo $loginToken['user_id']; ?></td>
+			<td><?php echo $loginToken['token']; ?></td>
+			<td><?php echo $loginToken['duration']; ?></td>
+			<td><?php echo $loginToken['used']; ?></td>
+			<td><?php echo $loginToken['created']; ?></td>
+			<td><?php echo $loginToken['expires']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'login_tokens', 'action' => 'view', $loginToken['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'login_tokens', 'action' => 'edit', $loginToken['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'login_tokens', 'action' => 'delete', $loginToken['id']), array(), __('Are you sure you want to delete # %s?', $loginToken['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
 
- <article class="card shadow-1">
-  <fieldset>
-
-      <legend>User<?php echo ': '; if (!empty($user)) { echo '<small>'.$user['User']['username'].'</small>'; }?></legend>
-      <div class="margenesHorizontales">
-      	<div>
-      		<div class="col-md-6">
-      			<div class="form-group">
-      				<label>First Name: </label>
-                    <?php echo h($user['User']['first_name'])?>
-      			</div>
-      		</div>
-      		<div class="col-md-6">
-      			<div class="form-group">
-				    <label>Last Name:</label>
-                	<?php echo h($user['User']['last_name'])?>
-                </div>
-      		</div>
-          <div class="col-md-6">
-            <div class="form-group">
-                <label>Email: </label>
-                <?php echo h($user['User']['email'])?>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-                <label>Phone:</label>
-                <?php echo h($user['User']['phone'])?>
-                </select>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-        <label>Country: </label>
-                <?php echo h($user['User']['country'])?>
-      </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-        <label>State:</label>
-                <?php echo h($user['User']['state'])?>
-                </select>
-      </div>
-          </div>
-      		<div style="clear:both;"></div>
-      	</div>           	
-      	<div>
-      		<div class="col-md-6">
-      			<div class="form-group">
-                <label>Interest 1:</label>
-                <?php echo h($user['User']['interest_1'])?>
-			      </div>
-      		</div>
-      		<div class="col-md-6">
-      			<div class="form-group">
-                <label>Interest 2:</label>
-                <?php echo h($user['User']['interest_2'])?>
-			      </div>
-      		</div>
-      		<div style="clear:both;"></div>
-      	</div>
-      	<div>
-      		<div class="col-md-6">
-      			<div class="form-group">
-                <label>Interest 3:</label>
-                <?php echo h($user['User']['interest_3'])?>
-			      </div>
-      		</div>
-      		<div style="clear:both;"></div>
-      	</div>
-      	<div>
-          <div id="content_imgs"></div>
-
-          <div class="col-md-12">
-              <div class="form-group">
-                <label>Imagen actual</label>
-                <div id="imagenes_content">
-                  <div id="img_edit" class="img_edit">
-                    <img src="<?php echo $this->webroot.'files/'.$user['User']['photo']; ?>" style="width:25%;">
-                  </div>
-                </div>
-              </div>
-          </div>
-
-      		<div class="margenesVerticales" style="text-align:right;">
-	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'users';" title="regresar" value = "Atr&aacute;s" style="width: 79px;"> 	  
-				  </div>
-      	</div>    
-</div>        
-    </fieldset>  
-</article>
-
+	<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New Login Token'), array('controller' => 'login_tokens', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+</div>

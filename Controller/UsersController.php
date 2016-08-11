@@ -21,7 +21,6 @@ class UsersController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->layout="admin";
 		$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
 	}
@@ -34,7 +33,6 @@ class UsersController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		$this->layout="admin";
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
@@ -48,7 +46,6 @@ class UsersController extends AppController {
  * @return void
  */
 	public function add() {
-		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
@@ -58,6 +55,12 @@ class UsersController extends AppController {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
 		}
+		$userGroups = $this->User->UserGroup->find('list');
+		$commentaries = $this->User->Commentary->find('list');
+		$countries = $this->User->Country->find('list');
+		$states = $this->User->State->find('list');
+		$cities = $this->User->City->find('list');
+		$this->set(compact('userGroups', 'commentaries', 'countries', 'states', 'cities'));
 	}
 
 /**
@@ -68,7 +71,6 @@ class UsersController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-		$this->layout="admin";
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
@@ -83,6 +85,12 @@ class UsersController extends AppController {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 			$this->request->data = $this->User->find('first', $options);
 		}
+		$userGroups = $this->User->UserGroup->find('list');
+		$commentaries = $this->User->Commentary->find('list');
+		$countries = $this->User->Country->find('list');
+		$states = $this->User->State->find('list');
+		$cities = $this->User->City->find('list');
+		$this->set(compact('userGroups', 'commentaries', 'countries', 'states', 'cities'));
 	}
 
 /**
@@ -97,7 +105,7 @@ class UsersController extends AppController {
 		if (!$this->User->exists()) {
 			throw new NotFoundException(__('Invalid user'));
 		}
-		//$this->request->allowMethod('post', 'delete');
+		$this->request->allowMethod('post', 'delete');
 		if ($this->User->delete()) {
 			$this->Session->setFlash(__('The user has been deleted.'));
 		} else {

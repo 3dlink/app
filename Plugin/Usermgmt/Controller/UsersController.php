@@ -167,7 +167,7 @@ class UsersController extends UserMgmtAppController {
 					$groupid = $this->UserAuth->getGroupId();
 
 					if($groupid == 1){
-						$this->redirect('/works');
+						$this->redirect('/dashboard');
 					}else{
 						$this->redirect('/');
 					}

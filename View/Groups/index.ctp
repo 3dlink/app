@@ -26,7 +26,7 @@
 		<td><?php echo h($group['Group']['description']); ?>&nbsp;</td>
 		<td><?php echo h($group['Group']['start_trip']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($group['User']['name'], array('controller' => 'users', 'action' => 'view', $group['User']['id'])); ?>
+			<?php echo $this->Html->link($group['User']['id'], array('controller' => 'users', 'action' => 'view', $group['User']['id'])); ?>
 		</td>
 		<td><?php echo h($group['Group']['date_trip']); ?>&nbsp;</td>
 		<td><?php echo h($group['Group']['limit_person']); ?>&nbsp;</td>

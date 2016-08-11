@@ -8,7 +8,7 @@
 		echo $this->Form->input('schedule');
 		echo $this->Form->input('price');
 		echo $this->Form->input('lat');
-		echo $this->Form->input('long');
+		echo $this->Form->input('longitude');
 		echo $this->Form->input('photo_1');
 		echo $this->Form->input('photo_2');
 		echo $this->Form->input('payment');

@@ -5,11 +5,11 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
-			<th><?php echo $this->Paginator->sort('country'); ?></th>
-			<th><?php echo $this->Paginator->sort('city'); ?></th>
-			<th><?php echo $this->Paginator->sort('state'); ?></th>
+			<th><?php echo $this->Paginator->sort('country_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('city_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('state_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('lat'); ?></th>
-			<th><?php echo $this->Paginator->sort('long'); ?></th>
+			<th><?php echo $this->Paginator->sort('longitude'); ?></th>
 			<th><?php echo $this->Paginator->sort('schedule'); ?></th>
 			<th><?php echo $this->Paginator->sort('description'); ?></th>
 			<th><?php echo $this->Paginator->sort('phone'); ?></th>
@@ -22,11 +22,17 @@
 	<tr>
 		<td><?php echo h($terminal['Terminal']['id']); ?>&nbsp;</td>
 		<td><?php echo h($terminal['Terminal']['name']); ?>&nbsp;</td>
-		<td><?php echo h($terminal['Terminal']['country']); ?>&nbsp;</td>
-		<td><?php echo h($terminal['Terminal']['city']); ?>&nbsp;</td>
-		<td><?php echo h($terminal['Terminal']['state']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($terminal['Country']['name'], array('controller' => 'countries', 'action' => 'view', $terminal['Country']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($terminal['City']['name'], array('controller' => 'cities', 'action' => 'view', $terminal['City']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($terminal['State']['name'], array('controller' => 'states', 'action' => 'view', $terminal['State']['id'])); ?>
+		</td>
 		<td><?php echo h($terminal['Terminal']['lat']); ?>&nbsp;</td>
-		<td><?php echo h($terminal['Terminal']['long']); ?>&nbsp;</td>
+		<td><?php echo h($terminal['Terminal']['longitude']); ?>&nbsp;</td>
 		<td><?php echo h($terminal['Terminal']['schedule']); ?>&nbsp;</td>
 		<td><?php echo h($terminal['Terminal']['description']); ?>&nbsp;</td>
 		<td><?php echo h($terminal['Terminal']['phone']); ?>&nbsp;</td>
@@ -58,5 +64,15 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Terminal'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Countries'), array('controller' => 'countries', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Country'), array('controller' => 'countries', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Cities'), array('controller' => 'cities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New City'), array('controller' => 'cities', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List States'), array('controller' => 'states', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New State'), array('controller' => 'states', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Clients'), array('controller' => 'clients', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Client'), array('controller' => 'clients', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Destinations'), array('controller' => 'destinations', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Destination'), array('controller' => 'destinations', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

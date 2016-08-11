@@ -3,11 +3,17 @@ App::uses('AppModel', 'Model');
 /**
  * Destination Model
  *
- * @property Category $Category
+ * @property Type $Type
+ * @property State $State
+ * @property City $City
+ * @property Country $Country
+ * @property Region $Region
+ * @property Park $Park
  * @property Comment $Comment
  * @property Forumq $Forumq
  * @property Group $Group
  * @property Point $Point
+ * @property Activity $Activity
  * @property Client $Client
  * @property Terminal $Terminal
  */
@@ -29,9 +35,44 @@ class Destination extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Category' => array(
-			'className' => 'Category',
-			'foreignKey' => 'category_id',
+		'Type' => array(
+			'className' => 'Type',
+			'foreignKey' => 'type_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'State' => array(
+			'className' => 'State',
+			'foreignKey' => 'state_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'City' => array(
+			'className' => 'City',
+			'foreignKey' => 'city_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Country' => array(
+			'className' => 'Country',
+			'foreignKey' => 'country_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Region' => array(
+			'className' => 'Region',
+			'foreignKey' => 'region_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Park' => array(
+			'className' => 'Park',
+			'foreignKey' => 'park_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -105,6 +146,19 @@ class Destination extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
+		'Activity' => array(
+			'className' => 'Activity',
+			'joinTable' => 'activities_destinations',
+			'foreignKey' => 'destination_id',
+			'associationForeignKey' => 'activity_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
 		'Client' => array(
 			'className' => 'Client',
 			'joinTable' => 'clients_destinations',

@@ -4,7 +4,11 @@ App::uses('AppModel', 'Model');
  * User Model
  *
  * @property UserGroup $UserGroup
- * @property Comment $Comment
+ * @property Commentary $Commentary
+ * @property Country $Country
+ * @property State $State
+ * @property City $City
+ * @property Commentary $Commentary
  * @property Foruma $Foruma
  * @property Forumq $Forumq
  * @property Group $Group
@@ -27,6 +31,34 @@ class User extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'Commentary' => array(
+			'className' => 'Commentary',
+			'foreignKey' => 'commentary_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Country' => array(
+			'className' => 'Country',
+			'foreignKey' => 'country_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'State' => array(
+			'className' => 'State',
+			'foreignKey' => 'state_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'City' => array(
+			'className' => 'City',
+			'foreignKey' => 'city_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 
@@ -36,8 +68,8 @@ class User extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'Comment' => array(
-			'className' => 'Comment',
+		'Commentary' => array(
+			'className' => 'Commentary',
 			'foreignKey' => 'user_id',
 			'dependent' => false,
 			'conditions' => '',

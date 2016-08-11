@@ -16,19 +16,34 @@
 			<?php echo h($destination['Destination']['description']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Type'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($destination['Type']['name'], array('controller' => 'types', 'action' => 'view', $destination['Type']['id'])); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('State'); ?></dt>
 		<dd>
-			<?php echo h($destination['Destination']['state']); ?>
+			<?php echo $this->Html->link($destination['State']['name'], array('controller' => 'states', 'action' => 'view', $destination['State']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('City'); ?></dt>
 		<dd>
-			<?php echo h($destination['Destination']['city']); ?>
+			<?php echo $this->Html->link($destination['City']['name'], array('controller' => 'cities', 'action' => 'view', $destination['City']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Country'); ?></dt>
 		<dd>
-			<?php echo h($destination['Destination']['country']); ?>
+			<?php echo $this->Html->link($destination['Country']['name'], array('controller' => 'countries', 'action' => 'view', $destination['Country']['id'])); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Region'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($destination['Region']['name'], array('controller' => 'regions', 'action' => 'view', $destination['Region']['id'])); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Park'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($destination['Park']['name'], array('controller' => 'parks', 'action' => 'view', $destination['Park']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Lat'); ?></dt>
@@ -36,9 +51,9 @@
 			<?php echo h($destination['Destination']['lat']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Long'); ?></dt>
+		<dt><?php echo __('Longitude'); ?></dt>
 		<dd>
-			<?php echo h($destination['Destination']['long']); ?>
+			<?php echo h($destination['Destination']['longitude']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Photo1'); ?></dt>
@@ -71,11 +86,6 @@
 			<?php echo h($destination['Destination']['affluence']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Category'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($destination['Category']['name'], array('controller' => 'categories', 'action' => 'view', $destination['Category']['id'])); ?>
-			&nbsp;
-		</dd>
 	</dl>
 </div>
 <div class="actions">
@@ -85,8 +95,18 @@
 		<li><?php echo $this->Form->postLink(__('Delete Destination'), array('action' => 'delete', $destination['Destination']['id']), array(), __('Are you sure you want to delete # %s?', $destination['Destination']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Destinations'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Destination'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Categories'), array('controller' => 'categories', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Category'), array('controller' => 'categories', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Types'), array('controller' => 'types', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Type'), array('controller' => 'types', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List States'), array('controller' => 'states', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New State'), array('controller' => 'states', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Cities'), array('controller' => 'cities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New City'), array('controller' => 'cities', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Countries'), array('controller' => 'countries', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Country'), array('controller' => 'countries', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Regions'), array('controller' => 'regions', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Region'), array('controller' => 'regions', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Parks'), array('controller' => 'parks', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Park'), array('controller' => 'parks', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Forumqs'), array('controller' => 'forumqs', 'action' => 'index')); ?> </li>
@@ -95,6 +115,12 @@
 		<li><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Points'), array('controller' => 'points', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Point'), array('controller' => 'points', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Activities'), array('controller' => 'activities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Activity'), array('controller' => 'activities', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Clients'), array('controller' => 'clients', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Client'), array('controller' => 'clients', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Terminals'), array('controller' => 'terminals', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Terminal'), array('controller' => 'terminals', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -220,7 +246,7 @@
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Name'); ?></th>
 		<th><?php echo __('Lat'); ?></th>
-		<th><?php echo __('Long'); ?></th>
+		<th><?php echo __('Longitude'); ?></th>
 		<th><?php echo __('Destination Id'); ?></th>
 		<th><?php echo __('Price'); ?></th>
 		<th><?php echo __('Schedule'); ?></th>
@@ -232,7 +258,7 @@
 			<td><?php echo $point['id']; ?></td>
 			<td><?php echo $point['name']; ?></td>
 			<td><?php echo $point['lat']; ?></td>
-			<td><?php echo $point['long']; ?></td>
+			<td><?php echo $point['longitude']; ?></td>
 			<td><?php echo $point['destination_id']; ?></td>
 			<td><?php echo $point['price']; ?></td>
 			<td><?php echo $point['schedule']; ?></td>
@@ -250,6 +276,129 @@
 	<div class="actions">
 		<ul>
 			<li><?php echo $this->Html->link(__('New Point'), array('controller' => 'points', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php echo __('Related Activities'); ?></h3>
+	<?php if (!empty($destination['Activity'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Name'); ?></th>
+		<th><?php echo __('Photo'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($destination['Activity'] as $activity): ?>
+		<tr>
+			<td><?php echo $activity['id']; ?></td>
+			<td><?php echo $activity['name']; ?></td>
+			<td><?php echo $activity['photo']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'activities', 'action' => 'view', $activity['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'activities', 'action' => 'edit', $activity['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'activities', 'action' => 'delete', $activity['id']), array(), __('Are you sure you want to delete # %s?', $activity['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New Activity'), array('controller' => 'activities', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php echo __('Related Clients'); ?></h3>
+	<?php if (!empty($destination['Client'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Name'); ?></th>
+		<th><?php echo __('Service Id'); ?></th>
+		<th><?php echo __('Schedule'); ?></th>
+		<th><?php echo __('Price'); ?></th>
+		<th><?php echo __('Lat'); ?></th>
+		<th><?php echo __('Longitude'); ?></th>
+		<th><?php echo __('Photo 1'); ?></th>
+		<th><?php echo __('Photo 2'); ?></th>
+		<th><?php echo __('Payment'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($destination['Client'] as $client): ?>
+		<tr>
+			<td><?php echo $client['id']; ?></td>
+			<td><?php echo $client['name']; ?></td>
+			<td><?php echo $client['service_id']; ?></td>
+			<td><?php echo $client['schedule']; ?></td>
+			<td><?php echo $client['price']; ?></td>
+			<td><?php echo $client['lat']; ?></td>
+			<td><?php echo $client['longitude']; ?></td>
+			<td><?php echo $client['photo_1']; ?></td>
+			<td><?php echo $client['photo_2']; ?></td>
+			<td><?php echo $client['payment']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'clients', 'action' => 'view', $client['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'clients', 'action' => 'edit', $client['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'clients', 'action' => 'delete', $client['id']), array(), __('Are you sure you want to delete # %s?', $client['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New Client'), array('controller' => 'clients', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php echo __('Related Terminals'); ?></h3>
+	<?php if (!empty($destination['Terminal'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Name'); ?></th>
+		<th><?php echo __('Country Id'); ?></th>
+		<th><?php echo __('City Id'); ?></th>
+		<th><?php echo __('State Id'); ?></th>
+		<th><?php echo __('Lat'); ?></th>
+		<th><?php echo __('Longitude'); ?></th>
+		<th><?php echo __('Schedule'); ?></th>
+		<th><?php echo __('Description'); ?></th>
+		<th><?php echo __('Phone'); ?></th>
+		<th><?php echo __('Contact'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($destination['Terminal'] as $terminal): ?>
+		<tr>
+			<td><?php echo $terminal['id']; ?></td>
+			<td><?php echo $terminal['name']; ?></td>
+			<td><?php echo $terminal['country_id']; ?></td>
+			<td><?php echo $terminal['city_id']; ?></td>
+			<td><?php echo $terminal['state_id']; ?></td>
+			<td><?php echo $terminal['lat']; ?></td>
+			<td><?php echo $terminal['longitude']; ?></td>
+			<td><?php echo $terminal['schedule']; ?></td>
+			<td><?php echo $terminal['description']; ?></td>
+			<td><?php echo $terminal['phone']; ?></td>
+			<td><?php echo $terminal['contact']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'terminals', 'action' => 'view', $terminal['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'terminals', 'action' => 'edit', $terminal['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'terminals', 'action' => 'delete', $terminal['id']), array(), __('Are you sure you want to delete # %s?', $terminal['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New Terminal'), array('controller' => 'terminals', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

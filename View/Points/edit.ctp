@@ -6,7 +6,7 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('name');
 		echo $this->Form->input('lat');
-		echo $this->Form->input('long');
+		echo $this->Form->input('longitude');
 		echo $this->Form->input('destination_id');
 		echo $this->Form->input('price');
 		echo $this->Form->input('schedule');

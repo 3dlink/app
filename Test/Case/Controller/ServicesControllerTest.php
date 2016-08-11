@@ -20,13 +20,16 @@ class ServicesControllerTest extends ControllerTestCase {
 		'app.category',
 		'app.comment',
 		'app.user',
+		'app.user_group',
 		'app.foruma',
 		'app.forumq',
 		'app.group',
+		'app.login_token',
 		'app.point',
 		'app.clients_destination',
 		'app.terminal',
-		'app.clients_terminal'
+		'app.clients_terminal',
+		'app.destinations_terminal'
 	);
 
 /**

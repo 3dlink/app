@@ -55,6 +55,9 @@ class TerminalsController extends AppController {
 				$this->Session->setFlash(__('The terminal could not be saved. Please, try again.'));
 			}
 		}
+		$clients = $this->Terminal->Client->find('list');
+		$destinations = $this->Terminal->Destination->find('list');
+		$this->set(compact('clients', 'destinations'));
 	}
 
 /**
@@ -79,6 +82,9 @@ class TerminalsController extends AppController {
 			$options = array('conditions' => array('Terminal.' . $this->Terminal->primaryKey => $id));
 			$this->request->data = $this->Terminal->find('first', $options);
 		}
+		$clients = $this->Terminal->Client->find('list');
+		$destinations = $this->Terminal->Destination->find('list');
+		$this->set(compact('clients', 'destinations'));
 	}
 
 /**

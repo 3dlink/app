@@ -35,7 +35,7 @@
 		<th><?php echo __('Schedule'); ?></th>
 		<th><?php echo __('Price'); ?></th>
 		<th><?php echo __('Lat'); ?></th>
-		<th><?php echo __('Long'); ?></th>
+		<th><?php echo __('Longitude'); ?></th>
 		<th><?php echo __('Photo 1'); ?></th>
 		<th><?php echo __('Photo 2'); ?></th>
 		<th><?php echo __('Payment'); ?></th>
@@ -49,7 +49,7 @@
 			<td><?php echo $client['schedule']; ?></td>
 			<td><?php echo $client['price']; ?></td>
 			<td><?php echo $client['lat']; ?></td>
-			<td><?php echo $client['long']; ?></td>
+			<td><?php echo $client['longitude']; ?></td>
 			<td><?php echo $client['photo_1']; ?></td>
 			<td><?php echo $client['photo_2']; ?></td>
 			<td><?php echo $client['payment']; ?></td>

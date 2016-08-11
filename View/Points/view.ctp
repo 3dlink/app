@@ -16,9 +16,9 @@
 			<?php echo h($point['Point']['lat']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Long'); ?></dt>
+		<dt><?php echo __('Longitude'); ?></dt>
 		<dd>
-			<?php echo h($point['Point']['long']); ?>
+			<?php echo h($point['Point']['longitude']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Destination'); ?></dt>

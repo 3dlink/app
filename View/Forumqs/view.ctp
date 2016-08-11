@@ -18,7 +18,7 @@
 		</dd>
 		<dt><?php echo __('User'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($forumq['User']['name'], array('controller' => 'users', 'action' => 'view', $forumq['User']['id'])); ?>
+			<?php echo $this->Html->link($forumq['User']['id'], array('controller' => 'users', 'action' => 'view', $forumq['User']['id'])); ?>
 			&nbsp;
 		</dd>
 	</dl>

@@ -18,9 +18,18 @@ class ForumqsControllerTest extends ControllerTestCase {
 		'app.category',
 		'app.comment',
 		'app.user',
+		'app.user_group',
 		'app.foruma',
 		'app.group',
-		'app.point'
+		'app.login_token',
+		'app.point',
+		'app.client',
+		'app.service',
+		'app.promotion',
+		'app.clients_destination',
+		'app.terminal',
+		'app.clients_terminal',
+		'app.destinations_terminal'
 	);
 
 /**

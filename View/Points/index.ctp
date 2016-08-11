@@ -6,7 +6,7 @@
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('lat'); ?></th>
-			<th><?php echo $this->Paginator->sort('long'); ?></th>
+			<th><?php echo $this->Paginator->sort('longitude'); ?></th>
 			<th><?php echo $this->Paginator->sort('destination_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('price'); ?></th>
 			<th><?php echo $this->Paginator->sort('schedule'); ?></th>
@@ -20,7 +20,7 @@
 		<td><?php echo h($point['Point']['id']); ?>&nbsp;</td>
 		<td><?php echo h($point['Point']['name']); ?>&nbsp;</td>
 		<td><?php echo h($point['Point']['lat']); ?>&nbsp;</td>
-		<td><?php echo h($point['Point']['long']); ?>&nbsp;</td>
+		<td><?php echo h($point['Point']['longitude']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($point['Destination']['name'], array('controller' => 'destinations', 'action' => 'view', $point['Destination']['id'])); ?>
 		</td>

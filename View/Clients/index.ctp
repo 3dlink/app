@@ -9,7 +9,7 @@
 			<th><?php echo $this->Paginator->sort('schedule'); ?></th>
 			<th><?php echo $this->Paginator->sort('price'); ?></th>
 			<th><?php echo $this->Paginator->sort('lat'); ?></th>
-			<th><?php echo $this->Paginator->sort('long'); ?></th>
+			<th><?php echo $this->Paginator->sort('longitude'); ?></th>
 			<th><?php echo $this->Paginator->sort('photo_1'); ?></th>
 			<th><?php echo $this->Paginator->sort('photo_2'); ?></th>
 			<th><?php echo $this->Paginator->sort('payment'); ?></th>
@@ -27,7 +27,7 @@
 		<td><?php echo h($client['Client']['schedule']); ?>&nbsp;</td>
 		<td><?php echo h($client['Client']['price']); ?>&nbsp;</td>
 		<td><?php echo h($client['Client']['lat']); ?>&nbsp;</td>
-		<td><?php echo h($client['Client']['long']); ?>&nbsp;</td>
+		<td><?php echo h($client['Client']['longitude']); ?>&nbsp;</td>
 		<td><?php echo h($client['Client']['photo_1']); ?>&nbsp;</td>
 		<td><?php echo h($client['Client']['photo_2']); ?>&nbsp;</td>
 		<td><?php echo h($client['Client']['payment']); ?>&nbsp;</td>

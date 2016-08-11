@@ -17,7 +17,7 @@ class ClientFixture extends CakeTestFixture {
 		'schedule' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'price' => array('type' => 'float', 'null' => false, 'default' => null, 'unsigned' => false),
 		'lat' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-		'long' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
+		'longitude' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'photo_1' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'photo_2' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'payment' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
@@ -40,7 +40,7 @@ class ClientFixture extends CakeTestFixture {
 			'schedule' => 'Lorem ipsum dolor sit amet',
 			'price' => 1,
 			'lat' => 'Lorem ipsum dolor sit amet',
-			'long' => 'Lorem ipsum dolor sit amet',
+			'longitude' => 'Lorem ipsum dolor sit amet',
 			'photo_1' => 'Lorem ipsum dolor sit amet',
 			'photo_2' => 'Lorem ipsum dolor sit amet',
 			'payment' => 'Lorem ipsum dolor sit amet'

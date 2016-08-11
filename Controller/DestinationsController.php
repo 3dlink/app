@@ -21,7 +21,6 @@ class DestinationsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->layout="admin";
 		$this->Destination->recursive = 0;
 		$this->set('destinations', $this->Paginator->paginate());
 	}
@@ -57,7 +56,9 @@ class DestinationsController extends AppController {
 			}
 		}
 		$categories = $this->Destination->Category->find('list');
-		$this->set(compact('categories'));
+		$clients = $this->Destination->Client->find('list');
+		$terminals = $this->Destination->Terminal->find('list');
+		$this->set(compact('categories', 'clients', 'terminals'));
 	}
 
 /**
@@ -83,7 +84,9 @@ class DestinationsController extends AppController {
 			$this->request->data = $this->Destination->find('first', $options);
 		}
 		$categories = $this->Destination->Category->find('list');
-		$this->set(compact('categories'));
+		$clients = $this->Destination->Client->find('list');
+		$terminals = $this->Destination->Terminal->find('list');
+		$this->set(compact('categories', 'clients', 'terminals'));
 	}
 
 /**

@@ -16,7 +16,7 @@
 		<td><?php echo h($foruma['Foruma']['id']); ?>&nbsp;</td>
 		<td><?php echo h($foruma['Foruma']['answer']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($foruma['User']['name'], array('controller' => 'users', 'action' => 'view', $foruma['User']['id'])); ?>
+			<?php echo $this->Html->link($foruma['User']['id'], array('controller' => 'users', 'action' => 'view', $foruma['User']['id'])); ?>
 		</td>
 		<td>
 			<?php echo $this->Html->link($foruma['Forumq']['id'], array('controller' => 'forumqs', 'action' => 'view', $foruma['Forumq']['id'])); ?>

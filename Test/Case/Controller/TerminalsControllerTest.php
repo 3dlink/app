@@ -13,7 +13,23 @@ class TerminalsControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.terminal'
+		'app.terminal',
+		'app.client',
+		'app.service',
+		'app.promotion',
+		'app.destination',
+		'app.category',
+		'app.comment',
+		'app.user',
+		'app.user_group',
+		'app.foruma',
+		'app.forumq',
+		'app.group',
+		'app.login_token',
+		'app.point',
+		'app.clients_destination',
+		'app.destinations_terminal',
+		'app.clients_terminal'
 	);
 
 /**

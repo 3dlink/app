@@ -19,7 +19,7 @@
 			<?php echo $this->Html->link($forumq['Destination']['name'], array('controller' => 'destinations', 'action' => 'view', $forumq['Destination']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($forumq['User']['name'], array('controller' => 'users', 'action' => 'view', $forumq['User']['id'])); ?>
+			<?php echo $this->Html->link($forumq['User']['id'], array('controller' => 'users', 'action' => 'view', $forumq['User']['id'])); ?>
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $forumq['Forumq']['id'])); ?>
