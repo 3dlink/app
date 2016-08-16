@@ -21,6 +21,7 @@ class PromotionsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Promotion->recursive = 0;
 		$this->set('promotions', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class PromotionsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Promotion->exists($id)) {
 			throw new NotFoundException(__('Invalid promotion'));
 		}
@@ -46,6 +48,7 @@ class PromotionsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Promotion->create();
 			if ($this->Promotion->save($this->request->data)) {
@@ -67,6 +70,7 @@ class PromotionsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Promotion->exists($id)) {
 			throw new NotFoundException(__('Invalid promotion'));
 		}
@@ -97,7 +101,7 @@ class PromotionsController extends AppController {
 		if (!$this->Promotion->exists()) {
 			throw new NotFoundException(__('Invalid promotion'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Promotion->delete()) {
 			$this->Session->setFlash(__('The promotion has been deleted.'));
 		} else {

@@ -21,6 +21,7 @@ class ServicesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Service->recursive = 0;
 		$this->set('services', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class ServicesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Service->exists($id)) {
 			throw new NotFoundException(__('Invalid service'));
 		}
@@ -46,6 +48,7 @@ class ServicesController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Service->create();
 			if ($this->Service->save($this->request->data)) {
@@ -65,6 +68,7 @@ class ServicesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Service->exists($id)) {
 			throw new NotFoundException(__('Invalid service'));
 		}
@@ -93,7 +97,7 @@ class ServicesController extends AppController {
 		if (!$this->Service->exists()) {
 			throw new NotFoundException(__('Invalid service'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Service->delete()) {
 			$this->Session->setFlash(__('The service has been deleted.'));
 		} else {

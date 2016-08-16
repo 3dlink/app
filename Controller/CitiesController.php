@@ -21,6 +21,7 @@ class CitiesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->City->recursive = 0;
 		$this->set('cities', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class CitiesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->City->exists($id)) {
 			throw new NotFoundException(__('Invalid city'));
 		}
@@ -46,6 +48,7 @@ class CitiesController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->City->create();
 			if ($this->City->save($this->request->data)) {
@@ -67,6 +70,7 @@ class CitiesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->City->exists($id)) {
 			throw new NotFoundException(__('Invalid city'));
 		}
@@ -97,7 +101,7 @@ class CitiesController extends AppController {
 		if (!$this->City->exists()) {
 			throw new NotFoundException(__('Invalid city'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->City->delete()) {
 			$this->Session->setFlash(__('The city has been deleted.'));
 		} else {

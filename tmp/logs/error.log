@@ -1565,3 +1565,251 @@ Request URL: /isia/country
 Stack Trace:
 #0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-08-11 21:35:31 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /isia/login
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(3546): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(3573): Model->setSource('users')
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\xampp\htdocs\isia\Plugin\Usermgmt\View\Users\login.ctp(5): FormHelper->create('User', Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#13 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-08-15 14:08:42 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2016-08-15 14:08:42 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /isia/login
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 458, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 458, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-16 07:57:34 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\CitiesController.php, line 62]
+2016-08-16 07:57:34 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/cities/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-16 07:58:52 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\CitiesController.php, line 62]
+2016-08-16 07:58:52 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/cities/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-16 14:07:05 Error: [MissingControllerException] Controller class CityController could not be found.
+Exception Attributes: array (
+  'class' => 'CityController',
+  'plugin' => NULL,
+)
+Request URL: /isia/city
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 14:07:17 Error: [MissingControllerException] Controller class CityController could not be found.
+Exception Attributes: array (
+  'class' => 'CityController',
+  'plugin' => NULL,
+)
+Request URL: /isia/city
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 14:07:43 Error: [MissingControllerException] Controller class CityController could not be found.
+Exception Attributes: array (
+  'class' => 'CityController',
+  'plugin' => NULL,
+)
+Request URL: /isia/city
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 16:16:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /isia/img/file.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 16:43:47 Error: [MissingControllerException] Controller class ServiceController could not be found.
+Exception Attributes: array (
+  'class' => 'ServiceController',
+  'plugin' => NULL,
+)
+Request URL: /isia/service
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 10:59:40 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\PromotionsController.php, line 62]
+2016-08-16 10:59:40 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/promotions/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-16 11:00:17 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\PromotionsController.php, line 62]
+2016-08-16 11:00:17 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/promotions/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-16 17:00:29 Error: [MissingControllerException] Controller class ServiceController could not be found.
+Exception Attributes: array (
+  'class' => 'ServiceController',
+  'plugin' => NULL,
+)
+Request URL: /isia/service
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 11:00:49 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\PromotionsController.php, line 62]
+2016-08-16 11:00:49 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/promotions/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-16 12:22:19 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:23:51 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:24:20 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:24:39 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:27:03 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:31:21 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:32:51 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:46:15 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:47:04 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 12:47:46 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-16 18:50:05 Error: [MissingControllerException] Controller class ClientController could not be found.
+Exception Attributes: array (
+  'class' => 'ClientController',
+  'plugin' => NULL,
+)
+Request URL: /isia/client
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 12:52:01 Error: [NotFoundException] Invalid client
+Request URL: /isia/clients/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: ClientsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

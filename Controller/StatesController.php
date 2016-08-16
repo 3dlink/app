@@ -87,7 +87,8 @@ class StatesController extends AppController {
 			$this->request->data = $this->State->find('first', $options);
 		}
 		$regions = $this->State->Region->find('list');
-		$this->set(compact('regions'));
+		$countries = $this->State->Country->find('list');
+		$this->set(compact('regions','countries'));
 	}
 
 /**
@@ -102,7 +103,6 @@ class StatesController extends AppController {
 		if (!$this->State->exists()) {
 			throw new NotFoundException(__('Invalid state'));
 		}
-		$this->request->allowMethod('post', 'delete');
 		if ($this->State->delete()) {
 			$this->Session->setFlash(__('The state has been deleted.'));
 		} else {

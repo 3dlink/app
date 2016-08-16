@@ -21,6 +21,7 @@ class RegionsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Region->recursive = 0;
 		$this->set('regions', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class RegionsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Region->exists($id)) {
 			throw new NotFoundException(__('Invalid region'));
 		}
@@ -46,6 +48,7 @@ class RegionsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Region->create();
 			if ($this->Region->save($this->request->data)) {
@@ -67,6 +70,7 @@ class RegionsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Region->exists($id)) {
 			throw new NotFoundException(__('Invalid region'));
 		}
@@ -97,7 +101,6 @@ class RegionsController extends AppController {
 		if (!$this->Region->exists()) {
 			throw new NotFoundException(__('Invalid region'));
 		}
-		$this->request->allowMethod('post', 'delete');
 		if ($this->Region->delete()) {
 			$this->Session->setFlash(__('The region has been deleted.'));
 		} else {

@@ -21,6 +21,7 @@ class ClientsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Client->recursive = 0;
 		$this->set('clients', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class ClientsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Client->exists($id)) {
 			throw new NotFoundException(__('Invalid client'));
 		}
@@ -46,6 +48,7 @@ class ClientsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Client->create();
 			if ($this->Client->save($this->request->data)) {
@@ -69,6 +72,7 @@ class ClientsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Client->exists($id)) {
 			throw new NotFoundException(__('Invalid client'));
 		}
@@ -101,7 +105,7 @@ class ClientsController extends AppController {
 		if (!$this->Client->exists()) {
 			throw new NotFoundException(__('Invalid client'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Client->delete()) {
 			$this->Session->setFlash(__('The client has been deleted.'));
 		} else {
