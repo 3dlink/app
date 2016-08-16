@@ -21,6 +21,7 @@ class DestinationsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Destination->recursive = 0;
 		$this->set('destinations', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class DestinationsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Destination->exists($id)) {
 			throw new NotFoundException(__('Invalid destination'));
 		}
@@ -46,6 +48,7 @@ class DestinationsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Destination->create();
 			if ($this->Destination->save($this->request->data)) {
@@ -55,10 +58,16 @@ class DestinationsController extends AppController {
 				$this->Session->setFlash(__('The destination could not be saved. Please, try again.'));
 			}
 		}
-		$categories = $this->Destination->Category->find('list');
+		$types = $this->Destination->Type->find('list');
+		$states = $this->Destination->State->find('list');
+		$cities = $this->Destination->City->find('list');
+		$countries = $this->Destination->Country->find('list');
+		$regions = $this->Destination->Region->find('list');
+		$parks = $this->Destination->Park->find('list');
+		$activities = $this->Destination->Activity->find('list');
 		$clients = $this->Destination->Client->find('list');
 		$terminals = $this->Destination->Terminal->find('list');
-		$this->set(compact('categories', 'clients', 'terminals'));
+		$this->set(compact('types', 'states', 'cities', 'countries', 'regions', 'parks', 'activities', 'clients', 'terminals'));
 	}
 
 /**
@@ -69,6 +78,7 @@ class DestinationsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Destination->exists($id)) {
 			throw new NotFoundException(__('Invalid destination'));
 		}
@@ -83,10 +93,16 @@ class DestinationsController extends AppController {
 			$options = array('conditions' => array('Destination.' . $this->Destination->primaryKey => $id));
 			$this->request->data = $this->Destination->find('first', $options);
 		}
-		$categories = $this->Destination->Category->find('list');
+		$types = $this->Destination->Type->find('list');
+		$states = $this->Destination->State->find('list');
+		$cities = $this->Destination->City->find('list');
+		$countries = $this->Destination->Country->find('list');
+		$regions = $this->Destination->Region->find('list');
+		$parks = $this->Destination->Park->find('list');
+		$activities = $this->Destination->Activity->find('list');
 		$clients = $this->Destination->Client->find('list');
 		$terminals = $this->Destination->Terminal->find('list');
-		$this->set(compact('categories', 'clients', 'terminals'));
+		$this->set(compact('types', 'states', 'cities', 'countries', 'regions', 'parks', 'activities', 'clients', 'terminals'));
 	}
 
 /**

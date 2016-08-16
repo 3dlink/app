@@ -9,7 +9,7 @@ App::uses('AppModel', 'Model');
  * @property Country $Country
  * @property Region $Region
  * @property Park $Park
- * @property Comment $Comment
+ * @property Commentary $Commentary
  * @property Forumq $Forumq
  * @property Group $Group
  * @property Point $Point
@@ -85,8 +85,8 @@ class Destination extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'Comment' => array(
-			'className' => 'Comment',
+		'Commentary' => array(
+			'className' => 'Commentary',
 			'foreignKey' => 'destination_id',
 			'dependent' => false,
 			'conditions' => '',

@@ -1,21 +1,22 @@
-<div class="types form">
-<?php echo $this->Form->create('Type'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Type'); ?></legend>
-	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('name');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+<article class="card shadow-1">
+<?php echo $this->Form->create('Type'); echo $this->Form->input('id');?>
+    <fieldset>
+      <legend>Add Country</legend>
+      <div class="margenesHorizontales">
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Type.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Type.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Types'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Destinations'), array('controller' => 'destinations', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Destination'), array('controller' => 'destinations', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Type Name</label>
+			          <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			        </div>
+	      		</div>
+
+        <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
+          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'types';" title="regresar" value = "Atr&aacute;s" style="width: 79px;">
+          <button type="submit" class="btn btn-primary">
+            Guardar
+          </button>
+        </div>
+      </div>          
+    </fieldset>  
+</article>

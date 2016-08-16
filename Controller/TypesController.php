@@ -21,6 +21,7 @@ class TypesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Type->recursive = 0;
 		$this->set('types', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class TypesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Type->exists($id)) {
 			throw new NotFoundException(__('Invalid type'));
 		}
@@ -46,6 +48,7 @@ class TypesController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Type->create();
 			if ($this->Type->save($this->request->data)) {
@@ -65,6 +68,7 @@ class TypesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Type->exists($id)) {
 			throw new NotFoundException(__('Invalid type'));
 		}
@@ -93,7 +97,7 @@ class TypesController extends AppController {
 		if (!$this->Type->exists()) {
 			throw new NotFoundException(__('Invalid type'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Type->delete()) {
 			$this->Session->setFlash(__('The type has been deleted.'));
 		} else {

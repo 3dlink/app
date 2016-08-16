@@ -21,6 +21,7 @@ class ParksController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Park->recursive = 0;
 		$this->set('parks', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class ParksController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Park->exists($id)) {
 			throw new NotFoundException(__('Invalid park'));
 		}
@@ -46,6 +48,7 @@ class ParksController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Park->create();
 			if ($this->Park->save($this->request->data)) {
@@ -65,6 +68,7 @@ class ParksController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Park->exists($id)) {
 			throw new NotFoundException(__('Invalid park'));
 		}
@@ -93,7 +97,7 @@ class ParksController extends AppController {
 		if (!$this->Park->exists()) {
 			throw new NotFoundException(__('Invalid park'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Park->delete()) {
 			$this->Session->setFlash(__('The park has been deleted.'));
 		} else {

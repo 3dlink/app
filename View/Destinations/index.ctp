@@ -1,4 +1,4 @@
-<div class="destinations index">
+<!-- <div class="destinations index">
 	<h2><?php echo __('Destinations'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
@@ -94,8 +94,8 @@
 		<li><?php echo $this->Html->link(__('New Region'), array('controller' => 'regions', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Parks'), array('controller' => 'parks', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Park'), array('controller' => 'parks', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Commentaries'), array('controller' => 'commentaries', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Commentary'), array('controller' => 'commentaries', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Forumqs'), array('controller' => 'forumqs', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Forumq'), array('controller' => 'forumqs', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?> </li>
@@ -110,3 +110,87 @@
 		<li><?php echo $this->Html->link(__('New Terminal'), array('controller' => 'terminals', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
+ -->
+<div class="Destination index">
+ <!--List  Open-->
+      <article class="card shadow-1">
+          <fieldset>
+            <legend>Destinations</legend>
+            <!--Search Open-->
+            <div class="margenesHorizontales">
+              <div class="col-md-6">
+                <div class=" margenesVerticales">
+	              	<form class="right" role="search" method="get">
+	                 <div class="input-group">
+	                    <!-- <input type="text" class="form-control" placeholder="Buscar categories..." name="filtro">
+	                    <span class="input-group-btn">
+	                      <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+	                    </span> -->
+	                  </div>  
+									</form>            
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class=" margenesVerticales" style="text-align: right;">
+                  <buttom onclick="window.location.href=WEBROOT+'destinations/add';" class="btn btn-primary">Add Destination</buttom>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+            </div>
+            <!--Search Close-->
+            <div class="margenesHorizontales">
+              <table class="table table-striped">
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Region</th>
+                  <th>Country</th>
+                  <th>Ranking</th>
+                  <th></th>
+                  
+                  <th></th>
+                </th>
+
+                <?php foreach ($destinations as $item): ?>
+					<tr>
+	           <td><?php echo h($item['Destination']['name']); ?>&nbsp;</td>
+	           <td><?php echo h($item['Type']['name']); ?>&nbsp;</td>
+	           <td><?php echo h($item['City']['name']); ?>&nbsp;</td>
+	           <td><?php echo h($item['State']['name']); ?>&nbsp;</td>
+	           <td><?php echo h($item['Region']['name']); ?>&nbsp;</td>
+	           <td><?php echo h($item['Country']['name']); ?>&nbsp;</td>
+	           <td><?php echo h($item['Destination']['ranking']); ?>&nbsp;</td>
+						
+                        <td>
+		                    <div style="display: block; width: 80px; margin: 0 auto;">
+	                        <?php if($this->UserAuth->getGroupId() == 1){ ?>
+	  	                      <a href="<?php echo $this->webroot;?>destinations/edit/<?php echo $item['Destination']['id'];?>" title="Editar Item" class="menuTable">
+	  	                        <span class="glyphicon glyphicon-pencil"></span>
+	  	                      </a>
+	  	                      <a href="<?php echo $this->webroot;?>destinations/delete/<?php echo $item['Destination']['id'];?>" onclick="if (confirm(&quot;¿Seguro que desea borrar el Personal?&quot;)) { return true; } return false;" class="menuTable">
+	  	                        <span class="glyphicon glyphicon-remove"></span></a>
+	  	                      <a href="<?php echo $this->webroot;?>destinations/view/<?php echo $item['Destination']['id'];?>" title="Ver Detalles" class="menuTable">
+                              	<span class="glyphicon glyphicon-eye-open"></span></a>
+                            <?php } ?>
+		                    </div>                  
+		                </td>
+					</tr>
+								<?php endforeach; ?>
+              </table>
+            </div> 
+          </fieldset>          
+      </article>
+<p>
+<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, mostrando {:current} Personal de {:count} en total.')));?>
+</p>
+<ul class="pagination">
+<?php
+  echo $this->Paginator->prev('&laquo;', array('tag' => 'li', 'escape' => false), '<a href="#">&laquo;</a>', array('class' => 'prev disabled', 'tag' => 'li', 'escape' => false));
+  echo $this->Paginator->numbers(array('separator' => '', 'tag' => 'li', 'currentLink' => true, 'currentClass' => 'active', 'currentTag' => 'a'));
+  echo $this->Paginator->next('&raquo;', array('tag' => 'li', 'escape' => false), '<a href="#">&raquo;</a>', array('class' => 'prev disabled', 'tag' => 'li', 'escape' => false));
+?>
+</ul>
+
+</div>	

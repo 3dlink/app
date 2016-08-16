@@ -21,6 +21,7 @@ class TerminalsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Terminal->recursive = 0;
 		$this->set('terminals', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class TerminalsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Terminal->exists($id)) {
 			throw new NotFoundException(__('Invalid terminal'));
 		}
@@ -46,6 +48,7 @@ class TerminalsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Terminal->create();
 			if ($this->Terminal->save($this->request->data)) {
@@ -57,7 +60,10 @@ class TerminalsController extends AppController {
 		}
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
-		$this->set(compact('clients', 'destinations'));
+		$states = $this->Terminal->State->find('list');
+		$cities = $this->Terminal->City->find('list');
+		$countries = $this->Terminal->Country->find('list');
+		$this->set(compact('clients', 'destinations','cities','states','countries'));
 	}
 
 /**
@@ -68,6 +74,7 @@ class TerminalsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Terminal->exists($id)) {
 			throw new NotFoundException(__('Invalid terminal'));
 		}
@@ -84,7 +91,10 @@ class TerminalsController extends AppController {
 		}
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
-		$this->set(compact('clients', 'destinations'));
+		$states = $this->Terminal->State->find('list');
+		$cities = $this->Terminal->City->find('list');
+		$countries = $this->Terminal->Country->find('list');
+		$this->set(compact('clients', 'destinations','cities','states','countries'));
 	}
 
 /**
@@ -95,6 +105,7 @@ class TerminalsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		$this->layout="admin";
 		$this->Terminal->id = $id;
 		if (!$this->Terminal->exists()) {
 			throw new NotFoundException(__('Invalid terminal'));

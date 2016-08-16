@@ -1,4 +1,4 @@
-<div class="destinations view">
+<!-- <div class="destinations view">
 <h2><?php echo __('Destination'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
@@ -107,8 +107,8 @@
 		<li><?php echo $this->Html->link(__('New Region'), array('controller' => 'regions', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Parks'), array('controller' => 'parks', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Park'), array('controller' => 'parks', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Commentaries'), array('controller' => 'commentaries', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Commentary'), array('controller' => 'commentaries', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Forumqs'), array('controller' => 'forumqs', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Forumq'), array('controller' => 'forumqs', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?> </li>
@@ -124,8 +124,8 @@
 	</ul>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Comments'); ?></h3>
-	<?php if (!empty($destination['Comment'])): ?>
+	<h3><?php echo __('Related Commentaries'); ?></h3>
+	<?php if (!empty($destination['Commentary'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
@@ -137,19 +137,19 @@
 		<th><?php echo __('Budget'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
-	<?php foreach ($destination['Comment'] as $comment): ?>
+	<?php foreach ($destination['Commentary'] as $commentary): ?>
 		<tr>
-			<td><?php echo $comment['id']; ?></td>
-			<td><?php echo $comment['comment']; ?></td>
-			<td><?php echo $comment['destination_id']; ?></td>
-			<td><?php echo $comment['user_id']; ?></td>
-			<td><?php echo $comment['security']; ?></td>
-			<td><?php echo $comment['environment']; ?></td>
-			<td><?php echo $comment['budget']; ?></td>
+			<td><?php echo $commentary['id']; ?></td>
+			<td><?php echo $commentary['comment']; ?></td>
+			<td><?php echo $commentary['destination_id']; ?></td>
+			<td><?php echo $commentary['user_id']; ?></td>
+			<td><?php echo $commentary['security']; ?></td>
+			<td><?php echo $commentary['environment']; ?></td>
+			<td><?php echo $commentary['budget']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'comments', 'action' => 'view', $comment['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'comments', 'action' => 'edit', $comment['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'comments', 'action' => 'delete', $comment['id']), array(), __('Are you sure you want to delete # %s?', $comment['id'])); ?>
+				<?php echo $this->Html->link(__('View'), array('controller' => 'commentaries', 'action' => 'view', $commentary['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'commentaries', 'action' => 'edit', $commentary['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'commentaries', 'action' => 'delete', $commentary['id']), array(), __('Are you sure you want to delete # %s?', $commentary['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -158,7 +158,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('New Commentary'), array('controller' => 'commentaries', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>
@@ -402,3 +402,130 @@
 		</ul>
 	</div>
 </div>
+ -->
+<article class="card shadow-1">
+  <fieldset>
+
+      <legend>Activity: <?php echo ': '; if (!empty($destination)) { echo '<small>'.$destination['Destination']['name'].'</small>'; }?></legend>
+      <div class="margenesHorizontales">
+      	<div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				        <label>Name: </label>
+                      <?php echo h($destination['Destination']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				        <label>Type: </label>
+                      <?php echo h($destination['Type']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>City: </label>
+                    <?php echo h($destination['City']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>State: </label>
+                    <?php echo h($destination['State']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Region: </label>
+                    <?php echo h($destination['Region']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Country: </label>
+                    <?php echo h($destination['Country']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Park: </label>
+                    <?php echo h($destination['Park']['name'])?>
+      			</div>
+      		</div>
+
+      		<div class="col-md-12">
+      			<div class="form-group">
+      				<label>Description: </label>
+                    <?php echo h($destination['Destination']['description'])?>
+      			</div>
+      		</div>
+      		
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Latitude: </label>
+                    <?php echo h($destination['Destination']['lat'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Longitude: </label>
+                    <?php echo h($destination['Destination']['longitude'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Ranking: </label>
+                    <?php echo h($destination['Destination']['ranking'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Security: </label>
+                    <?php echo h($destination['Destination']['security'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Environment: </label>
+                    <?php echo h($destination['Destination']['environment'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Budget: </label>
+                    <?php echo h($destination['Destination']['budget'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Affluence: </label>
+                    <?php echo h($destination['Destination']['affluence'])?>
+      			</div>
+      		</div>
+      		
+          
+          
+      		<div style="clear:both;"></div>
+      	</div>           	
+      	  <div style="clear:both;"></div>
+
+
+          <div id="content_imgs"></div>
+
+          <div class="col-md-12">
+              <div class="form-group">
+                <label>Photo</label>
+                <div id="imagenes_content">
+                  <div id="img_edit" class="img_edit">
+                    <img src="<?php echo $this->webroot.'files/'.$destination['Destination']['photo1']; ?>" style="width:25%;">
+                  </div>
+                </div>
+              </div>
+          </div>
+
+      		<div class="margenesVerticales" style="text-align:right;">
+	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'destinations';" title="regresar" value = "Atr&aacute;s" style="width: 79px;"> 	  
+			</div>
+      	</div>    
+</div>        
+    </fieldset>  
+</article>
