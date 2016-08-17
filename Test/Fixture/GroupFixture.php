@@ -37,9 +37,9 @@ class GroupFixture extends CakeTestFixture {
 			'name' => 'Lorem ipsum dolor sit amet',
 			'destination_id' => 1,
 			'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-			'start_trip' => '2016-08-11',
+			'start_trip' => '2016-08-17',
 			'user_id' => 1,
-			'date_trip' => '2016-08-11',
+			'date_trip' => '2016-08-17',
 			'limit_person' => 1,
 			'joined' => 1
 		),

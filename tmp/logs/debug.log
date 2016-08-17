@@ -15,3 +15,6 @@ Dispatcher::dispatch() - APP\cakephp\lib\Cake\Routing\Dispatcher.php, line 167
 2016-08-11 21:35:28 Debug: permission: actionUrl-states/index
 2016-08-16 11:58:30 Debug: permission: actionUrl-clients/index
 2016-08-16 16:20:56 Debug: permission: actionUrl-destinations/index
+2016-08-17 08:00:24 Debug: permission: actionUrl-groups/index
+2016-08-17 12:02:25 Debug: permission: actionUrl-forumqs/add
+2016-08-17 16:03:49 Debug: permission: actionUrl-forumqs/view

@@ -13,6 +13,7 @@ App::uses('AppModel', 'Model');
  * @property Forumq $Forumq
  * @property Group $Group
  * @property LoginToken $LoginToken
+ * @property Group $Group
  */
 class User extends AppModel {
 
@@ -132,6 +133,28 @@ class User extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		)
+	);
+
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Group' => array(
+			'className' => 'Group',
+			'joinTable' => 'groups_users',
+			'foreignKey' => 'user_id',
+			'associationForeignKey' => 'group_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
 		)
 	);
 

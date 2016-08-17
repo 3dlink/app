@@ -15,21 +15,30 @@ class GroupTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.group',
 		'app.destination',
-		'app.category',
-		'app.comment',
+		'app.type',
+		'app.state',
+		'app.region',
+		'app.country',
+		'app.terminal',
+		'app.city',
 		'app.user',
 		'app.user_group',
+		'app.commentary',
+		'app.photo',
 		'app.foruma',
 		'app.forumq',
 		'app.login_token',
-		'app.point',
 		'app.client',
 		'app.service',
 		'app.promotion',
 		'app.clients_destination',
-		'app.terminal',
 		'app.clients_terminal',
-		'app.destinations_terminal'
+		'app.destinations_terminal',
+		'app.park',
+		'app.point',
+		'app.activity',
+		'app.activities_destination',
+		'app.groups_user'
 	);
 
 /**

@@ -1869,3 +1869,425 @@ Stack Trace:
 #3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
 #4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-08-17 09:46:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'limit_person' cannot be null
+Request URL: /isia/groups/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `is...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `is...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Group), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\GroupsController.php(54): Model->save(Array)
+#5 [internal function]: GroupsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-17 17:44:21 Error: [MissingControllerException] Controller class ForumqController could not be found.
+Exception Attributes: array (
+  'class' => 'ForumqController',
+  'plugin' => NULL,
+)
+Request URL: /isia/forumq
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 11:45:53 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 63]
+2016-08-17 11:45:53 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:46:50 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 63]
+2016-08-17 11:46:50 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:48:07 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 63]
+2016-08-17 11:48:07 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:48:53 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:48:53 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:48:58 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:48:58 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:52:19 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:52:19 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:52:39 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:52:39 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:52:41 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:52:41 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:52:46 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:52:46 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:53:50 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:53:50 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:54:53 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:54:53 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 11:59:25 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 64]
+2016-08-17 11:59:25 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 64, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 12:02:39 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 63]
+2016-08-17 12:02:39 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 13:10:26 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 63]
+2016-08-17 13:10:26 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 13:11:25 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 63]
+2016-08-17 13:11:25 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 63, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 13:19:02 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 44]
+2016-08-17 13:19:02 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 13:33:36 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\isia\View\Forumqs\view.ctp, line 96]
+2016-08-17 13:33:36 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 96, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 96, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 13:43:44 Error: Fatal Error (1): Call to a member function create() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 44]
+2016-08-17 13:43:44 Error: [FatalErrorException] Call to a member function create() on null
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 13:46:14 Error: Fatal Error (1): Call to a member function create() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 48]
+2016-08-17 13:46:14 Error: [FatalErrorException] Call to a member function create() on null
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 14:42:09 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('User')
+#2 C:\xampp\htdocs\isia\View\Forumqs\view.ctp(98): View->__get('User')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ForumqsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-17 15:58:16 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('User')
+#2 C:\xampp\htdocs\isia\View\Forumqs\view.ctp(104): View->__get('User')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ForumqsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-17 16:04:19 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\View\Forumqs\view.ctp, line 104]
+2016-08-17 16:04:19 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 104)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 104, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 104, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 16:18:45 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\View\Forumqs\view.ctp, line 104]
+2016-08-17 16:18:45 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 104)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 104, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 104, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 16:36:30 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('User')
+#2 C:\xampp\htdocs\isia\View\Forumqs\view.ctp(103): View->__get('User')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ForumqsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-17 16:40:11 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('User')
+#2 C:\xampp\htdocs\isia\View\Forumqs\view.ctp(103): View->__get('User')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ForumqsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-17 16:43:14 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(841): HelperCollection->__isset('User')
+#2 C:\xampp\htdocs\isia\View\Forumqs\view.ctp(103): View->__get('User')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(954): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(916): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ForumqsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-17 23:05:37 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 67]
+2016-08-17 23:05:37 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 67, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 67, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 17:07:48 Error: Fatal Error (1): Cannot use object of type BehaviorCollection as array in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 61]
+2016-08-17 17:07:48 Error: [FatalErrorException] Cannot use object of type BehaviorCollection as array
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 61)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 61, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 61, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 17:21:24 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 58]
+2016-08-17 17:21:24 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 23:31:09 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 62]
+2016-08-17 23:31:09 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 23:31:28 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 62]
+2016-08-17 23:31:28 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 23:37:43 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 63]
+2016-08-17 23:37:43 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 63)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 63, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 63, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 23:37:44 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 63]
+2016-08-17 23:37:44 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 63)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 63, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 63, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 23:41:01 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 44]
+2016-08-17 23:41:01 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 23:50:23 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\ForumqsController.php, line 66]
+2016-08-17 23:50:23 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/forumqs/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 66, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 66, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 23:56:58 Error: [MissingControllerException] Controller class ForumqController could not be found.
+Exception Attributes: array (
+  'class' => 'ForumqController',
+  'plugin' => NULL,
+)
+Request URL: /isia/forumq
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

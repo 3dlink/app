@@ -21,6 +21,7 @@ class GroupsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Group->recursive = 0;
 		$this->set('groups', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class GroupsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Group->exists($id)) {
 			throw new NotFoundException(__('Invalid group'));
 		}
@@ -46,6 +48,7 @@ class GroupsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Group->create();
 			if ($this->Group->save($this->request->data)) {
@@ -68,6 +71,7 @@ class GroupsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Group->exists($id)) {
 			throw new NotFoundException(__('Invalid group'));
 		}
@@ -99,7 +103,7 @@ class GroupsController extends AppController {
 		if (!$this->Group->exists()) {
 			throw new NotFoundException(__('Invalid group'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Group->delete()) {
 			$this->Session->setFlash(__('The group has been deleted.'));
 		} else {

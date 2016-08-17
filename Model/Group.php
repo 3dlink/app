@@ -5,6 +5,7 @@ App::uses('AppModel', 'Model');
  *
  * @property Destination $Destination
  * @property User $User
+ * @property User $User
  */
 class Group extends AppModel {
 
@@ -39,4 +40,26 @@ class Group extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'User' => array(
+			'className' => 'User',
+			'joinTable' => 'groups_users',
+			'foreignKey' => 'group_id',
+			'associationForeignKey' => 'user_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		)
+	);
+
 }
