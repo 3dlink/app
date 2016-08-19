@@ -2291,3 +2291,51 @@ Request URL: /isia/forumq
 Stack Trace:
 #0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-08-19 11:39:42 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 51]
+2016-08-19 11:39:42 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 51, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 51, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-19 11:41:34 Error: Fatal Error (1): Call to a member function exists() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 39]
+2016-08-19 11:41:34 Error: [FatalErrorException] Call to a member function exists() on null
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 39, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 39, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-19 11:41:56 Error: Fatal Error (1): Call to a member function exists() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 39]
+2016-08-19 11:41:56 Error: [FatalErrorException] Call to a member function exists() on null
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 39, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 39, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-19 12:20:41 Error: [NotFoundException] Invalid commentary
+Request URL: /isia/commentaries/view
+Stack Trace:
+#0 [internal function]: CommentariesController->view()
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CommentariesController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentariesController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-19 19:10:00 Error: [MissingControllerException] Controller class CommentsController could not be found.
+Exception Attributes: array (
+  'class' => 'CommentsController',
+  'plugin' => NULL,
+)
+Request URL: /isia/comments/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

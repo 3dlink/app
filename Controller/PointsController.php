@@ -21,6 +21,7 @@ class PointsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout="admin";
 		$this->Point->recursive = 0;
 		$this->set('points', $this->Paginator->paginate());
 	}
@@ -33,6 +34,7 @@ class PointsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout="admin";
 		if (!$this->Point->exists($id)) {
 			throw new NotFoundException(__('Invalid point'));
 		}
@@ -46,6 +48,7 @@ class PointsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Point->create();
 			if ($this->Point->save($this->request->data)) {
@@ -67,6 +70,7 @@ class PointsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout="admin";
 		if (!$this->Point->exists($id)) {
 			throw new NotFoundException(__('Invalid point'));
 		}
@@ -97,7 +101,7 @@ class PointsController extends AppController {
 		if (!$this->Point->exists()) {
 			throw new NotFoundException(__('Invalid point'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Point->delete()) {
 			$this->Session->setFlash(__('The point has been deleted.'));
 		} else {

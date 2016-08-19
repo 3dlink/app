@@ -1,4 +1,4 @@
-<div class="commentaries index">
+<!-- <div class="commentaries index">
 	<h2><?php echo __('Commentaries'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
@@ -62,3 +62,4 @@
 		<li><?php echo $this->Html->link(__('New Photo'), array('controller' => 'photos', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
+ -->

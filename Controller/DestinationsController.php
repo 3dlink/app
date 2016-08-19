@@ -14,6 +14,7 @@ class DestinationsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	public $uses = array('Destination','Commentary','Usermgmt.User');
 
 /**
  * index method
@@ -38,8 +39,40 @@ class DestinationsController extends AppController {
 		if (!$this->Destination->exists($id)) {
 			throw new NotFoundException(__('Invalid destination'));
 		}
+
 		$options = array('conditions' => array('Destination.' . $this->Destination->primaryKey => $id));
-		$this->set('destination', $this->Destination->find('first', $options));
+		//$this->set('destination', $this->Destination->find('first', $options));
+		$destination = $this->Destination->find('first',$options);
+		$this->set('destination', $destination);
+
+
+
+		///////////////////////////
+		if ($this->request->is('post')) {
+			$this->Commentary->create();
+			// debug($this->request->data);die;
+			if ($this->Commentary->save($this->request->data)) {
+				$this->Session->setFlash(__('The commentary has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The commentary could not be saved. Please, try again.'));
+			}
+		}
+		$destinations = $this->Commentary->Destination->find('list');
+		$users = $this->Commentary->User->find('list');
+		$this->set(compact('destinations', 'users'));
+
+		///////////////////////////
+		$comments = array();
+		$comments = $destination['Commentary'];
+		foreach ($comments as $key => $value) {
+			$user = $this->User->findById($value['user_id']);
+			$user = $user['User'];
+			$comments[$key]['User']=$user;
+			# code...
+		}
+		$this->set('comments',$comments);
+		debug($comments);
 	}
 
 /**

@@ -406,7 +406,7 @@
 <article class="card shadow-1">
   <fieldset>
 
-      <legend>Activity: <?php echo ': '; if (!empty($destination)) { echo '<small>'.$destination['Destination']['name'].'</small>'; }?></legend>
+      <legend>Destination<?php echo ': '; if (!empty($destination)) { echo '<small>'.$destination['Destination']['name'].'</small>'; }?></legend>
       <div class="margenesHorizontales">
       	<div>
       		<div class="col-md-6">
@@ -521,6 +521,80 @@
                 </div>
               </div>
           </div>
+
+  		<div class="col-md-6">
+  			<div class="form-group">
+  				  <label>Some comments about this destination from other users: </label>
+            </div>
+  		</div>
+
+
+  				<div class="margenesHorizontales">
+  					<table class="table table-striped">
+  						<?php foreach ($comments as $item): ?>
+        				<tr>
+        				<td><?php echo h($item['comment']); ?>&nbsp;</td>
+  						<td><?php echo h($item['security']); ?>&nbsp;</td>
+  						<td><?php echo h($item['environment']); ?>&nbsp;</td>
+  						<td><?php echo h($item['budget']); ?>&nbsp;</td>
+  						<td><?php echo h($item['User']['username']); ?>&nbsp;</td>
+  						</tr>
+  						<?php endforeach; ?>
+					</table>
+  				</div>
+
+
+
+  				<div>
+				<?php echo $this->Form->create('Commentary'); ?>
+				<div class="col-md-12">
+			        <div class="form-group">
+			          <label>Add a comment about this destination</label>
+			        </div>
+			         <div class="col-md-12">
+
+
+						<div class="col-md-6">
+					        <div class="form-group">
+					          <label>Comment</label>
+					          <?php echo $this->Form->input('comment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+					        </div>
+			      		</div>
+
+						<div class="col-md-6">
+					        <div class="form-group">
+					          <label>Security</label>
+					          <?php echo $this->Form->input('security',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+					        </div>
+			      		</div>
+
+						<div class="col-md-6">
+					        <div class="form-group">
+					          <label>Environment</label>
+					          <?php echo $this->Form->input('environment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+					        </div>
+			      		</div>
+
+						<div class="col-md-6">
+					        <div class="form-group">
+					          <label>Budget</label>
+					          <?php echo $this->Form->input('budget',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+					        </div>
+			      		</div>
+
+			          <?php echo $this->Form->input('user_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$this->UserAuth->getUserId())); ?>
+	      			  <?php echo $this->Form->input('destination_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$destination['Destination']['id'])); ?>
+
+					    
+					    <button type="submit" class="btn btn-primary">
+				            	Submit
+				        </button>
+			          
+			        </div>
+	      		</div>
+	      		</div>
+
+
 
       		<div class="margenesVerticales" style="text-align:right;">
 	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'destinations';" title="regresar" value = "Atr&aacute;s" style="width: 79px;"> 	  
