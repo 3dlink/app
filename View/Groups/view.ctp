@@ -1,4 +1,4 @@
-<div class="groups view">
+<!-- <div class="groups view">
 <h2><?php echo __('Group'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
@@ -61,3 +61,77 @@
 		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
+ -->
+
+ <article class="card shadow-1">
+  <fieldset>
+
+      <legend>Group <?php echo ': '; if (!empty($group)) { echo '<small>'.$group['Group']['name'].'</small>'; }?></legend>
+      <div class="margenesHorizontales">
+      	<div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Name: </label>
+                    <?php echo h($group['Group']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Destination: </label>
+                    <?php echo h($group['Destination']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Description: </label>
+                    <?php echo h($group['Group']['description'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Trip Start Day: </label>
+                    <?php echo h($group['Group']['start_trip'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Trip Day: </label>
+                    <?php echo h($group['Group']['date_trip'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>Person's Limit: </label>
+                    <?php echo h($group['Group']['limit_person'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>People Joined: </label>
+                    <?php echo h($group['Group']['joined'])?>
+      			</div>
+      		</div>
+
+
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<label>This is the list of user who had joined to this group: </label>
+                    
+      			</div>
+      		</div>
+          
+          
+      		<div style="clear:both;"></div>
+      	</div>           	
+      	  <div style="clear:both;"></div>
+
+
+
+      		<div class="margenesVerticales" style="text-align:right;">
+	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'activities';" title="regresar" value = "Atr&aacute;s" style="width: 79px;"> 	  
+			</div>
+      	</div>    
+</div>        
+    </fieldset>  
+</article>
+
