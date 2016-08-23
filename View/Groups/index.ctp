@@ -68,7 +68,7 @@
  <!--List  Open-->
       <article class="card shadow-1">
           <fieldset>
-            <legend>Destinations</legend>
+            <legend>Groups</legend>
             <!--Search Open-->
             <div class="margenesHorizontales">
               <div class="col-md-6">
@@ -122,6 +122,18 @@
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
 	  	                      <a href="<?php echo $this->webroot;?>groups/view/<?php echo $item['Group']['id'];?>" title="Ver Detalles" class="menuTable">
                               	<span class="glyphicon glyphicon-eye-open"></span></a>
+
+
+                              	<?php if($item['Group']['joined'] == '1'){ ?>
+                                <a href="<?php echo $this->webroot;?>personals/makeinactive/<?php echo $item['Group']['id'];?>" title="Quitar de home" class="menuTable">
+                                <span class="glyphicon glyphicon-thumbs-down"></span></a>
+                              	<?php }else{ ?>
+                                <a href="<?php echo $this->webroot;?>personals/makeactive/<?php echo $item['Group']['id'];?>" title="Agregar a home" class="menuTable">
+                                <span class="glyphicon glyphicon-thumbs-up"></span></a>
+                              	<?php } ?>
+
+
+
                             <?php } ?>
 		                    </div>                  
 		                </td>

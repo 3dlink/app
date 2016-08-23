@@ -63,6 +63,11 @@
 </div>
  -->
 
+ <?php debug($peoplej); ?>
+  <?php debug($usjoined); 
+  
+		debug($uscreator);?>
+
  <article class="card shadow-1">
   <fieldset>
 
@@ -107,8 +112,18 @@
       		</div>
       		<div class="col-md-6">
       			<div class="form-group">
+      				<input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'groups/join_g/<?php echo $group['Group']['id'];?>';" title="Join this Group" value = "Join!" style="width: 79px;"> 	  
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+      				<input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'groups/unjoin_g/<?php echo $group['Group']['id'];?>';" title="Join this Group" value = "Exit!" style="width: 79px;"> 	  
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
       				<label>People Joined: </label>
-                    <?php echo h($group['Group']['joined'])?>
+                    <?php echo $peoplej?>
       			</div>
       		</div>
 
@@ -116,7 +131,15 @@
       		<div class="col-md-6">
       			<div class="form-group">
       				<label>This is the list of user who had joined to this group: </label>
-                    
+                    <table class="table table-striped">
+  									  						
+        				<?php foreach ($usjoined as $item): ?>
+        				<tr>
+        				<td><?php echo h($item['User']['username']); ?>&nbsp;</td>
+  						</tr>
+  						<?php endforeach; ?>
+	
+  					</table>
       			</div>
       		</div>
           
@@ -126,9 +149,8 @@
       	  <div style="clear:both;"></div>
 
 
-
       		<div class="margenesVerticales" style="text-align:right;">
-	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'activities';" title="regresar" value = "Atr&aacute;s" style="width: 79px;"> 	  
+	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'groups';" title="regresar" value = "Atr&aacute;s" style="width: 79px;"> 	  
 			</div>
       	</div>    
 </div>        

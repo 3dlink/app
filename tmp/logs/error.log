@@ -2339,3 +2339,129 @@ Request URL: /isia/comments/view/1
 Stack Trace:
 #0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-08-23 17:23:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'unset' at line 1
+Request URL: /isia/groups/unjoin_g/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('unset', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('unset', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('unset', Array, Array)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(808): DboSource->query('unset', Array, Object(GroupsUser))
+#5 C:\xampp\htdocs\isia\Controller\GroupsController.php(87): Model->__call('unset', Array)
+#6 C:\xampp\htdocs\isia\Controller\GroupsController.php(87): GroupsUser->unset(Array)
+#7 [internal function]: GroupsController->unjoin_g('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-08-23 17:24:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'unset' at line 1
+Request URL: /isia/groups/unjoin_g/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('unset', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('unset', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('unset', Array, Array)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(808): DboSource->query('unset', Array, Object(GroupsUser))
+#5 C:\xampp\htdocs\isia\Controller\GroupsController.php(87): Model->__call('unset', Array)
+#6 C:\xampp\htdocs\isia\Controller\GroupsController.php(87): GroupsUser->unset(Array)
+#7 [internal function]: GroupsController->unjoin_g('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-08-23 17:30:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /isia/groups/unjoin_g/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `GroupsU...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `GroupsU...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2638): Mysql->delete(Object(GroupsUser), Array)
+#4 C:\xampp\htdocs\isia\Controller\GroupsController.php(89): Model->delete()
+#5 [internal function]: GroupsController->unjoin_g('1')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-23 17:31:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /isia/groups/unjoin_g/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `GroupsU...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `GroupsU...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2638): Mysql->delete(Object(GroupsUser), Array)
+#4 C:\xampp\htdocs\isia\Controller\GroupsController.php(89): Model->delete()
+#5 [internal function]: GroupsController->unjoin_g('1')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-23 17:31:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /isia/groups/unjoin_g/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `GroupsU...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `GroupsU...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2638): Mysql->delete(Object(GroupsUser), Array)
+#4 C:\xampp\htdocs\isia\Controller\GroupsController.php(89): Model->delete()
+#5 [internal function]: GroupsController->unjoin_g('1')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-23 17:33:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /isia/groups/unjoin_g/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `GroupsU...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `GroupsU...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2638): Mysql->delete(Object(GroupsUser), Array)
+#4 C:\xampp\htdocs\isia\Controller\GroupsController.php(89): Model->delete()
+#5 [internal function]: GroupsController->unjoin_g('1')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-23 17:33:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /isia/groups/unjoin_g/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `GroupsU...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `GroupsU...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2638): Mysql->delete(Object(GroupsUser), Array)
+#4 C:\xampp\htdocs\isia\Controller\GroupsController.php(89): Model->delete()
+#5 [internal function]: GroupsController->unjoin_g('1')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-23 17:34:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /isia/groups/unjoin_g/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `GroupsU...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `GroupsU...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2638): Mysql->delete(Object(GroupsUser), Array)
+#4 C:\xampp\htdocs\isia\Controller\GroupsController.php(89): Model->delete()
+#5 [internal function]: GroupsController->unjoin_g('1')
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-23 17:53:28 Error: Fatal Error (1): Cannot use object of type Group as array in [C:\xampp\htdocs\isia\Controller\GroupsController.php, line 47]
+2016-08-23 17:53:28 Error: [FatalErrorException] Cannot use object of type Group as array
+Request URL: /isia/groups/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
