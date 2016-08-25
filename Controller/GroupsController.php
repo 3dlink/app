@@ -24,6 +24,10 @@ class GroupsController extends AppController {
 	public function index() {
 		$this->layout="admin";
 		$this->Group->recursive = 0;
+		
+		$uscreator = $this->Group->find('all');
+		foreach ($uscreator as $key => $value) {
+		}
 		$this->set('groups', $this->Paginator->paginate());
 	}
 
@@ -44,7 +48,7 @@ class GroupsController extends AppController {
 
 		$usjoined = $this->GroupsUser->find('all');
 		$peoplej = 0;
-		$uscreator = $this->Group['user_id'];
+		
 
 		//$resultlist = array();
 

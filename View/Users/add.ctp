@@ -59,6 +59,11 @@
       <legend>Add User</legend>
       <div class="margenesHorizontales">
 
+	            <?php echo $this->Form->input('user_group_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>'2')); ?>
+
+	            <?php echo $this->Form->input('active',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>'1')); ?>
+	            <?php echo $this->Form->input('email_verified',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>'1')); ?>
+
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>First Name</label>

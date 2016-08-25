@@ -166,11 +166,11 @@ class UsersController extends UserMgmtAppController {
 					// $redirect = (!empty($OriginAfterLogin)) ? $OriginAfterLogin : LOGIN_REDIRECT_URL;
 					$groupid = $this->UserAuth->getGroupId();
 
-					if($groupid == 1){
+					// if($groupid == 1){
 						$this->redirect('/dashboard');
-					}else{
-						$this->redirect('/');
-					}
+					// }else{
+					// 	$this->redirect('/');
+					// }
 				} else {
 					$this->Session->setFlash('User/Password incorrect. Please try again.', 'default', array('class' => 'error_message'));
 					return;

@@ -51,6 +51,14 @@ class UsersController extends AppController {
 		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->User->create();
+
+			$salt=$this->UserAuth->makeSalt();
+			$this->request->data['User']['salt']=$salt;
+			$this->request->data['User']['password'] = $this->UserAuth->makePassword($this->request->data['User']['password'], $salt);
+					
+
+
+
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The user has been saved.'));
 				return $this->redirect(array('action' => 'index'));

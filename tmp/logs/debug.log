@@ -22,3 +22,5 @@ Dispatcher::dispatch() - APP\cakephp\lib\Cake\Routing\Dispatcher.php, line 167
 2016-08-21 16:12:54 Debug: permission: actionUrl-groups/view
 2016-08-21 16:12:57 Debug: permission: actionUrl-commentaries/view
 2016-08-23 17:55:20 Debug: permission: actionUrl-forumqs/index
+2016-08-24 14:23:57 Debug: permission: actionUrl-destinations/view
+2016-08-25 16:05:33 Debug: permission: actionUrl-pages/dashboard
