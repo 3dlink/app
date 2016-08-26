@@ -72,77 +72,100 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Destinations</a>
-                  <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'destinations/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'destinations'; ?>">Todos</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Terminals</a>
-                  <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'terminals/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'terminals'; ?>">Todos</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Users</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'users/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'users'; ?>">Todos</a></li>
+                    <li><a href="<?php echo $this->webroot.'users/add'; ?>">Register</a></li>
+                    <li><a href="<?php echo $this->webroot.'users'; ?>">View All</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Clients</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'clients/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'clients'; ?>">Todos</a></li>
+                    <li><a href="<?php echo $this->webroot.'clients/add'; ?>">Register</a></li>
+                    <li><a href="<?php echo $this->webroot.'clients'; ?>">View All</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Groups</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'groups/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'groups'; ?>">Todos</a></li>
+                    <li><a href="<?php echo $this->webroot.'groups/add'; ?>">Create a Group</a></li>
+                    <li><a href="<?php echo $this->webroot.'groups'; ?>">View All</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Services</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'services/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'services'; ?>">Todos</a></li>
+                    <li><a href="<?php echo $this->webroot.'services/add'; ?>">Add Service</a></li>
+                    <li><a href="<?php echo $this->webroot.'services'; ?>">View All</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Promotions</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'promotions/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'promotions'; ?>">Todos</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Categories</a>
-                  <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'categories/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'categories'; ?>">Todos</a></li>
+                    <li><a href="<?php echo $this->webroot.'promotions/add'; ?>">Add Promotion</a></li>
+                    <li><a href="<?php echo $this->webroot.'promotions'; ?>">View All</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Forum Questions</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'forumq/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'forumq'; ?>">Todos</a></li>
+                    <li><a href="<?php echo $this->webroot.'forumq/add'; ?>">Make a Question</a></li>
+                    <li><a href="<?php echo $this->webroot.'forumq'; ?>">View Forum</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Geographics<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Countries</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'countries/add'; ?>">Add New</a></li>
+                    <li><a href="<?php echo $this->webroot.'countries'; ?>">View All</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Forum Answers</a>
+                  <a tabindex="-1" href="#">Regions</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'foruma/add'; ?>">Nuevo</a></li>
-                    <li><a href="<?php echo $this->webroot.'foruma'; ?>">Todos</a></li>
+                    <li><a href="<?php echo $this->webroot.'regions/add'; ?>">Add New</a></li>
+                    <li><a href="<?php echo $this->webroot.'regions'; ?>">View All</a></li>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a tabindex="-1" href="<?php echo $this->webroot.'start/balance'; ?>">Balance</a>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">States</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'states/add'; ?>">Add New</a></li>
+                    <li><a href="<?php echo $this->webroot.'states'; ?>">View All</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Cities</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'cities/add'; ?>">Add New</a></li>
+                    <li><a href="<?php echo $this->webroot.'cities'; ?>">View All</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Terminals</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'terminals/add'; ?>">Add Neww</a></li>
+                    <li><a href="<?php echo $this->webroot.'terminals'; ?>">View All</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Destinations</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'destinations/add'; ?>">Add New</a></li>
+                    <li><a href="<?php echo $this->webroot.'destinations'; ?>">View All</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Parks</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'parks/add'; ?>">Add New</a></li>
+                    <li><a href="<?php echo $this->webroot.'parks'; ?>">View All</a></li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -150,16 +173,17 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
               <?php if($this->UserAuth->getUserId()): ?>
                 <ul class="dropdown-menu">
-                  <li><a href="<?php echo $this->webroot; ?>">Ir a la página</a></li>
-                  <li><a href="<?php echo $this->webroot; ?>changePassword">Cambiar Contraseña</a></li>
-                  <li><a href="<?php echo $this->webroot.'logout'; ?>">Cerrar Sesión</a></li>
+                  <li><a href="<?php echo $this->webroot.'dashboard'; ?>">Home</a></li>
+                  <li><a href="<?php echo $this->webroot; ?>changePassword">Change Password</a></li>
+                  <li><a href="<?php echo $this->webroot.'permissions'; ?>">Permissions</a></li>
+                  <li><a href="<?php echo $this->webroot.'logout'; ?>">Logout</a></li>
                 </ul>
               <?php else: ?>
                 <ul class="dropdown-menu">
-                  <li><a href="<?php echo $this->webroot.'login'; ?>">Identificarse</a></li>
+                  <li><a href="<?php echo $this->webroot.'login'; ?>">Login</a></li>
                 </ul>
               <?php endIf ;?>
             </li>
