@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-08-2016 a las 00:11:10
+-- Tiempo de generación: 01-09-2016 a las 00:24:39
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -61,17 +61,21 @@ CREATE TABLE IF NOT EXISTS `activities_destinations` (
 CREATE TABLE IF NOT EXISTS `cities` (
 `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `state_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  `state_id` int(10) NOT NULL,
+  `region_id` int(10) NOT NULL,
+  `country_id` int(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `cities`
 --
 
-INSERT INTO `cities` (`id`, `name`, `state_id`) VALUES
-(1, 'San Antonio', 1),
-(2, 'Caracas', 3),
-(3, 'Petare', 3);
+INSERT INTO `cities` (`id`, `name`, `state_id`, `region_id`, `country_id`) VALUES
+(1, 'San Antonio', 1, 0, 0),
+(2, 'Caracas', 3, 0, 0),
+(3, 'Petare', 3, 0, 0),
+(4, 'San Cristobal', 1, 0, 0),
+(5, 'Betis', 4, 3, 3);
 
 -- --------------------------------------------------------
 
@@ -380,6 +384,8 @@ CREATE TABLE IF NOT EXISTS `promotions` (
   `name` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `price` float NOT NULL,
+  `photo1` varchar(255) NOT NULL,
+  `photo2` varchar(255) NOT NULL,
   `client_id` int(10) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
@@ -387,8 +393,8 @@ CREATE TABLE IF NOT EXISTS `promotions` (
 -- Volcado de datos para la tabla `promotions`
 --
 
-INSERT INTO `promotions` (`id`, `name`, `description`, `price`, `client_id`) VALUES
-(1, 'Air Conditioner', 'A promotion, a very good promotion', 50000, 1);
+INSERT INTO `promotions` (`id`, `name`, `description`, `price`, `photo1`, `photo2`, `client_id`) VALUES
+(1, 'Air Conditioner', 'A promotion, a very good promotion', 50000, 'img1472670606MO0.jpg', 'img14726706209CB.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -442,7 +448,7 @@ CREATE TABLE IF NOT EXISTS `states` (
   `name` varchar(255) NOT NULL,
   `region_id` int(10) NOT NULL,
   `country_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `states`
@@ -451,7 +457,8 @@ CREATE TABLE IF NOT EXISTS `states` (
 INSERT INTO `states` (`id`, `name`, `region_id`, `country_id`) VALUES
 (1, 'TÃ¡chira', 1, 1),
 (2, 'MÃ©rida', 1, 1),
-(3, 'Distrito Federal', 2, 1);
+(3, 'Distrito Federal', 2, 1),
+(4, 'Numancia', 3, 3);
 
 -- --------------------------------------------------------
 
@@ -1027,7 +1034,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `cities`
 --
 ALTER TABLE `cities`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `clients`
 --
@@ -1122,7 +1129,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT de la tabla `states`
 --
 ALTER TABLE `states`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `terminals`
 --
