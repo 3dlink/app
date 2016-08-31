@@ -4,6 +4,8 @@ App::uses('AppModel', 'Model');
  * City Model
  *
  * @property State $State
+ * @property Region $Region
+ * @property Country $Country
  * @property Destination $Destination
  * @property Terminal $Terminal
  * @property User $User
@@ -29,6 +31,20 @@ class City extends AppModel {
 		'State' => array(
 			'className' => 'State',
 			'foreignKey' => 'state_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Region' => array(
+			'className' => 'Region',
+			'foreignKey' => 'region_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Country' => array(
+			'className' => 'Country',
+			'foreignKey' => 'country_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

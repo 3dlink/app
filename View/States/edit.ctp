@@ -7,21 +7,21 @@
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>State Name</label>
-			          <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'State name')); ?>
+			          <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
 			        </div>
 	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Region</label>
-			          <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
 			        </div>
 	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Country</label>
-			          <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
 			        </div>
 	      		</div>	      		
 

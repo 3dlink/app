@@ -14,6 +14,7 @@ class RegionsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	public $uses = array('Region','Country');
 
 /**
  * index method
@@ -60,6 +61,14 @@ class RegionsController extends AppController {
 		}
 		$countries = $this->Region->Country->find('list');
 		$this->set(compact('countries'));
+	}
+
+	public function list_ajax($back, $next, $value){
+		$this->autoRender = false;
+		$back = strtolower($back);
+		$result = $this->$next->find('all', array('recursive'=> -1, 'fields'=>array('id','name'), 'conditions' => array($back.'_id'=>$value)));
+		
+		return json_encode($result);
 	}
 
 /**

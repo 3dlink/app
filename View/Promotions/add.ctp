@@ -96,13 +96,13 @@
 
 	$("#photo1").dropzone({ url: WEBROOT+"start/upload/1", maxFilesize: 10, dictDefaultMessage: '<div class="col-xs-12 text-center" style="padding-bottom:20px"><img src="<?php echo $this->webroot; ?>img/file.png" alt="" /></div><p class="dropzone-add-message">Drag and drop the files you want to upload or <a  class="add-files">click here to browse</a></p>',
 		success:function(data){
-			$('#content_imgs').append('<input type="hidden" value='+data.xhr.response+' name="data[Promotion][photo_1]">');
+			$('#content_imgs').append('<input type="hidden" value='+data.xhr.response+' name="data[Promotion][photo1]">');
 	  }
 	});
 
 	$("#photo2").dropzone({ url: WEBROOT+"start/upload/1", maxFilesize: 10, dictDefaultMessage: '<div class="col-xs-12 text-center" style="padding-bottom:20px"><img src="<?php echo $this->webroot; ?>img/file.png" alt="" /></div><p class="dropzone-add-message">Drag and drop the files you want to upload or <a  class="add-files">click here to browse</a></p>',
 		success:function(data){
-			$('#content_imgs').append('<input type="hidden" value='+data.xhr.response+' name="data[Promotion][photo_2]">');
+			$('#content_imgs').append('<input type="hidden" value='+data.xhr.response+' name="data[Promotion][photo2]">');
 	  }
 	});
 

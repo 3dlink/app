@@ -14,6 +14,7 @@ class StatesController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	public $uses = array('State','Country','Region');
 
 /**
  * index method
@@ -58,9 +59,17 @@ class StatesController extends AppController {
 				$this->Session->setFlash(__('The state could not be saved. Please, try again.'));
 			}
 		}
-		$regions = $this->State->Region->find('list');
+		//$regions = $this->State->Region->find('list');
 		$countries = $this->State->Country->find('list');
-		$this->set(compact('regions','countries'));
+		$this->set(compact('countries'));
+	}
+
+	public function list_ajax($back, $next, $value){
+		$this->autoRender = false;
+		$back = strtolower($back);
+		$result = $this->$next->find('all', array('recursive'=> -1, 'fields'=>array('id','name'), 'conditions' => array($back.'_id'=>$value)));
+		
+		return json_encode($result);
 	}
 
 /**
@@ -86,7 +95,7 @@ class StatesController extends AppController {
 			$options = array('conditions' => array('State.' . $this->State->primaryKey => $id));
 			$this->request->data = $this->State->find('first', $options);
 		}
-		$regions = $this->State->Region->find('list');
+		//$regions = $this->State->Region->find('list');
 		$countries = $this->State->Country->find('list');
 		$this->set(compact('regions','countries'));
 	}

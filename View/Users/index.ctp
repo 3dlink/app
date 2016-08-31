@@ -50,12 +50,12 @@
                         <td>
 		                    <div style="display: block; width: 80px; margin: 0 auto;">
 	                        <?php if($this->UserAuth->getGroupId() == 1){ ?>
-	  	                      <a href="<?php echo $this->webroot;?>users/edit/<?php echo $item['User']['id'];?>" title="Editar Item" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>users/edit/<?php echo $item['User']['id'];?>" title="Edit" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
 	  	                      <a href="<?php echo $this->webroot;?>users/delete/<?php echo $item['User']['id'];?>" onclick="if (confirm(&quot;You're about to delete a user. It's this ok?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
-	  	                      <a href="<?php echo $this->webroot;?>users/view/<?php echo $item['User']['id'];?>" title="Ver Detalles" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>users/view/<?php echo $item['User']['id'];?>" title="See Profile" class="menuTable">
                               	<span class="glyphicon glyphicon-eye-open"></span></a>
                             <?php } ?>
 		                    </div>                  

@@ -86,6 +86,13 @@
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Activities</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'activities/add'; ?>">Register</a></li>
+                    <li><a href="<?php echo $this->webroot.'activities'; ?>">View All</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Groups</a>
                   <ul class="dropdown-menu submenu">
                     <li><a href="<?php echo $this->webroot.'groups/add'; ?>">Create a Group</a></li>

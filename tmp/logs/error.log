@@ -2475,3 +2475,365 @@ Stack Trace:
 #3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-08-31 15:07:18 Error: [NotFoundException] Invalid promotion
+Request URL: /isia/promotions/view/%3Cpre%20class=
+Stack Trace:
+#0 [internal function]: PromotionsController->view('<pre class=')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PromotionsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PromotionsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-31 21:55:38 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 109]
+2016-08-31 21:55:38 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /isia/destinations
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 109)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 109, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 109, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 21:55:51 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 109]
+2016-08-31 21:55:51 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /isia/destinations/list_ajax
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 109)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 109, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 109, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 15:56:19 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 109]
+2016-08-31 15:56:19 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/list_ajax/1/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 109)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 109, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 109, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 22:32:50 Error: [MissingControllerException] Controller class DestinacionController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinacionController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destinacion/list_ajax/country/region/country
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:32:54 Error: [MissingControllerException] Controller class DestinacionController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinacionController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destinacion/list_ajax/country/region/country
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:35:21 Error: [MissingControllerException] Controller class DestinacionController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinacionController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destinacion/list_ajax/country/region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:35:23 Error: [MissingControllerException] Controller class DestinacionController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinacionController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destinacion/list_ajax/country/region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:35:51 Error: [MissingControllerException] Controller class DestinacionController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinacionController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destinacion/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:35:53 Error: [MissingControllerException] Controller class DestinacionController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinacionController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destinacion/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:36:20 Error: [MissingControllerException] Controller class DestinacionController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinacionController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destinacion/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:36:42 Error: [MissingControllerException] Controller class DestinacionController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinacionController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destinacion/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:36:49 Error: [MissingControllerException] Controller class DestinationController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinationController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destination/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:36:51 Error: [MissingControllerException] Controller class DestinationController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinationController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destination/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 22:37:05 Error: [MissingControllerException] Controller class DestinationController could not be found.
+Exception Attributes: array (
+  'class' => 'DestinationController',
+  'plugin' => NULL,
+)
+Request URL: /isia/destination/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-31 16:37:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'region_id' in 'where clause'
+Request URL: /isia/destinations/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Country...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Country...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Country...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Country), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(110): Model->find('list', Array)
+#7 [internal function]: DestinationsController->list_ajax('Country', 'Region', '1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-08-31 16:37:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'region_id' in 'where clause'
+Request URL: /isia/destinations/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Country...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Country...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Country...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Country), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(110): Model->find('list', Array)
+#7 [internal function]: DestinationsController->list_ajax('Country', 'Region', '2')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-08-31 16:37:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'region_id' in 'where clause'
+Request URL: /isia/destinations/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Country...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Country...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Country...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Country), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(110): Model->find('list', Array)
+#7 [internal function]: DestinationsController->list_ajax('Country', 'Region', '1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-08-31 16:38:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'region_id' in 'where clause'
+Request URL: /isia/destinations/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Country...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Country...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Country...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Country), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(110): Model->find('list', Array)
+#7 [internal function]: DestinationsController->list_ajax('Country', 'Region', '1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-08-31 17:17:08 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:17:08 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:17:09 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:17:09 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:17:45 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:17:45 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:17:46 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:17:46 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:18:11 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:18:11 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:19:08 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:19:08 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:19:46 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:19:46 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:19:47 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:19:47 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:19:54 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:19:54 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:19:58 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:19:58 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:29:13 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:29:13 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:29:14 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:29:14 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:31:35 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:31:35 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:31:43 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 69]
+2016-08-31 17:31:43 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:57:59 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\CitiesController.php, line 68]
+2016-08-31 17:57:59 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/cities/list_ajax/Country/Region/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-31 17:58:00 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\CitiesController.php, line 68]
+2016-08-31 17:58:00 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/cities/list_ajax/Country/Region/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

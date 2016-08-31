@@ -1,4 +1,4 @@
-<div class="types view">
+<!-- <div class="types view">
 <h2><?php echo __('Type'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
@@ -83,3 +83,4 @@
 		</ul>
 	</div>
 </div>
+ -->

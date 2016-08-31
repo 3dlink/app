@@ -41,10 +41,10 @@
                         <td>
 		                    <div style="display: block; width: 80px; margin: 0 auto;">
 	                        <?php if($this->UserAuth->getGroupId() == 1){ ?>
-	  	                      <a href="<?php echo $this->webroot;?>types/edit/<?php echo $item['Type']['id'];?>" title="Editar Item" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>types/edit/<?php echo $item['Type']['id'];?>" title="Edit" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>types/delete/<?php echo $item['Type']['id'];?>" onclick="if (confirm(&quot;¿Seguro que desea borrar el Personal?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>types/delete/<?php echo $item['Type']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the type?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
                             <?php } ?>
 		                    </div>                  
@@ -56,7 +56,7 @@
           </fieldset>          
       </article>
 <p>
-<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, mostrando {:current} Personal de {:count} en total.')));?>
+<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, showing {:current} Types of {:count}  total.')));?>
 </p>
 <ul class="pagination">
 <?php

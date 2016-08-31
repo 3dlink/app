@@ -14,6 +14,7 @@ class CitiesController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	public $uses = array('City','State','Country','Region');
 
 /**
  * index method
@@ -58,9 +59,18 @@ class CitiesController extends AppController {
 				$this->Session->setFlash(__('The city could not be saved. Please, try again.'));
 			}
 		}
-		$states = $this->City->State->find('list');
-		$this->set(compact('states'));
+		$countries = $this->City->Country->find('list');
+		$this->set(compact('countries'));
 	}
+
+	public function list_ajax($back, $next, $value){
+		$this->autoRender = false;
+		$back = strtolower($back);
+		$result = $this->$next->find('all', array('recursive'=> -1, 'fields'=>array('id','name'), 'conditions' => array($back.'_id'=>$value)));
+		
+		return json_encode($result);
+	}
+
 
 /**
  * edit method
@@ -85,8 +95,8 @@ class CitiesController extends AppController {
 			$options = array('conditions' => array('City.' . $this->City->primaryKey => $id));
 			$this->request->data = $this->City->find('first', $options);
 		}
-		$states = $this->City->State->find('list');
-		$this->set(compact('states'));
+		$countries = $this->City->Country->find('list');
+		$this->set(compact('countries'));
 	}
 
 /**

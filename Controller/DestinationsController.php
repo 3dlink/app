@@ -14,7 +14,7 @@ class DestinationsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
-	public $uses = array('Destination','Commentary','Usermgmt.User');
+	public $uses = array('Destination','Commentary','Usermgmt.User','Country','Region','State','City');
 
 /**
  * index method
@@ -92,15 +92,24 @@ class DestinationsController extends AppController {
 			}
 		}
 		$types = $this->Destination->Type->find('list');
-		$states = $this->Destination->State->find('list');
-		$cities = $this->Destination->City->find('list');
+
+		// $states = $this->Destination->State->find('list');
+		// $cities = $this->Destination->City->find('list');
 		$countries = $this->Destination->Country->find('list');
-		$regions = $this->Destination->Region->find('list');
+		// $regions = $this->Destination->Region->find('list');
 		$parks = $this->Destination->Park->find('list');
 		$activities = $this->Destination->Activity->find('list');
 		$clients = $this->Destination->Client->find('list');
 		$terminals = $this->Destination->Terminal->find('list');
-		$this->set(compact('types', 'states', 'cities', 'countries', 'regions', 'parks', 'activities', 'clients', 'terminals'));
+		$this->set(compact('types', 'countries', 'parks', 'activities', 'clients', 'terminals'));
+	}
+
+	public function list_ajax($back, $next, $value){
+		$this->autoRender = false;
+		$back = strtolower($back);
+		$result = $this->$next->find('all', array('recursive'=> -1, 'fields'=>array('id','name'), 'conditions' => array($back.'_id'=>$value)));
+		
+		return json_encode($result);
 	}
 
 /**

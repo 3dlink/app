@@ -7,14 +7,14 @@
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Region Name</label>
-			          <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'State name')); ?>
+			          <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Region name', 'id'=>'Region')); ?>
 			        </div>
 	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Country</label>
-			          <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name','id'=>'Country')); ?>
 			        </div>
 	      		</div>	      		
 
@@ -27,3 +27,34 @@
       </div>          
     </fieldset>  
 </article>
+
+<script type="text/javascript">
+
+      $('#Country').change(function(){
+        var value = $(this).val();
+        var back = "Country";
+        var next = "Region";
+        var opt = changeSelect(back,next,value);
+        // alert(opt)
+        // $('#region').html(opt);
+      })
+
+
+
+    function changeSelect(back,next,value){
+      $.ajax({
+        url: WEBROOT+'regions/list_ajax/'+back+"/"+next+"/"+value,
+        type:'POST',
+        dataType: 'json',
+        success:function(data){
+          var htmlContent = "<option>-- Select -- </option>";
+          for (var i = 0; i < data.length; i++) {
+
+            htmlContent += "<option value='"+data[i][next]['id']+"'>"+data[i][next]['name']+"</option>";
+          }
+          $('#'+next).html(htmlContent)
+        },
+        error: function(){}
+      })
+    }
+</script>
