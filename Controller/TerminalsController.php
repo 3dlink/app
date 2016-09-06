@@ -60,12 +60,20 @@ class TerminalsController extends AppController {
 		}
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
-		$states = $this->Terminal->State->find('list');
-		$cities = $this->Terminal->City->find('list');
+		// $states = $this->Terminal->State->find('list');
+		// $cities = $this->Terminal->City->find('list');
 		$countries = $this->Terminal->Country->find('list');
 		$this->set(compact('clients', 'destinations','cities','states','countries'));
 	}
 
+
+	public function list_ajax($back, $next, $value){
+		$this->autoRender = false;
+		$back = strtolower($back);
+		$result = $this->$next->find('all', array('recursive'=> -1, 'fields'=>array('id','name'), 'conditions' => array($back.'_id'=>$value)));
+		
+		return json_encode($result);
+	}
 /**
  * edit method
  *
@@ -110,7 +118,7 @@ class TerminalsController extends AppController {
 		if (!$this->Terminal->exists()) {
 			throw new NotFoundException(__('Invalid terminal'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Terminal->delete()) {
 			$this->Session->setFlash(__('The terminal has been deleted.'));
 		} else {

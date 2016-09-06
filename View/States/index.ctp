@@ -48,7 +48,7 @@
 	  	                      <a href="<?php echo $this->webroot;?>states/edit/<?php echo $item['State']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>states/delete/<?php echo $item['State']['id'];?>" onclick="if (confirm(&quot;¿Seguro que desea borrar el Personal?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>states/delete/<?php echo $item['State']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the state from our database?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
 	  	                      <!-- <a href="<?php echo $this->webroot;?>states/view/<?php echo $item['State']['id'];?>" title="Ver Detalles" class="menuTable">
                               	<span class="glyphicon glyphicon-eye-open"></span></a> -->

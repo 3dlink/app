@@ -104,6 +104,20 @@
 			    </div>
 			    <div id="content_imgs"></div>
 
+			    <div class="col-md-12">
+		        <div class="form-group">
+		          <label>Profile Image</label>
+		          <div id="imagenes_content">
+		          	<div id="img_edit" class="img_edit">
+		          		<div class="col-md-6" style="text-align:center;width:260px;height:260px;background-image:url('<?php echo $this->webroot.'files/'.$this->data['User']['photo']; ?>');background-size:cover;background-repeat:no-repeat;">
+		          		</div>
+		          	</div>
+		          </div>
+		        </div>
+      	  <div style="clear:both;"></div>
+
+
+
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
           <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'users';" title="return" value = "Back" style="width: 79px;">
           <button type="submit" class="btn btn-primary">

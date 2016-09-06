@@ -30,6 +30,8 @@
 
 <script type="text/javascript">
 
+      $('#Country').val("")
+
       $('#Country').change(function(){
         var value = $(this).val();
         var back = "Country";

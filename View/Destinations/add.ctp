@@ -45,20 +45,13 @@
 			          <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'City')); ?>
 			        </div>
 	      		</div>
-
+<!-- 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Park</label>
 			          <?php echo $this->Form->input('park_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
 			        </div>
-	      		</div>
-
-	      		<div class="col-md-6">
-			        <div class="form-group">
-			          <label>Description</label>
-			          <?php echo $this->Form->input('description',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
-			        </div>
-	      		</div>
+	      		</div> -->
 
 				<div class="col-md-6">
 			        <div class="form-group">
@@ -85,6 +78,13 @@
 			        <div class="form-group">
 			          <label>Affluence</label>
 			          <?php echo $this->Form->input('affluence',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			        </div>
+	      		</div>
+
+	      		<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Description</label>
+			          <?php echo $this->Form->input('description',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
 			        </div>
 	      		</div>
 

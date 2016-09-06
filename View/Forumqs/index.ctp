@@ -105,7 +105,7 @@
 	  	                      <a href="<?php echo $this->webroot;?>forumqs/edit/<?php echo $item['Forumq']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>forumqs/delete/<?php echo $item['Forumq']['id'];?>" onclick="if (confirm(&quot;¿Seguro que desea borrar el Personal?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>forumqs/delete/<?php echo $item['Forumq']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the subject?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
 	  	                       <a href="<?php echo $this->webroot;?>forumqs/view/<?php echo $item['Forumq']['id'];?>" title="Ver Detalles" class="menuTable">
                               	<span class="glyphicon glyphicon-eye-open"></span></a>
@@ -119,7 +119,7 @@
           </fieldset>          
       </article>
 <p>
-<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, mostrando {:current} Personal de {:count} en total.')));?>
+<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages}, showing {:current} Questions of {:count}  total.')));?>
 </p>
 <ul class="pagination">
 <?php

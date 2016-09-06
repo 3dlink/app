@@ -92,7 +92,7 @@
 	  	                      <a href="<?php echo $this->webroot;?>activities/edit/<?php echo $item['Activity']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>activities/delete/<?php echo $item['Activity']['id'];?>" onclick="if (confirm(&quot;¿Seguro que desea borrar el Personal?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>activities/delete/<?php echo $item['Activity']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the activity?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
 	  	                      <a href="<?php echo $this->webroot;?>activities/view/<?php echo $item['Activity']['id'];?>" title="Ver Detalles" class="menuTable">
                               	<span class="glyphicon glyphicon-eye-open"></span></a>

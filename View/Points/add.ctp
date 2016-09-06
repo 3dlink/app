@@ -67,15 +67,15 @@
 
         <div class="col-md-6">
               <div class="form-group">
-                <label>Schedule</label>
-                <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+                <label>Payment</label>
+                <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
-                <label>Payment</label>
-                <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+                <label>Schedule</label>
+                <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
               </div>
         </div>
 

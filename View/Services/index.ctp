@@ -44,7 +44,7 @@
 	  	                      <a href="<?php echo $this->webroot;?>services/edit/<?php echo $item['Service']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>services/delete/<?php echo $item['Service']['id'];?>" onclick="if (confirm(&quot;You're about to delete a service. It's this ok?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>services/delete/<?php echo $item['Service']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the service?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
 	  	                      <!-- <a href="<?php echo $this->webroot;?>services/view/<?php echo $item['Region']['id'];?>" title="Ver Detalles" class="menuTable">
                               	<span class="glyphicon glyphicon-eye-open"></span></a> -->
@@ -58,7 +58,7 @@
           </fieldset>          
       </article>
 <p>
-<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, mostrando {:current} Personal de {:count} en total.')));?>
+<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages}, showing {:current} Services of {:count}  total.')));?>
 </p>
 <ul class="pagination">
 <?php

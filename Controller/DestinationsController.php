@@ -72,7 +72,6 @@ class DestinationsController extends AppController {
 			# code...
 		}
 		$this->set('comments',$comments);
-		debug($comments);
 	}
 
 /**
@@ -159,7 +158,7 @@ class DestinationsController extends AppController {
 		if (!$this->Destination->exists()) {
 			throw new NotFoundException(__('Invalid destination'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		// $this->request->allowMethod('post', 'delete');
 		if ($this->Destination->delete()) {
 			$this->Session->setFlash(__('The destination has been deleted.'));
 		} else {

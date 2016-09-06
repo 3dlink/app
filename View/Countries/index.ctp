@@ -44,7 +44,7 @@
 	  	                      <a href="<?php echo $this->webroot;?>countries/edit/<?php echo $item['Country']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>countries/delete/<?php echo $item['Country']['id'];?>" onclick="if (confirm(&quot;¿Seguro que desea borrar el Personal?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>countries/delete/<?php echo $item['Country']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the country from our database?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
                             <?php } ?>
 		                    </div>                  
@@ -56,7 +56,7 @@
           </fieldset>          
       </article>
 <p>
-<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, mostrando {:current} Personal de {:count} en total.')));?>
+<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages}, showing {:current} Countries of {:count}  total.')));?>
 </p>
 <ul class="pagination">
 <?php

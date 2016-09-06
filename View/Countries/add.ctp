@@ -14,7 +14,7 @@
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
           <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'countries';" title="regresar" value = "Atr&aacute;s" style="width: 79px;">
           <button type="submit" class="btn btn-primary">
-            Guardar
+            Save
           </button>
         </div>
       </div>          

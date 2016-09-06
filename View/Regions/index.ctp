@@ -46,7 +46,7 @@
 	  	                      <a href="<?php echo $this->webroot;?>regions/edit/<?php echo $item['Region']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>regions/delete/<?php echo $item['Region']['id'];?>" onclick="if (confirm(&quot;You're about to delete a Region. It's this ok?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>regions/delete/<?php echo $item['Region']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the region from our database?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
 	  	                      <!-- <a href="<?php echo $this->webroot;?>regions/view/<?php echo $item['Region']['id'];?>" title="Ver Detalles" class="menuTable">
                               	<span class="glyphicon glyphicon-eye-open"></span></a> -->
@@ -60,7 +60,7 @@
           </fieldset>          
       </article>
 <p>
-<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, mostrando {:current} Personal de {:count} en total.')));?>
+<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages}, showing {:current} Regions of {:count}  total.')));?>
 </p>
 <ul class="pagination">
 <?php

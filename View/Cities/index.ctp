@@ -46,7 +46,7 @@
 	  	                      <a href="<?php echo $this->webroot;?>cities/edit/<?php echo $item['City']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>cities/delete/<?php echo $item['City']['id'];?>" onclick="if (confirm(&quot;¿Seguro que desea borrar el Personal?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>cities/delete/<?php echo $item['City']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the city from our database?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
                             <?php } ?>
 		                    </div>                  
@@ -58,7 +58,7 @@
           </fieldset>          
       </article>
 <p>
-<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, mostrando {:current} Personal de {:count} en total.')));?>
+<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages}, showing {:current} Cities of {:count}  total.')));?>
 </p>
 <ul class="pagination">
 <?php

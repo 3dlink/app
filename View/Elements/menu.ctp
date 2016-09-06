@@ -116,8 +116,8 @@
                 <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Forum Questions</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'forumq/add'; ?>">Make a Question</a></li>
-                    <li><a href="<?php echo $this->webroot.'forumq'; ?>">View Forum</a></li>
+                    <li><a href="<?php echo $this->webroot.'forumqs/add'; ?>">Make a Question</a></li>
+                    <li><a href="<?php echo $this->webroot.'forumqs'; ?>">View Forum</a></li>
                   </ul>
                 </li>
               </ul>
@@ -156,7 +156,7 @@
                 <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">Terminals</a>
                   <ul class="dropdown-menu submenu">
-                    <li><a href="<?php echo $this->webroot.'terminals/add'; ?>">Add Neww</a></li>
+                    <li><a href="<?php echo $this->webroot.'terminals/add'; ?>">Add New</a></li>
                     <li><a href="<?php echo $this->webroot.'terminals'; ?>">View All</a></li>
                   </ul>
                 </li>
@@ -165,6 +165,13 @@
                   <ul class="dropdown-menu submenu">
                     <li><a href="<?php echo $this->webroot.'destinations/add'; ?>">Add New</a></li>
                     <li><a href="<?php echo $this->webroot.'destinations'; ?>">View All</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Types</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'types/add'; ?>">Add New Destination Type</a></li>
+                    <li><a href="<?php echo $this->webroot.'types'; ?>">View All Types</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">

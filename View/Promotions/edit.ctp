@@ -1,28 +1,3 @@
-<!-- <div class="promotions form">
-<?php echo $this->Form->create('Promotion'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Promotion'); ?></legend>
-	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('name');
-		echo $this->Form->input('description');
-		echo $this->Form->input('price');
-		echo $this->Form->input('client_id');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Promotion.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Promotion.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Promotions'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Clients'), array('controller' => 'clients', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Client'), array('controller' => 'clients', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
- -->
 <article class="card shadow-1">
 <?php echo $this->Form->create('Promotion'); echo $this->Form->input('id');?>
     <fieldset>
@@ -81,7 +56,25 @@
 	      		</div>
 
 
-	      		<div id="content_imgs"></div>				      		
+	      		<div id="content_imgs"></div>
+			    <div id="content_imgs"></div>
+
+
+			    <div class="col-md-12">
+		        <div class="form-group">
+		          <label>Description Image</label>
+		          <div id="imagenes_content">
+		          	<div id="img_edit" class="img_edit">
+		          		<div class="col-md-6" style="text-align:center;width:260px;height:260px;background-image:url('<?php echo $this->webroot.'files/'.$this->data['Promotion']['photo1']; ?>');background-size:cover;background-repeat:no-repeat;">
+		          		</div>
+		          	</div>
+		          	<div id="img_edit" class="img_edit">
+		          		<div class="col-md-6" style="margin-left:25px;text-align:center;width:260px;height:260px;background-image:url('<?php echo $this->webroot.'files/'.$this->data['Promotion']['photo2']; ?>');background-size:cover;background-repeat:no-repeat;">
+		          		</div>
+		          	</div>
+		          </div>
+		        </div>
+      		</div>				      		
 
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
           <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'promotions';" title="regresar" value = "Atr&aacute;s" style="width: 79px;">

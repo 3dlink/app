@@ -79,7 +79,7 @@
               </div>
               <div class="col-md-6">
                 <div class=" margenesVerticales" style="text-align: right;">
-                  <buttom onclick="window.location.href=WEBROOT+'points/add';" class="btn btn-primary">Add Country</buttom>
+                  <buttom onclick="window.location.href=WEBROOT+'points/add';" class="btn btn-primary">Add Point</buttom>
                 </div>
               </div>
               <div style="clear:both;"></div>
@@ -100,7 +100,7 @@
                   <th></th>
                 </th>
 
-                <?php foreach ($countries as $item): ?>
+                <?php foreach ($points as $item): ?>
 					<tr>
 	           <td><?php echo h($item['Point']['name']); ?>&nbsp;</td>
 	           <td><?php echo h($item['Destination']['name']); ?>&nbsp;</td>
@@ -116,7 +116,7 @@
 	  	                      <a href="<?php echo $this->webroot;?>points/edit/<?php echo $item['Country']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>points/delete/<?php echo $item['Country']['id'];?>" onclick="if (confirm(&quot;¿Seguro que desea borrar el Personal?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>points/delete/<?php echo $item['Country']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the point of interest?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
                             <?php } ?>
 		                    </div>                  
@@ -128,7 +128,7 @@
           </fieldset>          
       </article>
 <p>
-<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, mostrando {:current} Personal de {:count} en total.')));?>
+<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages}, showing {:current} Points of interest of {:count}  total.')));?>
 </p>
 <ul class="pagination">
 <?php
