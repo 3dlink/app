@@ -86,6 +86,9 @@
 </article>
 
 <script type="text/javascript">
+
+
+      $('#Country').val("")
 	$(document).ready(function(){
 
       $('#Country').change(function(){

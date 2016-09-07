@@ -56,35 +56,35 @@
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Latitude</label>
-			          <?php echo $this->Form->input('lat',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('lat',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 			        </div>
 	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Longitude</label>
-			          <?php echo $this->Form->input('longitude',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('longitude',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 			        </div>
 	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Budget</label>
-			          <?php echo $this->Form->input('budget',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('budget',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 			        </div>
 	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Affluence</label>
-			          <?php echo $this->Form->input('affluence',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('affluence',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 			        </div>
 	      		</div>
 
 	      		<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Description</label>
-			          <?php echo $this->Form->input('description',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('description',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 			        </div>
 	      		</div>
 
@@ -99,9 +99,9 @@
 			    <div id="content_imgs"></div>
 
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
-          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'destinations';" title="regresar" value = "Atr&aacute;s" style="width: 79px;">
+          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'destinations';" title="Go back" value = "Back" style="width: 79px;">
           <button type="submit" class="btn btn-primary">
-            Guardar
+            Save
           </button>
         </div>
       </div>          

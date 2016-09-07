@@ -97,7 +97,7 @@ class ActivitiesController extends AppController {
 		if (!$this->Activity->exists()) {
 			throw new NotFoundException(__('Invalid activity'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Activity->delete()) {
 			$this->Session->setFlash(__('The activity has been deleted.'));
 		} else {

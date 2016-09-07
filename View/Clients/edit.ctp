@@ -1,58 +1,13 @@
-<!-- <div class="clients form">
-<?php echo $this->Form->create('Client'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Client'); ?></legend>
-	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('name');
-		echo $this->Form->input('service_id');
-		echo $this->Form->input('schedule');
-		echo $this->Form->input('price');
-		echo $this->Form->input('lat');
-		echo $this->Form->input('longitude');
-		echo $this->Form->input('photo_1');
-		echo $this->Form->input('photo_2');
-		echo $this->Form->input('payment');
-		echo $this->Form->input('Destination');
-		echo $this->Form->input('Terminal');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Client.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Client.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Clients'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Services'), array('controller' => 'services', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Service'), array('controller' => 'services', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Promotions'), array('controller' => 'promotions', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Promotion'), array('controller' => 'promotions', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Destinations'), array('controller' => 'destinations', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Destination'), array('controller' => 'destinations', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Terminals'), array('controller' => 'terminals', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Terminal'), array('controller' => 'terminals', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
- -->
 <article class="card shadow-1">
 <?php echo $this->Form->create('Client'); echo $this->Form->input('id');?>
     <fieldset>
-      <legend>Add Client</legend>
+      <legend>Edit Client</legend>
       <div class="margenesHorizontales">
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Client Name</label>
 			          <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
-			        </div>
-	      		</div>
-
-				<div class="col-md-6">
-			        <div class="form-group">
-			          <label>Schedule</label>
-			          <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
 			        </div>
 	      		</div>
 
@@ -91,6 +46,13 @@
 			        </div>
 	      		</div>
 
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Schedule</label>
+			          <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			        </div>
+	      		</div>
+
 	      		<div class="col-md-12 dlink-dropzone" style="margin:30px 0;">
 	        		<label>Picture 1</label>
 	        		<div  class="dropzone"  id ="photo1"  name="mainFileUploader">
@@ -114,12 +76,28 @@
 	      		</div>
 
 
-	      		<div id="content_imgs"></div>			
+	      		<div id="content_imgs"></div>
+
+			    <div class="col-md-12">
+		        <div class="form-group">
+		          <label>Description Image</label>
+		          <div id="imagenes_content">
+		          	<div id="img_edit" class="img_edit">
+		          		<div class="col-md-6" style="text-align:center;width:260px;height:260px;background-image:url('<?php echo $this->webroot.'files/'.$this->data['Client']['photo_1']; ?>');background-size:cover;background-repeat:no-repeat;">
+		          		</div>
+		          	</div>
+		          	<div id="img_edit" class="img_edit">
+		          		<div class="col-md-6" style="margin-left:25px;text-align:center;width:260px;height:260px;background-image:url('<?php echo $this->webroot.'files/'.$this->data['Client']['photo_2']; ?>');background-size:cover;background-repeat:no-repeat;">
+		          		</div>
+		          	</div>
+		          </div>
+		        </div>
+      		<div style="clear:both;"></div>			
 
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
-          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'clients';" title="regresar" value = "Atr&aacute;s" style="width: 79px;">
+          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'clients';" title="Go back" value = "Back" style="width: 79px;">
           <button type="submit" class="btn btn-primary">
-            Guardar
+            Save
           </button>
         </div>
       </div>          

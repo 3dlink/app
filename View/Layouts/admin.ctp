@@ -7,7 +7,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version());
   <head>
     <meta charset="utf-8">
 	<title>
-		Isía Admin
+		Naru Admin
 	</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">

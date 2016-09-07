@@ -139,7 +139,7 @@ class ForumqsController extends AppController {
 		if (!$this->Forumq->exists()) {
 			throw new NotFoundException(__('Invalid forumq'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Forumq->delete()) {
 			$this->Session->setFlash(__('The forumq has been deleted.'));
 		} else {

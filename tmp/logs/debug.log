@@ -27,3 +27,5 @@ Dispatcher::dispatch() - APP\cakephp\lib\Cake\Routing\Dispatcher.php, line 167
 2016-08-31 14:55:04 Debug: permission: actionUrl-activities/edit
 2016-09-06 13:41:57 Debug: permission: actionUrl-cities/index
 2016-09-06 17:42:37 Debug: permission: actionUrl-states/index
+2016-09-07 14:07:47 Debug: permission: actionUrl-cities/index
+2016-09-07 15:03:03 Debug: permission: actionUrl-destinations/edit

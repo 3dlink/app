@@ -99,7 +99,7 @@ class ForumasController extends AppController {
 		if (!$this->Foruma->exists()) {
 			throw new NotFoundException(__('Invalid foruma'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Foruma->delete()) {
 			$this->Session->setFlash(__('The foruma has been deleted.'));
 		} else {

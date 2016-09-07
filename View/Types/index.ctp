@@ -56,7 +56,7 @@
           </fieldset>          
       </article>
 <p>
-<?php echo $this->Paginator->counter(array('format' => __('Página {:page} de {:pages}, showing {:current} Types of {:count}  total.')));?>
+<?php echo $this->Paginator->counter(array('format' => __('Page {:page} de {:pages}, showing {:current} Types of {:count} total.')));?>
 </p>
 <ul class="pagination">
 <?php

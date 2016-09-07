@@ -97,7 +97,7 @@ class CountriesController extends AppController {
 		if (!$this->Country->exists()) {
 			throw new NotFoundException(__('Invalid country'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Country->delete()) {
 			$this->Session->setFlash(__('The country has been deleted.'));
 		} else {

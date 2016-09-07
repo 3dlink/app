@@ -46,13 +46,6 @@
                     <?php echo h($destination['Park']['name'])?>
       			</div>
       		</div>
-
-      		<div class="col-md-12">
-      			<div class="form-group">
-      				<label>Description: </label>
-                    <?php echo h($destination['Destination']['description'])?>
-      			</div>
-      		</div>
       		
       		<div class="col-md-6">
       			<div class="form-group">
@@ -96,6 +89,13 @@
                     <?php echo h($destination['Destination']['affluence'])?>
       			</div>
       		</div>
+
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Description: </label>
+                    <?php echo h($destination['Destination']['description'])?>
+            </div>
+          </div>
       		
           
           
@@ -157,28 +157,28 @@
 						<div class="col-md-6">
 					        <div class="form-group">
 					          <label>Comment</label>
-					          <?php echo $this->Form->input('comment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+					          <?php echo $this->Form->input('comment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 					        </div>
 			      		</div>
 
 						<div class="col-md-6">
 					        <div class="form-group">
 					          <label>Security</label>
-					          <?php echo $this->Form->input('security',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+					          <?php echo $this->Form->input('security',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 					        </div>
 			      		</div>
 
 						<div class="col-md-6">
 					        <div class="form-group">
 					          <label>Environment</label>
-					          <?php echo $this->Form->input('environment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+					          <?php echo $this->Form->input('environment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 					        </div>
 			      		</div>
 
 						<div class="col-md-6">
 					        <div class="form-group">
 					          <label>Budget</label>
-					          <?php echo $this->Form->input('budget',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+					          <?php echo $this->Form->input('budget',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 					        </div>
 			      		</div>
 

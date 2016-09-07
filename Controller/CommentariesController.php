@@ -99,7 +99,7 @@ class CommentariesController extends AppController {
 		if (!$this->Commentary->exists()) {
 			throw new NotFoundException(__('Invalid commentary'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		//$this->request->allowMethod('post', 'delete');
 		if ($this->Commentary->delete()) {
 			$this->Session->setFlash(__('The commentary has been deleted.'));
 		} else {
