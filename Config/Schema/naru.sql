@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-09-2016 a las 00:24:39
+-- Tiempo de generación: 07-09-2016 a las 17:23:14
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `isia`
+-- Base de datos: `naru`
 --
 
 -- --------------------------------------------------------
@@ -87,14 +87,14 @@ CREATE TABLE IF NOT EXISTS `clients` (
 `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL,
   `service_id` int(10) NOT NULL,
-  `schedule` varchar(255) NOT NULL,
+  `schedule` text NOT NULL,
   `price` float NOT NULL,
   `lat` varchar(255) NOT NULL,
   `longitude` varchar(255) NOT NULL,
   `photo_1` varchar(255) NOT NULL,
   `photo_2` varchar(255) NOT NULL,
   `payment` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `clients`
@@ -102,7 +102,8 @@ CREATE TABLE IF NOT EXISTS `clients` (
 
 INSERT INTO `clients` (`id`, `name`, `service_id`, `schedule`, `price`, `lat`, `longitude`, `photo_1`, `photo_2`, `payment`) VALUES
 (1, 'Jungle Men', 3, 'Summer', 100000, '60min', '15seg', 'img14713633661SA.jpg', 'img1471363368LXK.jpg', 'Cash'),
-(2, 'Alirio', 3, 'day', 1000000, '60min', '45sec', 'img1471990799SDY.jpg', 'img1471990809QWD.jpg', 'credit card');
+(2, 'Alirio', 3, 'day', 1000000, '60min', '45sec', 'img1471990799SDY.jpg', 'img1471990809QWD.jpg', 'credit card'),
+(3, 'Sapitos Co.', 4, 'hello, now im a text area', 10000, '5min', '350seg', 'img1473194689EXE.jpg', 'img1473194696HYO.jpg', 'credit card');
 
 -- --------------------------------------------------------
 
@@ -189,6 +190,7 @@ CREATE TABLE IF NOT EXISTS `destinations` (
   `country_id` int(10) NOT NULL,
   `region_id` int(10) NOT NULL,
   `park_id` int(10) NOT NULL,
+  `point_id` int(10) NOT NULL,
   `lat` varchar(255) NOT NULL,
   `longitude` varchar(255) NOT NULL,
   `photo1` varchar(255) NOT NULL,
@@ -203,9 +205,9 @@ CREATE TABLE IF NOT EXISTS `destinations` (
 -- Volcado de datos para la tabla `destinations`
 --
 
-INSERT INTO `destinations` (`id`, `name`, `description`, `type_id`, `state_id`, `city_id`, `country_id`, `region_id`, `park_id`, `lat`, `longitude`, `photo1`, `ranking`, `security`, `environment`, `budget`, `affluence`) VALUES
-(1, 'Mi Casa', 'Best place in da world', 1, 1, 1, 1, 1, 1, '360m', '10sec', 'img1471380349NKJ.jpg', 0, 0, 0, 19900283, 2),
-(2, 'Tuja', 'Tremendas orgias en las noches', 1, 3, 2, 1, 2, 5, '987812m', '134134sec', 'img1471991127LIN.jpg', 0, 0, 0, 70000, 5);
+INSERT INTO `destinations` (`id`, `name`, `description`, `type_id`, `state_id`, `city_id`, `country_id`, `region_id`, `park_id`, `point_id`, `lat`, `longitude`, `photo1`, `ranking`, `security`, `environment`, `budget`, `affluence`) VALUES
+(1, 'Mi Casa', 'Best place in da world', 1, 1, 1, 1, 1, 1, 0, '360m', '10sec', 'img1471380349NKJ.jpg', 0, 0, 0, 19900283, 2),
+(2, 'Tuja', 'Tremendas orgias en las noches', 1, 3, 2, 1, 2, 5, 0, '987812m', '134134sec', 'img1471991127LIN.jpg', 0, 0, 0, 70000, 5);
 
 -- --------------------------------------------------------
 
@@ -331,18 +333,20 @@ CREATE TABLE IF NOT EXISTS `login_tokens` (
 
 CREATE TABLE IF NOT EXISTS `parks` (
 `id` int(10) NOT NULL,
-  `name` varchar(255) NOT NULL
+  `name` varchar(255) NOT NULL,
+  `lat` varchar(255) NOT NULL,
+  `longitude` varchar(255) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `parks`
 --
 
-INSERT INTO `parks` (`id`, `name`) VALUES
-(1, 'Sierra Maestra'),
-(2, 'Llovizna'),
-(3, 'Gran Sabana'),
-(5, '80mts cuadrados no vi el editar');
+INSERT INTO `parks` (`id`, `name`, `lat`, `longitude`) VALUES
+(1, 'Sierra Maestra', '', ''),
+(2, 'Llovizna', '', ''),
+(3, 'Gran Sabana', '', ''),
+(5, '80mts cuadrados no vi el editar', '', '');
 
 -- --------------------------------------------------------
 
@@ -369,7 +373,7 @@ CREATE TABLE IF NOT EXISTS `points` (
   `longitude` varchar(255) NOT NULL,
   `destination_id` int(10) NOT NULL,
   `price` float NOT NULL,
-  `schedule` varchar(255) NOT NULL,
+  `schedule` text NOT NULL,
   `payment` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -1039,7 +1043,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 -- AUTO_INCREMENT de la tabla `clients`
 --
 ALTER TABLE `clients`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `clients_destinations`
 --
