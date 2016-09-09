@@ -18,6 +18,34 @@
 			        </div>
 	      		</div>
 
+	      		<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Country</label>
+			          <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Country')); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Region</label>
+			          <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Region')); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>State</label>
+			          <?php echo $this->Form->input('state_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'State')); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>City</label>
+			          <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'City')); ?>
+			        </div>
+	      		</div>
+
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Latitude</label>
@@ -35,7 +63,7 @@
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Payment</label>
-			          <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name','options'=>array('0'=>'Select','Cash'=>'Cash','Debit'=>'Debit','Credit Card'=>'Credit Card'))); ?>
 			        </div>
 	      		</div>
 
@@ -118,5 +146,53 @@
 			$('#content_imgs').append('<input type="hidden" value='+data.xhr.response+' name="data[Client][photo_2]">');
 	  }
 	});
+
+	$('#Country').val("")
+    $(document).ready(function(){
+
+
+      $('#Country').change(function(){
+        var value = $(this).val();
+        var back = "Country";
+        var next = "Region";
+        var opt = changeSelect(back,next,value);
+        // alert(opt)
+        // $('#region').html(opt);
+      })
+
+      $('#Region').change(function(){
+        var value = $(this).val();
+        var back = "Region";
+        var next = "State";
+        var opt = changeSelect(back,next,value);
+        // $('#state').html(opt);
+      })
+
+      $('#State').change(function(){
+        var value = $(this).val();
+        var back = "State";
+        var next = "City";
+        var opt = changeSelect(back,next,value);
+        // $('#city').html(opt);
+      })
+
+    })
+
+    function changeSelect(back,next,value){
+      $.ajax({
+        url: WEBROOT+'destinations/list_ajax/'+back+"/"+next+"/"+value,
+        type:'POST',
+        dataType: 'json',
+        success:function(data){
+          var htmlContent = "<option>-- Select -- </option>";
+          for (var i = 0; i < data.length; i++) {
+
+            htmlContent += "<option value='"+data[i][next]['id']+"'>"+data[i][next]['name']+"</option>";
+          }
+          $('#'+next).html(htmlContent)
+        },
+        error: function(){}
+      })
+    }
 
 </script>

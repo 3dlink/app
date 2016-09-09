@@ -72,6 +72,25 @@ class DestinationsController extends AppController {
 			# code...
 		}
 		$this->set('comments',$comments);
+
+		$securyval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.security) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
+		$num = $securyval[0]['num'] + 1;
+		$securyval = $securyval[0]['sum'] + $destination['Destination']['security'];
+		$securyval = $securyval/$num;
+
+		$budval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.budget) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
+		$num = $budval[0]['num'] + 1;
+		$budval = $budval[0]['sum'] + $destination['Destination']['budget'];
+		$budval = $budval/$num;
+
+		$envval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.environment) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
+		$num = $envval[0]['num'] + 1;
+		$envval = $envval[0]['sum'] + $destination['Destination']['security'];
+		$envval = $envval/$num;
+
+		$ranked = ($envval+$securyval+$budval)/3;
+
+		$this->set(compact('securyval', 'budval', 'envval','ranked'));
 	}
 
 /**

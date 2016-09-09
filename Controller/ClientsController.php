@@ -14,6 +14,7 @@ class ClientsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	public $uses = array('Client','Country','Destination','Region','State','Terminal','City','Service');
 
 /**
  * index method
@@ -59,9 +60,10 @@ class ClientsController extends AppController {
 			}
 		}
 		$services = $this->Client->Service->find('list');
+		$countries = $this->Client->Country->find('list');
 		$destinations = $this->Client->Destination->find('list');
 		$terminals = $this->Client->Terminal->find('list');
-		$this->set(compact('services', 'destinations', 'terminals'));
+		$this->set(compact('services', 'destinations', 'terminals', 'countries'));
 	}
 
 /**
@@ -88,9 +90,10 @@ class ClientsController extends AppController {
 			$this->request->data = $this->Client->find('first', $options);
 		}
 		$services = $this->Client->Service->find('list');
+		$countries = $this->Client->Country->find('list');
 		$destinations = $this->Client->Destination->find('list');
 		$terminals = $this->Client->Terminal->find('list');
-		$this->set(compact('services', 'destinations', 'terminals'));
+		$this->set(compact('services', 'destinations', 'terminals', 'countries'));
 	}
 
 /**

@@ -62,25 +62,25 @@
       		<div class="col-md-6">
       			<div class="form-group">
       				<label>Ranking: </label>
-                    <?php echo h($destination['Destination']['ranking'])?>
+                    <?php echo h($ranked)?>
       			</div>
       		</div>
       		<div class="col-md-6">
       			<div class="form-group">
       				<label>Security: </label>
-                    <?php echo h($destination['Destination']['security'])?>
+                    <?php echo h($securyval)?>
       			</div>
       		</div>
       		<div class="col-md-6">
       			<div class="form-group">
       				<label>Environment: </label>
-                    <?php echo h($destination['Destination']['environment'])?>
+                    <?php echo h($envval)?>
       			</div>
       		</div>
       		<div class="col-md-6">
       			<div class="form-group">
       				<label>Budget: </label>
-                    <?php echo h($destination['Destination']['budget'])?>
+                    <?php echo h($budval)?>
       			</div>
       		</div>
       		<div class="col-md-6">
@@ -138,6 +138,7 @@
   						<td><?php echo h($item['environment']); ?>&nbsp;</td>
   						<td><?php echo h($item['budget']); ?>&nbsp;</td>
   						<td><?php echo h($item['User']['username']); ?>&nbsp;</td>
+              <?php  ?>
   						</tr>
   						<?php endforeach; ?>
 					</table>

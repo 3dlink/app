@@ -45,13 +45,13 @@
 			          <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'City')); ?>
 			        </div>
 	      		</div>
-<!-- 
+
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Park</label>
-			          <?php echo $this->Form->input('park_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+			          <?php echo $this->Form->input('park_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'required'=>false, 'id'=>'park')); ?>
 			        </div>
-	      		</div> -->
+	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
@@ -81,6 +81,13 @@
 			        </div>
 	      		</div>
 
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Security</label>
+			          <?php echo $this->Form->input('security',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+			        </div>
+	      		</div>
+
 	      		<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Description</label>
@@ -106,6 +113,7 @@
         </div>
       </div>          
     </fieldset>  
+
 </article>
 
 <script type="text/javascript">
@@ -117,8 +125,8 @@
 	});
 
 
-
-    $('#Country').val("")
+    $('#park').val("");
+    $('#Country').val("");
     $(document).ready(function(){
 
 

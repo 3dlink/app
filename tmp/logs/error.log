@@ -2920,3 +2920,307 @@ Stack Trace:
 #3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
 #4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-09-08 15:08:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /isia/clients/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Client), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\ClientsController.php(55): Model->save(Array)
+#5 [internal function]: ClientsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ClientsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ClientsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-09 19:33:32 Error: Fatal Error (4): syntax error, unexpected '$securyval' (T_VARIABLE) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 76]
+2016-09-09 19:33:32 Error: [FatalErrorException] syntax error, unexpected '$securyval' (T_VARIABLE)
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 19:34:32 Error: Fatal Error (4): syntax error, unexpected '$securyval' (T_VARIABLE) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 76]
+2016-09-09 19:34:32 Error: [FatalErrorException] syntax error, unexpected '$securyval' (T_VARIABLE)
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 19:34:35 Error: Fatal Error (4): syntax error, unexpected '$securyval' (T_VARIABLE) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 76]
+2016-09-09 19:34:35 Error: [FatalErrorException] syntax error, unexpected '$securyval' (T_VARIABLE)
+Request URL: /isia/destinations/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 19:35:02 Error: Fatal Error (4): syntax error, unexpected '$securyval' (T_VARIABLE) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 76]
+2016-09-09 19:35:02 Error: [FatalErrorException] syntax error, unexpected '$securyval' (T_VARIABLE)
+Request URL: /isia/destinations/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 19:35:07 Error: Fatal Error (4): syntax error, unexpected '$securyval' (T_VARIABLE) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 76]
+2016-09-09 19:35:07 Error: [FatalErrorException] syntax error, unexpected '$securyval' (T_VARIABLE)
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 19:36:02 Error: Fatal Error (4): syntax error, unexpected '$securyval' (T_VARIABLE) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 76]
+2016-09-09 19:36:02 Error: [FatalErrorException] syntax error, unexpected '$securyval' (T_VARIABLE)
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 19:36:06 Error: Fatal Error (4): syntax error, unexpected '$securyval' (T_VARIABLE) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 76]
+2016-09-09 19:36:06 Error: [FatalErrorException] syntax error, unexpected '$securyval' (T_VARIABLE)
+Request URL: /isia/destinations
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 19:36:11 Error: Fatal Error (4): syntax error, unexpected '$securyval' (T_VARIABLE) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 76]
+2016-09-09 19:36:11 Error: [FatalErrorException] syntax error, unexpected '$securyval' (T_VARIABLE)
+Request URL: /isia/destinations
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 76, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 13:55:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'security' in field list is ambiguous
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT AVG(secu...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT AVG(secu...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT AVG(secu...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Commentary), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(75): Model->find('all', Array)
+#7 [internal function]: DestinationsController->view('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-09 14:04:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'security' in field list is ambiguous
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT AVG(secu...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT AVG(secu...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT AVG(secu...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Commentary), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(75): Model->find('all', Array)
+#7 [internal function]: DestinationsController->view('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-09 14:04:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'security' in field list is ambiguous
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT AVG(secu...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT AVG(secu...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT AVG(secu...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Commentary), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(75): Model->find('all', Array)
+#7 [internal function]: DestinationsController->view('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-09 14:05:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'security' in field list is ambiguous
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT AVG(secu...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT AVG(secu...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT AVG(secu...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Commentary), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(75): Model->find('all', Array)
+#7 [internal function]: DestinationsController->view('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-09 14:06:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'security' in field list is ambiguous
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT AVG(secu...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT AVG(secu...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT AVG(secu...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Commentary), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(75): Model->find('all', Array)
+#7 [internal function]: DestinationsController->view('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-09 14:06:11 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'security' in field list is ambiguous
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT AVG(secu...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT AVG(secu...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT AVG(secu...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Commentary), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(75): Model->find('all', Array)
+#7 [internal function]: DestinationsController->view('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-09 14:07:18 Error: Fatal Error (1): Call to a member function find() on array in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 75]
+2016-09-09 14:07:18 Error: [FatalErrorException] Call to a member function find() on array
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 75, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 75, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 14:10:57 Error: Fatal Error (1): Call to a member function find() on array in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 77]
+2016-09-09 14:10:57 Error: [FatalErrorException] Call to a member function find() on array
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 77, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 77, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 14:12:12 Error: Fatal Error (1): Call to a member function find() on array in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 79]
+2016-09-09 14:12:12 Error: [FatalErrorException] Call to a member function find() on array
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 79)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 79, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 79, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 14:13:02 Error: Fatal Error (1): Call to a member function find() on array in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 80]
+2016-09-09 14:13:02 Error: [FatalErrorException] Call to a member function find() on array
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 80)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 80, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 80, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 20:15:37 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 80]
+2016-09-09 20:15:37 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 80)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 80, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 80, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 20:16:15 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 80]
+2016-09-09 20:16:15 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 80)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 80, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 80, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 20:19:09 Error: Fatal Error (4): syntax error, unexpected 'debug' (T_STRING) in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 82]
+2016-09-09 20:19:09 Error: [FatalErrorException] syntax error, unexpected 'debug' (T_STRING)
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 82)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 82, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 82, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 14:25:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'budget' cannot be null
+Request URL: /isia/destinations/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Destination), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\DestinationsController.php(97): Model->save(Array)
+#5 [internal function]: DestinationsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-09 16:26:58 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\isia\View\Destinations\view.ctp, line 65]
+2016-09-09 16:26:58 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /isia/destinations/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 16:32:20 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\isia\View\Destinations\add.ctp, line 24]
+2016-09-09 16:32:20 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /isia/destinations/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 24, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 24, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-09 16:32:42 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\isia\View\Destinations\add.ctp, line 24]
+2016-09-09 16:32:42 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /isia/destinations/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 24, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 24, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
