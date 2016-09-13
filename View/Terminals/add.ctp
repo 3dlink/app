@@ -75,10 +75,24 @@
 			        </div>
 	      		</div>
 
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Cities</label>
+			          <?php echo $this->Form->input('City',array('div'=>false,'multiple'=>true,'label'=>false,'class'=>'form-control','type'=>'select','placeholder'=>' ','id'=>'select_city','options'=>$destcities)); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Destinations</label>
+			          <?php echo $this->Form->input('Destination',array('div'=>false,'multiple'=>true,'label'=>false,'class'=>'form-control','type'=>'select','placeholder'=>' ','id'=>'select_dest','options'=>$destinations)); ?>
+			        </div>
+	      		</div>
+
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
           <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'terminals';" title="return" value = "Back" style="width: 79px;">
           <button type="submit" class="btn btn-primary">
-            Guardar
+            Save
           </button>
         </div>
       </div>          
@@ -87,8 +101,11 @@
 
 <script type="text/javascript">
 
+    $('#select_dest').multipleSelect();
+    $('#select_city').multipleSelect();
 
-      $('#Country').val("")
+    $('#Country').val("");
+
 	$(document).ready(function(){
 
       $('#Country').change(function(){

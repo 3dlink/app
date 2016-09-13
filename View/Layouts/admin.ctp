@@ -17,10 +17,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version());
     echo $this->Html->css('bootstrap.min');
     echo $this->Html->css('admin');
     echo $this->Html->css('dropzone');
+    echo $this->Html->css('multiple-select');
 
     echo $this->Html->script('jquery-2.2.0.min');
     echo $this->Html->script('bootstrap.min');
     echo $this->Html->script('dropzone');
+    echo $this->Html->script('multiple-select');
+
     
 	echo $this->fetch('meta');
 	echo $this->fetch('css');

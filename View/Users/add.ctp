@@ -75,21 +75,21 @@
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Interest 1</label>
-			          <?php echo $this->Form->input('interest_1',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
+			          <?php echo $this->Form->input('interest_1',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ','options'=>$types)); ?>
 			        </div>
 	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Interest 2</label>
-			          <?php echo $this->Form->input('interest_2',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
+			          <?php echo $this->Form->input('interest_2',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ','options'=>$types)); ?>
 			        </div>
 	      		</div>
 
 				<div class="col-md-6">
 			        <div class="form-group">
 			          <label>Interest 3</label>
-			          <?php echo $this->Form->input('interest_3',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
+			          <?php echo $this->Form->input('interest_3',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ','options'=>$types)); ?>
 			        </div>
 	      		</div>
 

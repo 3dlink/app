@@ -15,6 +15,8 @@ class TerminalsController extends AppController {
  */
 	public $components = array('Paginator');
 
+	public $uses = array('Terminal','Destination','Commentary','Usermgmt.User','Country','State','City');
+
 /**
  * index method
  *
@@ -61,9 +63,9 @@ class TerminalsController extends AppController {
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
 		// $states = $this->Terminal->State->find('list');
-		// $cities = $this->Terminal->City->find('list');
+		$destcities = $this->Terminal->City->find('list');
 		$countries = $this->Terminal->Country->find('list');
-		$this->set(compact('clients', 'destinations','cities','states','countries'));
+		$this->set(compact('clients', 'destinations','destcities','states','countries'));
 	}
 
 
@@ -99,10 +101,12 @@ class TerminalsController extends AppController {
 		}
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
-		$states = $this->Terminal->State->find('list');
-		$cities = $this->Terminal->City->find('list');
+		// $states = $this->Terminal->State->find('list');
+		
+		$destcities = $this->Terminal->City->find('list');
+
 		$countries = $this->Terminal->Country->find('list');
-		$this->set(compact('clients', 'destinations','cities','states','countries'));
+		$this->set(compact('clients', 'destinations','destcities','states','countries'));
 	}
 
 /**

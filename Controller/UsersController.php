@@ -71,7 +71,8 @@ class UsersController extends AppController {
 		$countries = $this->User->Country->find('list');
 		$states = $this->User->State->find('list');
 		$cities = $this->User->City->find('list');
-		$this->set(compact('userGroups', 'commentaries', 'countries', 'states', 'cities'));
+		$types = $this->User->Type->find('list');
+		$this->set(compact('userGroups', 'commentaries', 'countries', 'states', 'cities', 'types'));
 	}
 
 /**
@@ -102,7 +103,8 @@ class UsersController extends AppController {
 		$countries = $this->User->Country->find('list');
 		$states = $this->User->State->find('list');
 		$cities = $this->User->City->find('list');
-		$this->set(compact('userGroups', 'commentaries', 'countries', 'states', 'cities'));
+		$types = $this->User->Type->find('list');
+		$this->set(compact('userGroups', 'commentaries', 'countries', 'states', 'cities', 'types'));
 	}
 
 /**

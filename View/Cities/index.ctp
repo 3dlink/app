@@ -48,6 +48,8 @@
 	  	                      </a>
 	  	                      <a href="<?php echo $this->webroot;?>cities/delete/<?php echo $item['City']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the city from our database?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
+                            <a href="<?php echo $this->webroot;?>cities/view/<?php echo $item['City']['id'];?>" title="Watch detail" class="menuTable">
+                                <span class="glyphicon glyphicon-eye-open"></span></a>
                             <?php } ?>
 		                    </div>                  
 		                </td>

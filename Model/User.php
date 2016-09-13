@@ -14,6 +14,7 @@ App::uses('AppModel', 'Model');
  * @property Group $Group
  * @property LoginToken $LoginToken
  * @property Group $Group
+ * @property Type $Type
  */
 class User extends AppModel {
 
@@ -148,6 +149,19 @@ class User extends AppModel {
 			'joinTable' => 'groups_users',
 			'foreignKey' => 'user_id',
 			'associationForeignKey' => 'group_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
+		'Type' => array(
+			'className' => 'Type',
+			'joinTable' => 'types_users',
+			'foreignKey' => 'user_id',
+			'associationForeignKey' => 'type_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

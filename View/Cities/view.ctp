@@ -1,4 +1,4 @@
-<div class="cities view">
+<!-- <div class="cities view">
 <h2><?php echo __('City'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
@@ -210,3 +210,72 @@
 		</ul>
 	</div>
 </div>
+ -->
+<article class="card shadow-1">
+  <fieldset>
+
+      <legend>City<?php echo ': '; if (!empty($city)) { echo '<small>'.$city['City']['name'].'</small>'; }?></legend>
+      <div class="margenesHorizontales">
+      	<div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+				<label>Name: </label>
+         	    <?php echo h($city['City']['name'])?>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+				<label>State:</label>
+                <?php echo h($city['State']['name'])?>
+                </select>
+			       </div>
+      		</div>
+      		<div class="col-md-6">
+      			<div class="form-group">
+				<label>Region:</label>
+                <?php echo h($city['Region']['name'])?>
+                </select>
+			       </div>
+      		</div>
+          <div class="col-md-6">
+            <div class="form-group">
+                <label>Country: </label>
+                <?php echo h($city['Country']['name'])?>
+            </div>
+          </div>
+          
+        </div>
+      		<div style="clear:both;"></div>
+      	</div> 
+
+      	<div class="col-md-6">
+            <div class="form-group">
+              <label>Terminals Available:</label>
+
+              <table class="table table-striped">
+
+
+                      <?php 
+                      foreach ($city['Terminal'] as $item): ?>
+                      <?php if(is_array($item)){ ?>
+                <tr>
+                   <td><?php echo h($item['name']); ?>&nbsp;</td>
+                </tr>
+                    <?php }
+                      endforeach; 
+                    ?>
+              </table>
+            </div>
+        </div>
+        <div style="clear:both;"></div>            	
+        
+      	
+
+          
+      		<div class="margenesVerticales" style="text-align:right;">
+	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'cities';" title="Go back" value = "Back" style="width: 79px;"> 	  
+				  </div>
+      	</div>    
+</div>        
+    </fieldset>  
+</article>

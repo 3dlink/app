@@ -6,6 +6,8 @@ App::uses('AppModel', 'Model');
  * @property Country $Country
  * @property City $City
  * @property State $State
+ * @property City $City
+ * @property City $City
  * @property Client $Client
  * @property Destination $Destination
  */
@@ -51,11 +53,46 @@ class Terminal extends AppModel {
 	);
 
 /**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'City' => array(
+			'className' => 'City',
+			'foreignKey' => 'terminal_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
+
+/**
  * hasAndBelongsToMany associations
  *
  * @var array
  */
 	public $hasAndBelongsToMany = array(
+		'City' => array(
+			'className' => 'City',
+			'joinTable' => 'cities_terminals',
+			'foreignKey' => 'terminal_id',
+			'associationForeignKey' => 'city_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
 		'Client' => array(
 			'className' => 'Client',
 			'joinTable' => 'clients_terminals',

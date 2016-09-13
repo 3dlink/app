@@ -23,6 +23,7 @@ class UserTest extends CakeTestCase {
 		'app.country',
 		'app.terminal',
 		'app.city',
+		'app.cities_terminal',
 		'app.client',
 		'app.service',
 		'app.promotion',
@@ -38,7 +39,8 @@ class UserTest extends CakeTestCase {
 		'app.activity',
 		'app.activities_destination',
 		'app.photo',
-		'app.login_token'
+		'app.login_token',
+		'app.types_user'
 	);
 
 /**

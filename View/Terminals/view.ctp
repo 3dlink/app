@@ -66,7 +66,48 @@
                 <?php echo h($terminal['Terminal']['description'])?>
             </div>
           </div>
-      	</div>           	
+      	</div>
+
+          <div style="clear:both;"></div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Cities Available:</label>
+
+              <table class="table table-striped">
+
+
+                      <?php 
+                      foreach ($terminal['City'] as $item): ?>
+                      <?php if(is_array($item)){ ?>
+                <tr>
+                   <td><?php echo h($item['name']); ?>&nbsp;</td>
+                </tr>
+                    <?php }
+                      endforeach; 
+                    ?>
+              </table>
+            </div>
+          </div>    
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Destinations Available:</label>
+
+              <table class="table table-striped">
+
+
+                      <?php 
+                      foreach ($terminal['Destination'] as $item): ?>
+                      
+                <tr>
+                   <td><?php echo h($item['name']); ?>&nbsp;</td>
+                </tr>
+                    <?php 
+                      endforeach; 
+                    ?>
+              </table>
+            </div>
+          </div>        	
       	<div style="clear:both;"></div>
       	
         
