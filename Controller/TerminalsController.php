@@ -15,7 +15,7 @@ class TerminalsController extends AppController {
  */
 	public $components = array('Paginator');
 
-	public $uses = array('Terminal','Destination','Commentary','Usermgmt.User','Country','State','City');
+	public $uses = array('Terminal','Destination','Commentary','Usermgmt.User','Country','State','City','Point');
 
 /**
  * index method
@@ -62,9 +62,10 @@ class TerminalsController extends AppController {
 		}
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
-		// $states = $this->Terminal->State->find('list');
 		$destcities = $this->Terminal->City->find('list');
-		$countries = $this->Terminal->Country->find('list');
+		$countries = $this->Destination->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		$this->set(compact('clients', 'destinations','destcities','states','countries'));
 	}
 
@@ -101,11 +102,10 @@ class TerminalsController extends AppController {
 		}
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
-		// $states = $this->Terminal->State->find('list');
-		
 		$destcities = $this->Terminal->City->find('list');
-
-		$countries = $this->Terminal->Country->find('list');
+		$countries = $this->Destination->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		$this->set(compact('clients', 'destinations','destcities','states','countries'));
 	}
 

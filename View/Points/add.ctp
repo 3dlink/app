@@ -33,7 +33,7 @@
 		<div class="col-md-6">
 	        <div class="form-group">
 	          <label>Name</label>
-	          <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+	          <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name','required'=>true)); ?>
 	        </div>
 	     </div>
 
@@ -53,15 +53,50 @@
 
         <div class="col-md-6">
               <div class="form-group">
+                <label>Country</label>
+                <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Country')); ?>
+              </div>
+        </div>
+
+        <div class="col-md-6">
+              <div class="form-group">
+                <label>Region</label>
+                <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Region')); ?>
+              </div>
+        </div>
+
+        <div class="col-md-6">
+              <div class="form-group">
+                <label>State</label>
+                <?php echo $this->Form->input('state_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'State')); ?>
+              </div>
+        </div>
+
+        <div class="col-md-6">
+              <div class="form-group">
+                <label>City</label>
+                <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'City')); ?>
+              </div>
+        </div>
+
+        <div class="col-md-6">
+              <div class="form-group">
                 <label>Destination</label>
-                <?php echo $this->Form->input('destination_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+                <?php echo $this->Form->input('destination_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'required'=>false, 'id'=>'Destination')); ?>
+              </div>
+        </div>
+
+        <div class="col-md-6">
+              <div class="form-group">
+                <label>Nearest Terminal</label>
+                <?php echo $this->Form->input('terminal_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Not Required', 'required'=>false, 'id'=>'Terminal')); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>Price</label>
-                <?php echo $this->Form->input('price',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+                <?php echo $this->Form->input('price',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name','required'=>true)); ?>
               </div>
         </div>
 
@@ -81,10 +116,100 @@
 
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
           <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'points';" title="regresar" value = "Atr&aacute;s" style="width: 79px;">
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" class="btn btn-primary" id="savebutton">
             Save
           </button>
         </div>
       </div>          
     </fieldset>  
 </article>
+
+<script type="text/javascript">
+
+  $("#photo").dropzone({ url: WEBROOT+"start/upload/1", maxFilesize: 10, dictDefaultMessage: '<div class="col-xs-12 text-center" style="padding-bottom:20px"><img src="<?php echo $this->webroot; ?>img/file.png" alt="" /></div><p class="dropzone-add-message">Arrastra aquí todos los archivos a cargar o <a  class="add-files">selecciónalos de tu computador</a></p>',
+    success:function(data){
+      $('#content_imgs').append('<input type="hidden" value='+data.xhr.response+' name="data[Destination][photo1]">');
+    }
+  });
+
+
+    $('#park').val("");
+    $('#Country').val("");
+    $(document).ready(function(){
+
+
+      $('#Country').change(function(){
+        var value = $(this).val();
+        var back = "Country";
+        var next = "Region";
+        var opt = changeSelect(back,next,value,'destinations');
+        // alert(opt)
+        // $('#region').html(opt);
+      })
+
+      $('#Region').change(function(){
+        var value = $(this).val();
+        var back = "Region";
+        var next = "State";
+        var opt = changeSelect(back,next,value,'destinations');
+        // $('#state').html(opt);
+      })
+
+      $('#State').change(function(){
+        var value = $(this).val();
+        var back = "State";
+        var next = "City";
+        var opt = changeSelect(back,next,value,'destinations');
+        // $('#city').html(opt);
+      })
+
+      $('#City').change(function(){
+        var value = $(this).val();
+        var back = "City";
+        var next = "Destination";
+        var opt = changeSelect(back,next,value,'destinations');
+        // $('#city').html(opt);
+      })
+
+      $('#City').change(function(){
+        var value = $(this).val();
+        var back = "City";
+        var next = "Terminal";
+        var opt = changeSelect(back,next,value,'terminals');
+        // $('#city').html(opt);
+      })
+
+    })
+
+    function changeSelect(back,next,value,controller){
+      $.ajax({
+        url: WEBROOT+controller+'/list_ajax/'+back+"/"+next+"/"+value,
+        type:'POST',
+        dataType: 'json',
+        success:function(data){
+          var htmlContent = "<option value=''>-- Select -- </option>";
+          for (var i = 0; i < data.length; i++) {
+
+            htmlContent += "<option value='"+data[i][next]['id']+"'>"+data[i][next]['name']+"</option>";
+          }
+          $('#'+next).html(htmlContent)
+        },
+        error: function(){}
+      })
+    }
+
+    $('#savebutton').click(function(e){
+      if($('#Destination').val() == '' && $('#Terminal').val()==''){
+        alert("You have to choose either a Terminal or a Destination");
+        e.preventDefault();
+      }
+      if($('#Destination').val() == null && $('#Terminal').val() == null){
+        alert("You have to choose either a Terminal or a Destination");
+        e.preventDefault();
+      }
+      
+    })
+  
+
+
+</script>

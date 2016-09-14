@@ -14,6 +14,7 @@ class PointsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	public $uses = array('Point','Destination','Country','Region','State','City','Terminal');
 
 /**
  * index method
@@ -49,17 +50,35 @@ class PointsController extends AppController {
  */
 	public function add() {
 		$this->layout="admin";
+		$aux = array();
 		if ($this->request->is('post')) {
 			$this->Point->create();
 			if ($this->Point->save($this->request->data)) {
 				$this->Session->setFlash(__('The point has been saved.'));
+
+				// if ($this->request->data['Point']['terminal_id'] != null || $this->request->data['Point']['terminal_id'] != '0'){
+				// 	$aux['terminal_id'] = $this->request->data['Point']['terminal_id'];
+				// 	$aux['point_id'] = $this->Point->getLastInsertID();
+				// 	$this->PointsTerminal->save($aux);	
+				// }
+
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The point could not be saved. Please, try again.'));
 			}
 		}
-		$destinations = $this->Point->Destination->find('list');
-		$this->set(compact('destinations'));
+		$countries = $this->Point->Country->find('list');
+		//$destinations = $this->Point->Destination->find('list');
+		$this->set(compact('countries'));
+	}
+
+
+	public function list_ajax($back, $next, $value){
+		$this->autoRender = false;
+		$back = strtolower($back);
+		$result = $this->$next->find('all', array('recursive'=> -1, 'fields'=>array('id','name'), 'conditions' => array($back.'_id'=>$value)));
+		
+		return json_encode($result);
 	}
 
 /**
@@ -77,6 +96,14 @@ class PointsController extends AppController {
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Point->save($this->request->data)) {
 				$this->Session->setFlash(__('The point has been saved.'));
+
+
+				// if ($this->request->data['Point']['terminal_id'] != null || $this->request->data['Point']['terminal_id'] != '0'){
+				// 	$aux['terminal_id'] = $this->request->data['Point']['terminal_id'];
+				// 	$aux['point_id'] = $this->Point->getLastInsertID();
+				// 	$this->PointsTerminal->save($aux);	
+				// }
+
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The point could not be saved. Please, try again.'));
@@ -85,8 +112,8 @@ class PointsController extends AppController {
 			$options = array('conditions' => array('Point.' . $this->Point->primaryKey => $id));
 			$this->request->data = $this->Point->find('first', $options);
 		}
-		$destinations = $this->Point->Destination->find('list');
-		$this->set(compact('destinations'));
+		$countries = $this->Point->Country->find('list');
+		$this->set(compact('countries'));
 	}
 
 /**

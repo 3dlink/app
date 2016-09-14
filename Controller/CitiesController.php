@@ -59,7 +59,9 @@ class CitiesController extends AppController {
 				$this->Session->setFlash(__('The city could not be saved. Please, try again.'));
 			}
 		}
-		$countries = $this->City->Country->find('list');
+		$countries = $this->Destination->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		$this->set(compact('countries'));
 	}
 
@@ -95,7 +97,9 @@ class CitiesController extends AppController {
 			$options = array('conditions' => array('City.' . $this->City->primaryKey => $id));
 			$this->request->data = $this->City->find('first', $options);
 		}
-		$countries = $this->City->Country->find('list');
+		$countries = $this->Destination->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		$this->set(compact('countries'));
 	}
 

@@ -59,7 +59,9 @@ class RegionsController extends AppController {
 				$this->Session->setFlash(__('The region could not be saved. Please, try again.'));
 			}
 		}
-		$countries = $this->Region->Country->find('list');
+		$countries = $this->Destination->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		$this->set(compact('countries'));
 	}
 
@@ -94,7 +96,9 @@ class RegionsController extends AppController {
 			$options = array('conditions' => array('Region.' . $this->Region->primaryKey => $id));
 			$this->request->data = $this->Region->find('first', $options);
 		}
-		$countries = $this->Region->Country->find('list');
+		$countries = $this->Destination->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		$this->set(compact('countries'));
 	}
 

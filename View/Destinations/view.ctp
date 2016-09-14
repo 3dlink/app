@@ -117,6 +117,32 @@
               </div>
           </div>
 
+      <div class="col-md-6">
+        <div class="form-group">
+            <label>Some points of interests on this destination: </label>
+            </div>
+      </div>
+
+
+          <div class="margenesHorizontales">
+            <table class="table table-striped">
+                  <th>Name</th>
+                  <th>Schedule</th>
+                  <th>Price</th>
+              <?php foreach ($points as $item): ?>
+                <tr>
+                <?php if(is_array($item)){ ?>  
+                <td><?php echo h($item['Point']['name']); ?>&nbsp;</td>
+                <td><?php echo h($item['Point']['schedule']); ?>&nbsp;</td>
+                <td><?php echo h($item['Point']['price']); ?>&nbsp;</td>
+                </tr>
+              <?php }
+              endforeach; 
+              ?>
+          </table>
+          </div>
+          <div style="clear:both;"></div>
+
   		<div class="col-md-6">
   			<div class="form-group">
   				  <label>Some comments about this destination from other users: </label>
@@ -190,6 +216,7 @@
 					    <button type="submit" class="btn btn-primary">
 				            	Submit
 				        </button>
+                <div style="clear:both;"></div>
 			          
 			        </div>
 	      		</div>

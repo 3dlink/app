@@ -1,11 +1,11 @@
 <?php
-App::uses('Point', 'Model');
+App::uses('PointsTerminal', 'Model');
 
 /**
- * Point Test Case
+ * PointsTerminal Test Case
  *
  */
-class PointTest extends CakeTestCase {
+class PointsTerminalTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,22 +13,14 @@ class PointTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.point',
+		'app.points_terminal',
+		'app.terminal',
 		'app.country',
 		'app.destination',
 		'app.type',
 		'app.state',
 		'app.region',
 		'app.city',
-		'app.terminal',
-		'app.cities_terminal',
-		'app.client',
-		'app.service',
-		'app.promotion',
-		'app.clients_destination',
-		'app.clients_terminal',
-		'app.destinations_terminal',
-		'app.points_terminal',
 		'app.user',
 		'app.user_group',
 		'app.commentary',
@@ -40,8 +32,16 @@ class PointTest extends CakeTestCase {
 		'app.login_token',
 		'app.types_user',
 		'app.park',
+		'app.point',
 		'app.activity',
-		'app.activities_destination'
+		'app.activities_destination',
+		'app.client',
+		'app.service',
+		'app.promotion',
+		'app.clients_destination',
+		'app.clients_terminal',
+		'app.destinations_terminal',
+		'app.cities_terminal'
 	);
 
 /**
@@ -51,7 +51,7 @@ class PointTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Point = ClassRegistry::init('Point');
+		$this->PointsTerminal = ClassRegistry::init('PointsTerminal');
 	}
 
 /**
@@ -60,7 +60,7 @@ class PointTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Point);
+		unset($this->PointsTerminal);
 
 		parent::tearDown();
 	}

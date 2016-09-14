@@ -3262,3 +3262,263 @@ Stack Trace:
 #3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-09-13 17:12:50 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2016-09-13 17:12:51 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /isia/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 458, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\\xampp\\htdocs...', 458, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-14 11:06:57 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 133]
+2016-09-14 11:06:57 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/list_ajax/City/Terminal/3
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-14 11:06:58 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 133]
+2016-09-14 11:06:58 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/list_ajax/City/Terminal/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-14 11:07:36 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 133]
+2016-09-14 11:07:36 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/list_ajax/Destination/Terminal/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-14 11:08:07 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 133]
+2016-09-14 11:08:07 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/list_ajax/Destination/Terminal/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-14 11:40:30 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 133]
+2016-09-14 11:40:30 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/list_ajax/City/Terminal/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-14 11:40:46 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 133]
+2016-09-14 11:40:46 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/list_ajax/City/Terminal/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-14 11:52:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /isia/points/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Point), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\PointsController.php(55): Model->save(Array)
+#5 [internal function]: PointsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-14 11:53:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /isia/points/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Point), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\PointsController.php(55): Model->save(Array)
+#5 [internal function]: PointsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-14 11:57:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /isia/points/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Point), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\PointsController.php(55): Model->save(Array)
+#5 [internal function]: PointsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-14 11:57:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /isia/points/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Point), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\PointsController.php(55): Model->save(Array)
+#5 [internal function]: PointsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-14 11:57:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /isia/points/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Point), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\PointsController.php(55): Model->save(Array)
+#5 [internal function]: PointsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-14 11:58:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /isia/points/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Point), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\PointsController.php(55): Model->save(Array)
+#5 [internal function]: PointsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-14 12:03:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /isia/points/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Point), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\PointsController.php(55): Model->save(Array)
+#5 [internal function]: PointsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-14 12:09:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'destination_id' cannot be null
+Request URL: /isia/points/add
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(1856): DboSource->create(Object(Point), Array, Array)
+#4 C:\xampp\htdocs\isia\Controller\PointsController.php(55): Model->save(Array)
+#5 [internal function]: PointsController->add()
+#6 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#7 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-14 12:48:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'terminal_id' in 'where clause'
+Request URL: /isia/destinations/list_ajax/Terminal/Point/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Point`....', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Point`....', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Point`....', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Point), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\isia\Controller\DestinationsController.php(133): Model->find('all', Array)
+#7 [internal function]: DestinationsController->list_ajax('Terminal', 'Point', '1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DestinationsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DestinationsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-14 12:48:11 Error: [MissingActionException] Action TerminalsController::Terminal() could not be found.
+Exception Attributes: array (
+  'controller' => 'TerminalsController',
+  'action' => 'Terminal',
+)
+Request URL: /isia/terminals/Terminal/Point/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TerminalsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-14 12:48:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'fint' at line 1
+Request URL: /isia/terminals/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('fint', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('fint', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('fint', Array, Array)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(808): DboSource->query('fint', Array, Object(Point))
+#5 C:\xampp\htdocs\isia\Controller\TerminalsController.php(46): Model->__call('fint', Array)
+#6 C:\xampp\htdocs\isia\Controller\TerminalsController.php(46): Point->fint('list')
+#7 [internal function]: TerminalsController->view('2')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TerminalsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TerminalsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-14 12:48:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'fint' at line 1
+Request URL: /isia/terminals/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('fint', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('fint', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('fint', Array, Array)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(808): DboSource->query('fint', Array, Object(Point))
+#5 C:\xampp\htdocs\isia\Controller\TerminalsController.php(46): Model->__call('fint', Array)
+#6 C:\xampp\htdocs\isia\Controller\TerminalsController.php(46): Point->fint('list')
+#7 [internal function]: TerminalsController->view('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TerminalsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TerminalsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-14 13:11:17 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\DestinationsController.php, line 133]
+2016-09-14 13:11:17 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/destinations/list_ajax/City/Terminal/2
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 133, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-14 13:43:24 Error: [NotFoundException] Invalid point
+Request URL: /isia/points/edit/7
+Stack Trace:
+#0 [internal function]: PointsController->edit('7')
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

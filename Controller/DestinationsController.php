@@ -14,7 +14,7 @@ class DestinationsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
-	public $uses = array('Destination','Commentary','Usermgmt.User','Country','Region','State','City');
+	public $uses = array('Destination','Commentary','Usermgmt.User','Country','Region','State','City','Point');
 
 /**
  * index method
@@ -91,6 +91,11 @@ class DestinationsController extends AppController {
 		$ranked = ($envval+$securyval+$budval)/3;
 
 		$this->set(compact('securyval', 'budval', 'envval','ranked'));
+
+		//////////////////////////////
+
+		$points = $this->Destination->Point->find('all', array('conditions' => array(array('Destination.' . $this->Destination->primaryKey => $id))));
+		$this->set('points',$points);
 	}
 
 /**
@@ -110,11 +115,9 @@ class DestinationsController extends AppController {
 			}
 		}
 		$types = $this->Destination->Type->find('list');
-
-		// $states = $this->Destination->State->find('list');
-		// $cities = $this->Destination->City->find('list');
 		$countries = $this->Destination->Country->find('list');
-		// $regions = $this->Destination->Region->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		$parks = $this->Destination->Park->find('list');
 		$activities = $this->Destination->Activity->find('list');
 		$clients = $this->Destination->Client->find('list');
@@ -154,15 +157,14 @@ class DestinationsController extends AppController {
 			$this->request->data = $this->Destination->find('first', $options);
 		}
 		$types = $this->Destination->Type->find('list');
-		$states = $this->Destination->State->find('list');
-		$cities = $this->Destination->City->find('list');
 		$countries = $this->Destination->Country->find('list');
-		$regions = $this->Destination->Region->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		$parks = $this->Destination->Park->find('list');
 		$activities = $this->Destination->Activity->find('list');
 		$clients = $this->Destination->Client->find('list');
 		$terminals = $this->Destination->Terminal->find('list');
-		$this->set(compact('types', 'states', 'cities', 'countries', 'regions', 'parks', 'activities', 'clients', 'terminals'));
+		$this->set(compact('types', 'countries', 'parks', 'activities', 'clients', 'terminals'));
 	}
 
 /**

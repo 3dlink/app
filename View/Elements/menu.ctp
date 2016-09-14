@@ -181,6 +181,13 @@
                     <li><a href="<?php echo $this->webroot.'parks'; ?>">View All</a></li>
                   </ul>
                 </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Points of Interest</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a href="<?php echo $this->webroot.'points/add'; ?>">Add New PoI</a></li>
+                    <li><a href="<?php echo $this->webroot.'points'; ?>">View All PoI</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <?php } ?>

@@ -90,8 +90,7 @@
                 <tr>
                   <th>Name</th>
                   <th>Destination</th>
-                  <th>Latitude</th>
-                  <th>Longitude</th>
+                  <th>Terminal</th>
                   <th>Price</th>
                   <th>Schedule</th>
                   <th>Payment</th>
@@ -104,8 +103,7 @@
 					<tr>
 	           <td><?php echo h($item['Point']['name']); ?>&nbsp;</td>
 	           <td><?php echo h($item['Destination']['name']); ?>&nbsp;</td>
-	           <td><?php echo h($item['Point']['lat']); ?>&nbsp;</td>
-	           <td><?php echo h($item['Point']['longitude']); ?>&nbsp;</td>
+	           <td><?php echo h($item['Terminal']['name']); ?>&nbsp;</td>
 	           <td><?php echo h($item['Point']['price']); ?>&nbsp;</td>
 	           <td><?php echo h($item['Point']['schedule']); ?>&nbsp;</td>
 	           <td><?php echo h($item['Point']['payment']); ?>&nbsp;</td>
@@ -113,10 +111,10 @@
                         <td>
 		                    <div style="display: block; width: 80px; margin: 0 auto;">
 	                        <?php if($this->UserAuth->getGroupId() == 1){ ?>
-	  	                      <a href="<?php echo $this->webroot;?>points/edit/<?php echo $item['Country']['id'];?>" title="Editar Item" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>points/edit/<?php echo $item['Point']['id'];?>" title="Editar Item" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
-	  	                      <a href="<?php echo $this->webroot;?>points/delete/<?php echo $item['Country']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the point of interest?&quot;)) { return true; } return false;" class="menuTable">
+	  	                      <a href="<?php echo $this->webroot;?>points/delete/<?php echo $item['Point']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the point of interest?&quot;)) { return true; } return false;" class="menuTable">
 	  	                        <span class="glyphicon glyphicon-remove"></span></a>
                             <?php } ?>
 		                    </div>                  

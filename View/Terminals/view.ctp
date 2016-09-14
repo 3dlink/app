@@ -71,7 +71,7 @@
           <div style="clear:both;"></div>
           <div class="col-md-6">
             <div class="form-group">
-              <label>Cities Available:</label>
+              <label>Cities for traveling to:</label>
 
               <table class="table table-striped">
 
@@ -107,7 +107,27 @@
                     ?>
               </table>
             </div>
-          </div>        	
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Points of Interest:</label>
+
+              <table class="table table-striped">
+
+
+                      <?php 
+                      foreach ($terminal['Point'] as $item): ?>
+                      <?php if(is_array($item)){ ?>
+                <tr>
+                   <td><?php echo h($item['name']); ?>&nbsp;</td>
+                </tr>
+                    <?php }
+                      endforeach; 
+                    ?>
+              </table>
+            </div>
+          </div>          	
       	<div style="clear:both;"></div>
       	
         

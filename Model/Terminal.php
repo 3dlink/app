@@ -7,9 +7,11 @@ App::uses('AppModel', 'Model');
  * @property City $City
  * @property State $State
  * @property City $City
+ * @property Point $Point
  * @property City $City
  * @property Client $Client
  * @property Destination $Destination
+ * @property Point $Point
  */
 class Terminal extends AppModel {
 
@@ -70,6 +72,19 @@ class Terminal extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		),
+		'Point' => array(
+			'className' => 'Point',
+			'foreignKey' => 'terminal_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
 		)
 	);
 
@@ -111,6 +126,19 @@ class Terminal extends AppModel {
 			'joinTable' => 'destinations_terminals',
 			'foreignKey' => 'terminal_id',
 			'associationForeignKey' => 'destination_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
+		'Point' => array(
+			'className' => 'Point',
+			'joinTable' => 'points_terminals',
+			'foreignKey' => 'terminal_id',
+			'associationForeignKey' => 'point_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
