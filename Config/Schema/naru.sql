@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-09-2016 a las 22:06:41
+-- Tiempo de generación: 14-09-2016 a las 20:34:14
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -413,11 +413,38 @@ CREATE TABLE IF NOT EXISTS `points` (
   `name` varchar(255) NOT NULL,
   `lat` varchar(255) NOT NULL,
   `longitude` varchar(255) NOT NULL,
-  `destination_id` int(10) NOT NULL,
+  `country_id` int(10) NOT NULL,
+  `state_id` int(10) NOT NULL,
+  `city_id` int(10) NOT NULL,
+  `destination_id` int(10) DEFAULT NULL,
+  `terminal_id` int(10) NOT NULL,
   `price` float NOT NULL,
   `schedule` text NOT NULL,
   `payment` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `points`
+--
+
+INSERT INTO `points` (`id`, `name`, `lat`, `longitude`, `country_id`, `state_id`, `city_id`, `destination_id`, `terminal_id`, `price`, `schedule`, `payment`) VALUES
+(1, 'BaÃ±o', '0min', '0sec', 0, 0, 0, 1, 0, 0, 'all day', 'credit card'),
+(2, 'Cuarto', '0min', '0sec', 0, 0, 0, 1, 0, 0, 'Nights Only', 'credit card'),
+(8, 'TestDRIVE', '3', '4', 1, 3, 2, NULL, 2, 12, 'asdsadasd', 'credit card'),
+(9, 'Anotherasd', '3', '2', 1, 3, 2, NULL, 2, 2314310, 'asdfasdasd', 'Debit'),
+(10, 'EL PUTO PUNTO', '12', '12', 1, 1, 1, 1, 1, 364567, 'dasd', 'DEbito MAMAGUEVOOOO!');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `points_terminals`
+--
+
+CREATE TABLE IF NOT EXISTS `points_terminals` (
+`id` int(10) NOT NULL,
+  `terminal_id` int(10) NOT NULL,
+  `point_id` int(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1027,6 +1054,12 @@ ALTER TABLE `points`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `points_terminals`
+--
+ALTER TABLE `points_terminals`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `promotions`
 --
 ALTER TABLE `promotions`
@@ -1184,7 +1217,12 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `points`
 --
 ALTER TABLE `points`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT de la tabla `points_terminals`
+--
+ALTER TABLE `points_terminals`
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `promotions`
 --
