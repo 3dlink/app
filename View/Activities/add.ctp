@@ -43,9 +43,9 @@
 			    <div id="content_imgs"></div>
 
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
-          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'activities';" title="regresar" value = "Atr&aacute;s" style="width: 79px;">
+          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'activities';" title="Go Back" value = "Back" style="width: 79px;">
           <button type="submit" class="btn btn-primary">
-            Guardar
+            Save
           </button>
         </div>
       </div>          
