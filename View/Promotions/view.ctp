@@ -53,7 +53,7 @@
 
           
       		<div class="margenesVerticales" style="text-align:right;">
-	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'promotions';" title="regresar" value = "Atr&aacute;s" style="width: 79px;"> 	  
+	                <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'promotions';" title="Go Back" value = "Back" style="width: 79px;">
 				  </div>
       	</div>    
 </div>        

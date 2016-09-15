@@ -35,56 +35,56 @@
     <div class="col-md-6">
           <div class="form-group">
             <label>Name</label>
-            <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name','required'=>true)); ?>
+            <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'','required'=>true)); ?>
           </div>
        </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>Latitude</label>
-                <?php echo $this->Form->input('lat',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+                <?php echo $this->Form->input('lat',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>Longitude</label>
-                <?php echo $this->Form->input('longitude',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+                <?php echo $this->Form->input('longitude',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>Country</label>
-                <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Country')); ?>
+                <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'', 'id'=>'Country')); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>Region</label>
-                <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Region')); ?>
+                <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'', 'id'=>'Region')); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>State</label>
-                <?php echo $this->Form->input('state_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'State')); ?>
+                <?php echo $this->Form->input('state_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'', 'id'=>'State')); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>City</label>
-                <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'City')); ?>
+                <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'', 'id'=>'City')); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>Destination</label>
-                <?php echo $this->Form->input('destination_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'required'=>false, 'id'=>'Destination')); ?>
+                <?php echo $this->Form->input('destination_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'', 'required'=>false, 'id'=>'Destination')); ?>
               </div>
         </div>
 
@@ -98,26 +98,26 @@
         <div class="col-md-6">
               <div class="form-group">
                 <label>Price</label>
-                <?php echo $this->Form->input('price',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name','required'=>true)); ?>
+                <?php echo $this->Form->input('price',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'','required'=>true)); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>Payment</label>
-                <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+                <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'','options'=>array('0'=>'Select','Cash'=>'Cash','Debit'=>'Debit','Credit Card'=>'Credit Card'))); ?>
               </div>
         </div>
 
         <div class="col-md-6">
               <div class="form-group">
                 <label>Schedule</label>
-                <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+                <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
               </div>
         </div>
 
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
-          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'points';" title="regresar" value = "Atr&aacute;s" style="width: 79px;">
+          <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'points';" title="Go Back" value = "Back" style="width: 79px;">
           <button type="submit" class="btn btn-primary" id="savebutton">
             Save
           </button>
