@@ -83,6 +83,13 @@
 
 				<div class="col-md-6">
 			        <div class="form-group">
+			          <label>Environment</label>
+			          <?php echo $this->Form->input('environment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
 			          <label>Security</label>
 			          <?php echo $this->Form->input('security',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 			        </div>

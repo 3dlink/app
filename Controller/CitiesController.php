@@ -53,13 +53,13 @@ class CitiesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->City->create();
 			if ($this->City->save($this->request->data)) {
-				$this->Session->setFlash(__('The city has been saved.'));
+				$this->Session->setFlash(__('The city has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The city could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The city could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
-		$countries = $this->Destination->Country->find('list');
+		$countries = $this->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
 		$this->set(compact('countries'));
@@ -88,16 +88,16 @@ class CitiesController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->City->save($this->request->data)) {
-				$this->Session->setFlash(__('The city has been saved.'));
+				$this->Session->setFlash(__('The city has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The city could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The city could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('City.' . $this->City->primaryKey => $id));
 			$this->request->data = $this->City->find('first', $options);
 		}
-		$countries = $this->Destination->Country->find('list');
+		$countries = $this->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
 		$this->set(compact('countries'));
@@ -117,9 +117,9 @@ class CitiesController extends AppController {
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->City->delete()) {
-			$this->Session->setFlash(__('The city has been deleted.'));
+			$this->Session->setFlash(__('The city has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The city could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The city could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

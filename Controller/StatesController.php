@@ -53,13 +53,13 @@ class StatesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->State->create();
 			if ($this->State->save($this->request->data)) {
-				$this->Session->setFlash(__('The state has been saved.'));
+				$this->Session->setFlash(__('The state has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The state could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The state could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
-		$countries = $this->Destination->Country->find('list');
+		$countries = $this->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
 		$this->set(compact('countries'));
@@ -87,16 +87,16 @@ class StatesController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->State->save($this->request->data)) {
-				$this->Session->setFlash(__('The state has been saved.'));
+				$this->Session->setFlash(__('The state has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The state could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The state could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('State.' . $this->State->primaryKey => $id));
 			$this->request->data = $this->State->find('first', $options);
 		}
-		$countries = $this->Destination->Country->find('list');
+		$countries = $this->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
 		$this->set(compact('regions','countries'));
@@ -115,9 +115,9 @@ class StatesController extends AppController {
 			throw new NotFoundException(__('Invalid state'));
 		}
 		if ($this->State->delete()) {
-			$this->Session->setFlash(__('The state has been deleted.'));
+			$this->Session->setFlash(__('The state has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The state could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The state could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

@@ -45,17 +45,29 @@ class DestinationsController extends AppController {
 		$destination = $this->Destination->find('first',$options);
 		$this->set('destination', $destination);
 
+		$ranked = $destination['Destination']['ranking'];
+		$budval = $destination['Destination']['budget'];
+		$securyval = $destination['Destination']['security'];
+		$envval = $destination['Destination']['environment'];
 
 
 		///////////////////////////
 		if ($this->request->is('post')) {
 			$this->Commentary->create();
-			// debug($this->request->data);die;
+			// debug($destination['Destination']['ranking']);
+			// debug($ranked);die;
 			if ($this->Commentary->save($this->request->data)) {
-				$this->Session->setFlash(__('The commentary has been saved.'));
+				$this->Session->setFlash(__('The commentary has been saved.'), 'default', array('class' => 'success_message'));
+
+				$destination['Destination']['ranking'] = $ranked;
+				$destination['Destination']['budget'] = $budval;
+				$destination['Destination']['security'] = $securyval;
+				$destination['Destination']['environment'] = $envval;
+				$this->Destination->save($destination);
+
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The commentary could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The commentary could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		$destinations = $this->Commentary->Destination->find('list');
@@ -72,6 +84,8 @@ class DestinationsController extends AppController {
 			# code...
 		}
 		$this->set('comments',$comments);
+
+
 
 		$securyval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.security) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
 		$num = $securyval[0]['num'] + 1;
@@ -90,6 +104,9 @@ class DestinationsController extends AppController {
 
 		$ranked = ($envval+$securyval+$budval)/3;
 
+
+		$destination['Destination']['ranking'] = $ranked;
+
 		$this->set(compact('securyval', 'budval', 'envval','ranked'));
 
 		//////////////////////////////
@@ -107,11 +124,18 @@ class DestinationsController extends AppController {
 		$this->layout="admin";
 		if ($this->request->is('post')) {
 			$this->Destination->create();
-			if ($this->Destination->save($this->request->data)) {
-				$this->Session->setFlash(__('The destination has been saved.'));
+			$data = $this->request->data;
+			$securyval = $data['Destination']['security'];			
+			$budval = $data['Destination']['budget'];
+			$envval = $data['Destination']['environment'];
+
+			$ranked = ($securyval+$budval+$envval)/3;
+			$data['Destination']['ranking'] = $ranked;
+			if ($this->Destination->save($data)) {
+				$this->Session->setFlash(__('The destination has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The destination could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The destination could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		$types = $this->Destination->Type->find('list');
@@ -147,10 +171,10 @@ class DestinationsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Destination->save($this->request->data)) {
-				$this->Session->setFlash(__('The destination has been saved.'));
+				$this->Session->setFlash(__('The destination has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The destination could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The destination could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Destination.' . $this->Destination->primaryKey => $id));
@@ -181,9 +205,9 @@ class DestinationsController extends AppController {
 		}
 		// $this->request->allowMethod('post', 'delete');
 		if ($this->Destination->delete()) {
-			$this->Session->setFlash(__('The destination has been deleted.'));
+			$this->Session->setFlash(__('The destination has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The destination could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The destination could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

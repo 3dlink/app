@@ -52,10 +52,10 @@ class CountriesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Country->create();
 			if ($this->Country->save($this->request->data)) {
-				$this->Session->setFlash(__('The country has been saved.'));
+				$this->Session->setFlash(__('The country has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The country could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The country could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 	}
@@ -74,10 +74,10 @@ class CountriesController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Country->save($this->request->data)) {
-				$this->Session->setFlash(__('The country has been saved.'));
+				$this->Session->setFlash(__('The country has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The country could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The country could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Country.' . $this->Country->primaryKey => $id));
@@ -99,9 +99,9 @@ class CountriesController extends AppController {
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->Country->delete()) {
-			$this->Session->setFlash(__('The country has been deleted.'));
+			$this->Session->setFlash(__('The country has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The country could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The country could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

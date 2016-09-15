@@ -52,10 +52,10 @@ class ParksController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Park->create();
 			if ($this->Park->save($this->request->data)) {
-				$this->Session->setFlash(__('The park has been saved.'));
+				$this->Session->setFlash(__('The park has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The park could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The park could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 	}
@@ -74,10 +74,10 @@ class ParksController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Park->save($this->request->data)) {
-				$this->Session->setFlash(__('The park has been saved.'));
+				$this->Session->setFlash(__('The park has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The park could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The park could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Park.' . $this->Park->primaryKey => $id));
@@ -99,9 +99,9 @@ class ParksController extends AppController {
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->Park->delete()) {
-			$this->Session->setFlash(__('The park has been deleted.'));
+			$this->Session->setFlash(__('The park has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The park could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The park could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

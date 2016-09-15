@@ -52,10 +52,10 @@ class PromotionsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Promotion->create();
 			if ($this->Promotion->save($this->request->data)) {
-				$this->Session->setFlash(__('The promotion has been saved.'));
+				$this->Session->setFlash(__('The promotion has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The promotion could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The promotion could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		$clients = $this->Promotion->Client->find('list');
@@ -76,10 +76,10 @@ class PromotionsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Promotion->save($this->request->data)) {
-				$this->Session->setFlash(__('The promotion has been saved.'));
+				$this->Session->setFlash(__('The promotion has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The promotion could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The promotion could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Promotion.' . $this->Promotion->primaryKey => $id));
@@ -103,9 +103,9 @@ class PromotionsController extends AppController {
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->Promotion->delete()) {
-			$this->Session->setFlash(__('The promotion has been deleted.'));
+			$this->Session->setFlash(__('The promotion has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The promotion could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The promotion could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

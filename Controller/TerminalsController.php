@@ -54,16 +54,16 @@ class TerminalsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Terminal->create();
 			if ($this->Terminal->save($this->request->data)) {
-				$this->Session->setFlash(__('The terminal has been saved.'));
+				$this->Session->setFlash(__('The terminal has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The terminal could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The terminal could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
 		$destcities = $this->Terminal->City->find('list');
-		$countries = $this->Destination->Country->find('list');
+		$countries = $this->Terminal->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
 		$this->set(compact('clients', 'destinations','destcities','states','countries'));
@@ -91,10 +91,10 @@ class TerminalsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Terminal->save($this->request->data)) {
-				$this->Session->setFlash(__('The terminal has been saved.'));
+				$this->Session->setFlash(__('The terminal has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The terminal could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The terminal could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Terminal.' . $this->Terminal->primaryKey => $id));
@@ -103,7 +103,7 @@ class TerminalsController extends AppController {
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
 		$destcities = $this->Terminal->City->find('list');
-		$countries = $this->Destination->Country->find('list');
+		$countries = $this->Terminal->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
 		$this->set(compact('clients', 'destinations','destcities','states','countries'));
@@ -124,9 +124,9 @@ class TerminalsController extends AppController {
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->Terminal->delete()) {
-			$this->Session->setFlash(__('The terminal has been deleted.'));
+			$this->Session->setFlash(__('The terminal has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The terminal could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The terminal could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

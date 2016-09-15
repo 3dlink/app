@@ -54,7 +54,7 @@ class PointsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Point->create();
 			if ($this->Point->save($this->request->data)) {
-				$this->Session->setFlash(__('The point has been saved.'));
+				$this->Session->setFlash(__('The point has been saved.'), 'default', array('class' => 'success_message'));
 
 				// if ($this->request->data['Point']['terminal_id'] != null || $this->request->data['Point']['terminal_id'] != '0'){
 				// 	$aux['terminal_id'] = $this->request->data['Point']['terminal_id'];
@@ -64,7 +64,7 @@ class PointsController extends AppController {
 
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The point could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The point could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		$countries = $this->Point->Country->find('list');
@@ -95,7 +95,7 @@ class PointsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Point->save($this->request->data)) {
-				$this->Session->setFlash(__('The point has been saved.'));
+				$this->Session->setFlash(__('The point has been saved.'), 'default', array('class' => 'success_message'));
 
 
 				// if ($this->request->data['Point']['terminal_id'] != null || $this->request->data['Point']['terminal_id'] != '0'){
@@ -106,7 +106,7 @@ class PointsController extends AppController {
 
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The point could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The point could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Point.' . $this->Point->primaryKey => $id));
@@ -130,9 +130,9 @@ class PointsController extends AppController {
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->Point->delete()) {
-			$this->Session->setFlash(__('The point has been deleted.'));
+			$this->Session->setFlash(__('The point has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The point could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The point could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

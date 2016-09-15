@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-09-2016 a las 20:34:14
+-- Tiempo de generación: 15-09-2016 a las 20:32:07
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `cities` (
   `region_id` int(10) NOT NULL,
   `country_id` int(10) NOT NULL,
   `terminal_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `cities`
@@ -76,7 +76,8 @@ INSERT INTO `cities` (`id`, `name`, `state_id`, `region_id`, `country_id`, `term
 (2, 'Caracas', 3, 2, 1, 0),
 (3, 'Petare', 3, 2, 1, 0),
 (4, 'San Cristobal', 1, 1, 1, 0),
-(5, 'Betis', 4, 3, 3, 0);
+(5, 'Betis', 4, 3, 3, 0),
+(6, 'Barquisimeto', 5, 2, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -175,7 +176,7 @@ CREATE TABLE IF NOT EXISTS `commentaries` (
   `security` int(5) NOT NULL,
   `environment` int(5) NOT NULL,
   `budget` int(5) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `commentaries`
@@ -185,7 +186,19 @@ INSERT INTO `commentaries` (`id`, `comment`, `destination_id`, `user_id`, `secur
 (1, 'adkfjhakjasj', 1, 1, 1, 2, 3),
 (2, 'Another commentary', 1, 1, 2, 3, 44),
 (3, 'Quiero agregar un comment', 2, 1, 1, 2, 5),
-(4, 'Hello', 1, 1, 3, 2, 1);
+(4, 'Hello', 1, 1, 3, 2, 1),
+(5, 'Wenas', 1, 1, 5, 5, 5),
+(6, 'Que buena esta esa salvaje', 4, 1, 3, 4, 5),
+(7, 'otro comment pa ve', 4, 1, 1, 1, 1),
+(8, 'probando', 4, 1, 4, 5, 4),
+(9, 'ahi otro pa ve', 4, 1, 1, 1, 1),
+(10, 'rtwere', 4, 1, 4, 4, 4),
+(11, 'NU osos', 4, 1, 2, 2, 2),
+(12, 'dfsdfsdf', 4, 1, 1, 1, 1),
+(13, 'Another one', 4, 1, 2, 2, 2),
+(14, 'asdjhjasjddasd', 4, 1, 5, 5, 5),
+(15, 'asdasdasd', 4, 1, 5, 5, 5),
+(16, 'hello', 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -196,7 +209,7 @@ INSERT INTO `commentaries` (`id`, `comment`, `destination_id`, `user_id`, `secur
 CREATE TABLE IF NOT EXISTS `countries` (
 `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `countries`
@@ -205,7 +218,8 @@ CREATE TABLE IF NOT EXISTS `countries` (
 INSERT INTO `countries` (`id`, `name`) VALUES
 (1, 'Venezuela'),
 (2, 'Colombia'),
-(3, 'EspaÃ±a');
+(3, 'EspaÃ±a'),
+(4, 'Chile');
 
 -- --------------------------------------------------------
 
@@ -227,12 +241,12 @@ CREATE TABLE IF NOT EXISTS `destinations` (
   `lat` varchar(255) NOT NULL,
   `longitude` varchar(255) NOT NULL,
   `photo1` varchar(255) NOT NULL,
-  `ranking` int(1) NOT NULL,
-  `security` int(1) NOT NULL,
-  `environment` int(1) NOT NULL,
-  `budget` int(1) NOT NULL,
+  `ranking` float NOT NULL,
+  `security` float NOT NULL,
+  `environment` float NOT NULL,
+  `budget` float NOT NULL,
   `affluence` int(3) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `destinations`
@@ -240,7 +254,9 @@ CREATE TABLE IF NOT EXISTS `destinations` (
 
 INSERT INTO `destinations` (`id`, `name`, `description`, `type_id`, `state_id`, `city_id`, `country_id`, `region_id`, `park_id`, `point_id`, `lat`, `longitude`, `photo1`, `ranking`, `security`, `environment`, `budget`, `affluence`) VALUES
 (1, 'Mi Casa', 'Best place in da world', 1, 1, 1, 1, 1, 1, 0, '360m', '10sec', 'img1471380349NKJ.jpg', 0, 0, 0, 1, 2),
-(2, 'Tuja', 'Tremendas orgias en las noches', 1, 3, 2, 1, 2, 5, 0, '987812m', '134134sec', 'img1471991127LIN.jpg', 0, 0, 0, 70000, 5);
+(2, 'Tuja', 'Tremendas orgias en las noches', 1, 3, 2, 1, 2, 5, 0, '987812m', '134134sec', 'img1471991127LIN.jpg', 0, 0, 0, 70000, 5),
+(3, 'Otro SItio', 'lkaskskajflkhjkasdasd', 3, 3, 2, 1, 2, 0, 0, '100', '100', 'img1473959707ILJ.jpg', 0, 5, 2, 3, 1),
+(4, 'Test Place', '', 3, 1, 1, 1, 1, 3, 0, '34', '234', 'img1473960815UMC.jpg', 2.66806, 2.52639, 2.72639, 2.75139, 2);
 
 -- --------------------------------------------------------
 
@@ -444,7 +460,7 @@ CREATE TABLE IF NOT EXISTS `points_terminals` (
 `id` int(10) NOT NULL,
   `terminal_id` int(10) NOT NULL,
   `point_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -479,7 +495,7 @@ CREATE TABLE IF NOT EXISTS `regions` (
 `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL,
   `country_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `regions`
@@ -488,7 +504,8 @@ CREATE TABLE IF NOT EXISTS `regions` (
 INSERT INTO `regions` (`id`, `name`, `country_id`) VALUES
 (1, 'Los Andes', 1),
 (2, 'Litoral Central', 1),
-(3, 'AndalucÃ­a', 3);
+(3, 'AndalucÃ­a', 3),
+(4, 'Oriente', 1);
 
 -- --------------------------------------------------------
 
@@ -521,7 +538,7 @@ CREATE TABLE IF NOT EXISTS `states` (
   `name` varchar(255) NOT NULL,
   `region_id` int(10) NOT NULL,
   `country_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `states`
@@ -531,7 +548,8 @@ INSERT INTO `states` (`id`, `name`, `region_id`, `country_id`) VALUES
 (1, 'TÃ¡chira', 1, 1),
 (2, 'MÃ©rida', 1, 1),
 (3, 'Distrito Federal', 2, 1),
-(4, 'Numancia', 3, 3);
+(4, 'Numancia', 3, 3),
+(5, 'Lara', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -1137,7 +1155,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `cities`
 --
 ALTER TABLE `cities`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `cities_terminals`
 --
@@ -1162,17 +1180,17 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `commentaries`
 --
 ALTER TABLE `commentaries`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT de la tabla `countries`
 --
 ALTER TABLE `countries`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `destinations`
 --
 ALTER TABLE `destinations`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `destinations_terminals`
 --
@@ -1222,7 +1240,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 -- AUTO_INCREMENT de la tabla `points_terminals`
 --
 ALTER TABLE `points_terminals`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `promotions`
 --
@@ -1232,7 +1250,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT de la tabla `regions`
 --
 ALTER TABLE `regions`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `services`
 --
@@ -1242,7 +1260,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT de la tabla `states`
 --
 ALTER TABLE `states`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `terminals`
 --

@@ -53,13 +53,13 @@ class RegionsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Region->create();
 			if ($this->Region->save($this->request->data)) {
-				$this->Session->setFlash(__('The region has been saved.'));
+				$this->Session->setFlash(__('The region has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The region could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The region could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
-		$countries = $this->Destination->Country->find('list');
+		$countries = $this->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
 		$this->set(compact('countries'));
@@ -87,16 +87,16 @@ class RegionsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Region->save($this->request->data)) {
-				$this->Session->setFlash(__('The region has been saved.'));
+				$this->Session->setFlash(__('The region has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The region could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The region could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Region.' . $this->Region->primaryKey => $id));
 			$this->request->data = $this->Region->find('first', $options);
 		}
-		$countries = $this->Destination->Country->find('list');
+		$countries = $this->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
 		$this->set(compact('countries'));
@@ -115,9 +115,9 @@ class RegionsController extends AppController {
 			throw new NotFoundException(__('Invalid region'));
 		}
 		if ($this->Region->delete()) {
-			$this->Session->setFlash(__('The region has been deleted.'));
+			$this->Session->setFlash(__('The region has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The region could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The region could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

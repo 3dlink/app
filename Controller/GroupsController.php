@@ -73,9 +73,9 @@ class GroupsController extends AppController {
 		$res = array('group_id'=>$group_id, 'user_id'=>$thisuser);
 
 		if($this->GroupsUser->save($res)){
-				$this->Session->setFlash(__('You have been added to the group.'));
+				$this->Session->setFlash(__('You have been added to the group.'), 'default', array('class' => 'success_message'));
 		}else{
-				$this->Session->setFlash(__('You could not be added to the group. Please try again.'));
+				$this->Session->setFlash(__('You could not be added to the group. Please try again.'), 'default', array('class' => 'error_message'));
 		}
 		
 		return $this->redirect(array('action' => 'index'));
@@ -91,9 +91,9 @@ class GroupsController extends AppController {
 		$this->GroupsUser->id = $relacion_id['GroupsUser']['id'];
 
 		if($this->GroupsUser->delete()){
-				$this->Session->setFlash(__('You have been deleted from the group.'));
+				$this->Session->setFlash(__('You have been deleted from the group.'), 'default', array('class' => 'success_message'));
 		}else{
-				$this->Session->setFlash(__('You could not be deleted from the group. Please try again.'));
+				$this->Session->setFlash(__('You could not be deleted from the group. Please try again.'), 'default', array('class' => 'error_message'));
 		}
 		
 		return $this->redirect(array('action' => 'index'));
@@ -109,10 +109,10 @@ class GroupsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Group->create();
 			if ($this->Group->save($this->request->data)) {
-				$this->Session->setFlash(__('The group has been saved.'));
+				$this->Session->setFlash(__('The group has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The group could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The group could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		$destinations = $this->Group->Destination->find('list');
@@ -134,10 +134,10 @@ class GroupsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Group->save($this->request->data)) {
-				$this->Session->setFlash(__('The group has been saved.'));
+				$this->Session->setFlash(__('The group has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The group could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The group could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Group.' . $this->Group->primaryKey => $id));
@@ -162,9 +162,9 @@ class GroupsController extends AppController {
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->Group->delete()) {
-			$this->Session->setFlash(__('The group has been deleted.'));
+			$this->Session->setFlash(__('The group has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The group could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The group could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
