@@ -100,7 +100,10 @@ class CitiesController extends AppController {
 		$countries = $this->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
-		$this->set(compact('countries'));
+
+		$regions = $this->Region->find('list', array('conditions'=> array('Region.country_id = '.$this->request->data['Country']['id'])));
+		$states = $this->State->find('list', array('conditions'=> array('State.region_id = '.$this->request->data['Country']['id'])));
+		$this->set(compact('countries','regions','states'));
 	}
 
 /**

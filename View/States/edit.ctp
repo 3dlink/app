@@ -38,16 +38,11 @@
 <script type="text/javascript">
 
 
-
-      $('#Country').val(0)
-
       $('#Country').change(function(){
         var value = $(this).val();
         var back = "Country";
         var next = "Region";
         var opt = changeSelect(back,next,value);
-        // alert(opt)
-        // $('#region').html(opt);
       })
 
       $('#Region').change(function(){
@@ -55,7 +50,6 @@
         var back = "Region";
         var next = "State";
         var opt = changeSelect(back,next,value);
-        // $('#state').html(opt);
       })
 
 

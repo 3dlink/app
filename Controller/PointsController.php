@@ -112,8 +112,14 @@ class PointsController extends AppController {
 			$options = array('conditions' => array('Point.' . $this->Point->primaryKey => $id));
 			$this->request->data = $this->Point->find('first', $options);
 		}
+		debug($this->request->data['City']['id']);
 		$countries = $this->Point->Country->find('list');
-		$this->set(compact('countries'));
+		$regions = $this->Region->find('list', array('conditions'=> array('Region.country_id = '.$this->request->data['Country']['id'])));
+		$states = $this->State->find('list', array('conditions'=> array('State.region_id = '.$this->request->data['Country']['id'])));
+		$cities = $this->City->find('list', array('conditions'=> array('City.region_id = '.$this->request->data['Country']['id'])));
+		$destinations = $this->Destination->find('list', array('conditions'=> array('Destination.city_id = '.$this->request->data['City']['id'])));
+		$terminals = $this->Terminal->find('list', array('conditions'=> array('Terminal.city_id = '.$this->request->data['City']['id'])));
+		$this->set(compact('countries','regions','states','cities','destinations','terminals'));
 	}
 
 /**

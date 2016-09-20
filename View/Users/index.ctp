@@ -31,6 +31,7 @@
                   <th>Name</th>
                   <th>Username</th>
                   <th>Email</th>
+                  <th>Ranking</th>
                   <th>City</th>
                   <th>Country</th>
                   <th></th>

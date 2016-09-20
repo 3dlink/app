@@ -27,7 +27,12 @@ class DestinationTest extends CakeTestCase {
 		'app.foruma',
 		'app.forumq',
 		'app.group',
+		'app.groups_user',
 		'app.login_token',
+		'app.types_user',
+		'app.cities_terminal',
+		'app.point',
+		'app.points_terminal',
 		'app.client',
 		'app.service',
 		'app.promotion',
@@ -35,7 +40,6 @@ class DestinationTest extends CakeTestCase {
 		'app.clients_terminal',
 		'app.destinations_terminal',
 		'app.park',
-		'app.point',
 		'app.activity',
 		'app.activities_destination'
 	);

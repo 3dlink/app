@@ -3561,3 +3561,529 @@ Request URL: /isia/css/multiple-select.png
 Stack Trace:
 #0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-09-16 15:30:07 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 101]
+2016-09-16 15:30:07 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 15:30:30 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 101]
+2016-09-16 15:30:30 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 15:33:02 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 101]
+2016-09-16 15:33:02 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 15:33:42 Error: Fatal Error (1): Cannot use object of type StatesController as array in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 101]
+2016-09-16 15:33:42 Error: [FatalErrorException] Cannot use object of type StatesController as array
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 101, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 101, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 16:00:22 Error: Fatal Error (1): Cannot use object of type StatesController as array in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 101]
+2016-09-16 16:00:22 Error: [FatalErrorException] Cannot use object of type StatesController as array
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 101, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 101, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 16:01:43 Error: Fatal Error (1): Call to a member function find() on array in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 102]
+2016-09-16 16:01:43 Error: [FatalErrorException] Call to a member function find() on array
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:12:53 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 102]
+2016-09-16 22:12:53 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:13:39 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 102]
+2016-09-16 22:13:39 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 16:14:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Countryid' in 'where clause'
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Region`...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Region`...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Region`...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Region), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\StatesController.php(102): Model->find('list', Array)
+#7 [internal function]: StatesController->edit('1')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(StatesController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StatesController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 22:16:59 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 126]
+2016-09-16 22:16:59 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:17:38 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 127]
+2016-09-16 22:17:38 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:17:42 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 127]
+2016-09-16 22:17:42 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:18:09 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 127]
+2016-09-16 22:18:09 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:18:54 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 126]
+2016-09-16 22:18:54 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:20:06 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 92]
+2016-09-16 22:20:06 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:20:08 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 92]
+2016-09-16 22:20:08 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:20:11 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 92]
+2016-09-16 22:20:11 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:20:46 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 92]
+2016-09-16 22:20:46 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 92, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:21:01 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 115]
+2016-09-16 22:21:01 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 115)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 115, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 115, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:23:12 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 126]
+2016-09-16 22:23:12 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:23:44 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 126]
+2016-09-16 22:23:44 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 126, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:24:06 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 127]
+2016-09-16 22:24:06 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 22:24:07 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\isia\Controller\StatesController.php, line 127]
+2016-09-16 22:24:07 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /isia/states/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 127, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-09-16 16:58:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `State`....', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `State`....', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `State`....', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(State), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(117): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 16:59:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /isia/points/edit/8
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `State`....', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `State`....', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `State`....', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(State), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(117): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('8')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:00:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `State`....', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `State`....', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `State`....', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(State), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(117): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:02:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `State`....', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `State`....', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `State`....', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(State), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(117): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:03:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `State`....', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `State`....', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `State`....', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(State), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(118): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:13:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.city_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:13:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.state_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:14:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.state_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:14:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.state_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:16:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.state_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:17:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.city_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:17:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.city_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:17:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.city_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:18:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.country_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:20:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.point_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:22:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.city_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-16 17:22:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Terminals.city_id' in 'where clause'
+Request URL: /isia/points/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Termina...', Array)
+#2 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Termina...', Array, Array)
+#3 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Termina...', false)
+#4 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2951): DboSource->read(Object(Terminal), Array)
+#5 C:\xampp\htdocs\isia\cakephp\lib\Cake\Model\Model.php(2923): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\isia\Controller\PointsController.php(121): Model->find('list', Array)
+#7 [internal function]: PointsController->edit('10')
+#8 C:\xampp\htdocs\isia\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PointsController), Array)
+#9 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\isia\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PointsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-09-20 22:40:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-20 22:40:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /isia/css/multiple-select.png
+Stack Trace:
+#0 C:\xampp\htdocs\isia\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

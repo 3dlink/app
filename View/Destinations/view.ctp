@@ -96,6 +96,27 @@
                     <?php echo h($destination['Destination']['description'])?>
             </div>
           </div>
+
+          <div style="clear:both;"></div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Activities in this destination:</label>
+
+              <table class="table table-striped">
+
+
+                      <?php 
+                      foreach ($destination['Activity'] as $item): ?>
+                      <?php if(is_array($item)){ ?>
+                <tr>
+                   <td><?php echo h($item['name']); ?>&nbsp;</td>
+                </tr>
+                    <?php }
+                      endforeach; 
+                    ?>
+              </table>
+            </div>
+          </div>  
       		
           
           

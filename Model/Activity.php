@@ -4,6 +4,7 @@ App::uses('AppModel', 'Model');
  * Activity Model
  *
  * @property Destination $Destination
+ * @property Destination $Destination
  */
 class Activity extends AppModel {
 
@@ -16,6 +17,28 @@ class Activity extends AppModel {
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Destination' => array(
+			'className' => 'Destination',
+			'foreignKey' => 'activity_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 
 /**
  * hasAndBelongsToMany associations

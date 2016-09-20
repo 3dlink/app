@@ -69,8 +69,8 @@
 
 				<div class="col-md-6">
 			        <div class="form-group">
-			          <label>Budget</label>
-			          <?php echo $this->Form->input('budget',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+			          <label>Activities</label>
+			          <?php echo $this->Form->input('Activity',array('div'=>false,'multiple'=>true,'label'=>false,'class'=>'form-control','type'=>'select','placeholder'=>' ','id'=>'select_act','options'=>$activities)); ?>
 			        </div>
 	      		</div>
 
@@ -78,6 +78,15 @@
 			        <div class="form-group">
 			          <label>Affluence</label>
 			          <?php echo $this->Form->input('affluence',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+			        </div>
+	      		</div>
+
+          <div style="clear:both;"></div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Budget</label>
+			          <?php echo $this->Form->input('budget',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 			        </div>
 	      		</div>
 
@@ -99,6 +108,13 @@
 			        <div class="form-group">
 			          <label>Description</label>
 			          <?php echo $this->Form->input('description',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+			        </div>
+	      		</div>
+
+	      		<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Schedule</label>
+			          <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
 			        </div>
 	      		</div>
 
@@ -132,6 +148,7 @@
 	});
 
 
+    $('#select_act').multipleSelect();
     $('#park').val("");
     // $('#Country').val("");
     $(document).ready(function(){

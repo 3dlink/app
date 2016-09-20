@@ -9,6 +9,8 @@ App::uses('AppModel', 'Model');
  * @property Country $Country
  * @property Region $Region
  * @property Park $Park
+ * @property Activity $Activity
+ * @property Point $Point
  * @property Commentary $Commentary
  * @property Forumq $Forumq
  * @property Group $Group
@@ -73,6 +75,20 @@ class Destination extends AppModel {
 		'Park' => array(
 			'className' => 'Park',
 			'foreignKey' => 'park_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Activity' => array(
+			'className' => 'Activity',
+			'foreignKey' => 'activity_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Point' => array(
+			'className' => 'Point',
+			'foreignKey' => 'point_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
