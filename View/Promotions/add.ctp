@@ -48,6 +48,41 @@
 			        </div>
 	      		</div>
 
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Country</label>
+			          <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Country')); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Region</label>
+			          <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Region')); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>State</label>
+			          <?php echo $this->Form->input('state_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'State')); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>City</label>
+			          <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'City')); ?>
+			        </div>
+	      		</div>
+
+				<div class="col-md-6">
+			        <div class="form-group">
+			          <label>Destination</label>
+			          <?php echo $this->Form->input('destination_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name', 'id'=>'Destination')); ?>
+			        </div>
+	      		</div>
+
 				<div class="col-md-12">
 			        <div class="form-group">
 			          <label>Description</label>
@@ -105,5 +140,60 @@
 			$('#content_imgs').append('<input type="hidden" value='+data.xhr.response+' name="data[Promotion][photo2]">');
 	  }
 	});
+
+    $(document).ready(function(){
+
+
+      $('#Country').change(function(){
+        var value = $(this).val();
+        var back = "Country";
+        var next = "Region";
+        var opt = changeSelect(back,next,value,'destinations');
+        // alert(opt)
+        // $('#region').html(opt);
+      })
+
+      $('#Region').change(function(){
+        var value = $(this).val();
+        var back = "Region";
+        var next = "State";
+        var opt = changeSelect(back,next,value,'destinations');
+        // $('#state').html(opt);
+      })
+
+      $('#State').change(function(){
+        var value = $(this).val();
+        var back = "State";
+        var next = "City";
+        var opt = changeSelect(back,next,value,'destinations');
+        // $('#city').html(opt);
+      })
+
+      $('#City').change(function(){
+        var value = $(this).val();
+        var back = "City";
+        var next = "Destination";
+        var opt = changeSelect(back,next,value,'destinations');
+        // $('#city').html(opt);
+      })
+
+    })
+
+    function changeSelect(back,next,value,controller){
+      $.ajax({
+        url: WEBROOT+controller+'/list_ajax/'+back+"/"+next+"/"+value,
+        type:'POST',
+        dataType: 'json',
+        success:function(data){
+          var htmlContent = "<option value=''>-- Select -- </option>";
+          for (var i = 0; i < data.length; i++) {
+
+            htmlContent += "<option value='"+data[i][next]['id']+"'>"+data[i][next]['name']+"</option>";
+          }
+          $('#'+next).html(htmlContent)
+        },
+        error: function(){}
+      })
+    }
 
 </script>

@@ -45,6 +45,12 @@
 
 	      		<?php echo $this->Form->input('user_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$this->UserAuth->getUserId())); ?>
 
+	      		<?php
+					$today = date("F j, Y, g:i a");
+				?>
+
+	      		<?php echo $this->Form->input('qdate',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$today)); ?>
+
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
           <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'forumqs';" title="Go Back" value = "Back" style="width: 79px;">
           <button type="submit" class="btn btn-primary">

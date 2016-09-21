@@ -68,4 +68,14 @@
 ?>
 </ul>
 
-</div>	
+</div>
+<script type="text/javascript">
+
+
+          $(document).ready(function() {
+            // fade out flash 'success' messages
+            $('.success-message').delay(800).hide('highlight', {color: '#ffffff'}, 1000);
+          }); 
+
+
+</script>

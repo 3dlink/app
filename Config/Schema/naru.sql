@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-09-2016 a las 23:19:20
+-- Tiempo de generación: 21-09-2016 a las 22:05:38
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -30,15 +30,29 @@ CREATE TABLE IF NOT EXISTS `activities` (
 `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `activities`
 --
 
 INSERT INTO `activities` (`id`, `name`, `photo`) VALUES
-(1, 'Hello', 'img1470945158KMF.jpg'),
-(2, 'una ahi blondes 2', 'img1471990182GAU.jpg');
+(1, 'Hello!!', 'img1470945158KMF.jpg'),
+(2, 'una ahi blondes 2', 'img1471990182GAU.jpg'),
+(3, 'Testing', 'img1474469523JD8.png'),
+(4, 'Testing 2', 'img14744695619L4.jpg'),
+(5, 'Test 3', 'img1474469752VKH.jpg'),
+(6, 'Tits', 'img1474469993I5J.jpg'),
+(7, 'Sdasdasd', 'img1474470104ZMU.jpg'),
+(8, 'asdasd', 'img14744705175RE.jpg'),
+(9, 'asdasdasd', 'img14744705488II.jpg'),
+(10, 'asdasdasd', 'img1474470944UWV.gif'),
+(11, 'fsdfsdf', 'img1474471088QVF.jpg'),
+(12, 'Sadasdasd', 'img1474471141FQS.png'),
+(13, 'Sdasdasdsa', '[false,false]'),
+(14, 'dfsdgfsgggh', 'img14744713225AC.jpg'),
+(15, 'wqewqrwqrwqr', 'img1474471919W6H.gif'),
+(16, 'asdffasf', '');
 
 -- --------------------------------------------------------
 
@@ -134,7 +148,7 @@ CREATE TABLE IF NOT EXISTS `clients` (
   `photo_1` varchar(255) NOT NULL,
   `photo_2` varchar(255) NOT NULL,
   `payment` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `clients`
@@ -144,7 +158,9 @@ INSERT INTO `clients` (`id`, `name`, `service_id`, `schedule`, `price`, `country
 (1, 'Jungle Men', 3, 'Summer', 100000, 0, 0, 0, 0, '60min', '15seg', 'img14713633661SA.jpg', 'img1471363368LXK.jpg', 'Cash'),
 (2, 'Alirio', 3, 'day', 1000000, 0, 0, 0, 0, '60min', '45sec', 'img1471990799SDY.jpg', 'img1471990809QWD.jpg', 'credit card'),
 (3, 'Sapitos Co.', 4, 'hello, now im a text area', 10000, 0, 0, 0, 0, '5min', '350seg', 'img1473194689EXE.jpg', 'img1473194696HYO.jpg', 'credit card'),
-(4, 'Bellezas', 2, 'Verano', 9913840000, 1, 2, 3, 2, '30min', '60sec', 'img1473361781WTP.jpg', 'img1473362946W6D.jpg', 'credit card');
+(4, 'Bellezas', 2, 'Verano', 9913840000, 1, 2, 3, 2, '30min', '60sec', 'img1473361781WTP.jpg', 'img1473362946W6D.jpg', 'credit card'),
+(5, 'xcxzc', 2, 'asdasdas', 123, 1, 2, 3, 2, '1', '1', '', '', 'All'),
+(6, 'New Test', 2, 'sas', 12, 1, 2, 3, 2, '1', '1', '', '', 'All');
 
 -- --------------------------------------------------------
 
@@ -184,7 +200,7 @@ CREATE TABLE IF NOT EXISTS `commentaries` (
   `security` float NOT NULL,
   `environment` float NOT NULL,
   `budget` float NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `commentaries`
@@ -236,7 +252,8 @@ INSERT INTO `commentaries` (`id`, `comment`, `destination_id`, `user_id`, `secur
 (43, '<3', 13, 1, 1, 1, 1),
 (44, '<3 <3 <3 ', 13, 1, 2, 2, 2),
 (45, '<3', 14, 1, 1, 1, 1),
-(46, '<3 <3', 14, 1, 2, 2, 2);
+(46, '<3 <3', 14, 1, 2, 2, 2),
+(47, ':)', 9, 1, 5, 5, 5);
 
 -- --------------------------------------------------------
 
@@ -297,7 +314,7 @@ CREATE TABLE IF NOT EXISTS `destinations` (
 --
 
 INSERT INTO `destinations` (`id`, `name`, `description`, `schedule`, `type_id`, `state_id`, `city_id`, `country_id`, `region_id`, `park_id`, `activity_id`, `point_id`, `lat`, `longitude`, `photo1`, `ranking`, `security`, `environment`, `budget`, `fi_ranking`, `fi_security`, `fi_environment`, `fi_budget`, `affluence`) VALUES
-(9, 'Mi Casa', '5', NULL, 3, 3, 2, 1, 2, 0, 0, 0, '1', '1', 'img14744021204W6.jpg', 2.33333, 2.33333, 2.33333, 2.33333, 5, 5, 5, 5, 5555),
+(9, 'Mi Casa', '5', NULL, 3, 3, 2, 1, 2, 0, 0, 0, '1', '1', 'img14744021204W6.jpg', 3.66667, 3.66667, 3.66667, 3.66667, 5, 5, 5, 5, 5555),
 (10, 'Prueba', '5', NULL, 2, 1, 4, 1, 1, 0, 0, 0, '1', '1', '', 3.5, 3.5, 3.5, 3.5, 5, 5, 5, 5, 345),
 (12, 'Nueva', '5', NULL, 3, 3, 2, 1, 2, 1, 0, 0, '1', '1', '', 5, 5, 5, 5, 5, 5, 5, 5, 5),
 (13, 'TestNewCheck', '5', NULL, 3, 3, 2, 1, 2, 2, 0, 0, '12', '12', '', 2.66667, 2.66667, 2.66667, 2.66667, 5, 5, 5, 5, 12),
@@ -318,7 +335,7 @@ CREATE TABLE IF NOT EXISTS `destinations_terminals` (
   `hours` int(10) NOT NULL,
   `payment` varchar(255) NOT NULL,
   `company` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -329,19 +346,22 @@ CREATE TABLE IF NOT EXISTS `destinations_terminals` (
 CREATE TABLE IF NOT EXISTS `foruma` (
 `id` int(10) NOT NULL,
   `answer` text NOT NULL,
+  `adate` varchar(255) NOT NULL,
   `user_id` int(10) NOT NULL,
   `forumq_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `foruma`
 --
 
-INSERT INTO `foruma` (`id`, `answer`, `user_id`, `forumq_id`) VALUES
-(1, 'Si, seguramente', 1, 1),
-(2, 'Es posible que tengan que soplar', 1, 1),
-(3, 'No, busquen donde irse', 1, 1),
-(4, 'Acaba de rebotar a una pues...', 1, 2);
+INSERT INTO `foruma` (`id`, `answer`, `adate`, `user_id`, `forumq_id`) VALUES
+(1, 'Si, seguramente', '', 1, 1),
+(2, 'Es posible que tengan que soplar', '', 1, 1),
+(3, 'No, busquen donde irse', '', 1, 1),
+(4, 'Acaba de rebotar a una pues...', '', 1, 2),
+(5, 'Hello', 'September 21, 2016', 1, 11),
+(6, 'Testing', 'September 21, 2016, 1:59 pm', 1, 12);
 
 -- --------------------------------------------------------
 
@@ -352,17 +372,26 @@ INSERT INTO `foruma` (`id`, `answer`, `user_id`, `forumq_id`) VALUES
 CREATE TABLE IF NOT EXISTS `forumq` (
 `id` int(10) NOT NULL,
   `question` text NOT NULL,
+  `qdate` varchar(255) NOT NULL,
   `destination_id` int(10) NOT NULL,
   `user_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `forumq`
 --
 
-INSERT INTO `forumq` (`id`, `question`, `destination_id`, `user_id`) VALUES
-(1, 'Hay cama pa tanta gente?', 1, 1),
-(2, 'A Diego le gustan las gorditas??', 1, 1);
+INSERT INTO `forumq` (`id`, `question`, `qdate`, `destination_id`, `user_id`) VALUES
+(1, 'Hay cama pa tanta gente?', '0000-00-00', 9, 1),
+(2, 'A Diego le gustan las gorditas??', '0000-00-00', 13, 1),
+(4, 'Hello!?', '0000-00-00', 9, 1),
+(6, 'asdsadasd', '0000-00-00', 9, 1),
+(7, 'asdasffasf', '0000-00-00', 9, 1),
+(8, 'Alirio!?', '0000-00-00', 9, 1),
+(9, 'asdasdasd', '0000-00-00', 9, 1),
+(10, 'asdasdasdasd', '2016 September 21', 9, 1),
+(11, 'sadasdasd', 'September 21, 2016', 9, 1),
+(12, 'tESTING', 'September 21, 2016, 1:59 pm', 9, 1);
 
 -- --------------------------------------------------------
 
@@ -511,15 +540,21 @@ CREATE TABLE IF NOT EXISTS `promotions` (
   `price` float NOT NULL,
   `photo1` varchar(255) NOT NULL,
   `photo2` varchar(255) NOT NULL,
-  `client_id` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `client_id` int(10) NOT NULL,
+  `country_id` int(10) NOT NULL,
+  `region_id` int(10) NOT NULL,
+  `state_id` int(10) NOT NULL,
+  `city_id` int(10) NOT NULL,
+  `destination_id` int(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `promotions`
 --
 
-INSERT INTO `promotions` (`id`, `name`, `description`, `price`, `photo1`, `photo2`, `client_id`) VALUES
-(1, 'Air Conditioner', 'A promotion, a very good promotion', 50000, 'img1472670606MO0.jpg', 'img14726706209CB.jpg', 1);
+INSERT INTO `promotions` (`id`, `name`, `description`, `price`, `photo1`, `photo2`, `client_id`, `country_id`, `region_id`, `state_id`, `city_id`, `destination_id`) VALUES
+(1, 'Air Conditioner', 'A promotion, a very good promotion', 50000, 'img1472670606MO0.jpg', 'img14726706209CB.jpg', 1, 0, 0, 0, 0, 0),
+(2, '1', '12', 1, 'img147448518518O.jpg', 'img1474485194POK.gif', 5, 1, 2, 3, 2, 14);
 
 -- --------------------------------------------------------
 
@@ -1181,7 +1216,7 @@ ALTER TABLE `user_group_permissions`
 -- AUTO_INCREMENT de la tabla `activities`
 --
 ALTER TABLE `activities`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT de la tabla `activities_destinations`
 --
@@ -1201,7 +1236,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 -- AUTO_INCREMENT de la tabla `clients`
 --
 ALTER TABLE `clients`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `clients_destinations`
 --
@@ -1216,7 +1251,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `commentaries`
 --
 ALTER TABLE `commentaries`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=47;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
 --
 -- AUTO_INCREMENT de la tabla `countries`
 --
@@ -1231,17 +1266,17 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 -- AUTO_INCREMENT de la tabla `destinations_terminals`
 --
 ALTER TABLE `destinations_terminals`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `foruma`
 --
 ALTER TABLE `foruma`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `forumq`
 --
 ALTER TABLE `forumq`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT de la tabla `groups`
 --
@@ -1281,7 +1316,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `promotions`
 --
 ALTER TABLE `promotions`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `regions`
 --

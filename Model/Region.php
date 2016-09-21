@@ -4,7 +4,10 @@ App::uses('AppModel', 'Model');
  * Region Model
  *
  * @property Country $Country
+ * @property City $City
+ * @property Client $Client
  * @property Destination $Destination
+ * @property Promotion $Promotion
  * @property State $State
  */
 class Region extends AppModel {
@@ -40,8 +43,47 @@ class Region extends AppModel {
  * @var array
  */
 	public $hasMany = array(
+		'City' => array(
+			'className' => 'City',
+			'foreignKey' => 'region_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Client' => array(
+			'className' => 'Client',
+			'foreignKey' => 'region_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'Destination' => array(
 			'className' => 'Destination',
+			'foreignKey' => 'region_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Promotion' => array(
+			'className' => 'Promotion',
 			'foreignKey' => 'region_id',
 			'dependent' => false,
 			'conditions' => '',

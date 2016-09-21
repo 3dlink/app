@@ -14,6 +14,7 @@ class PromotionsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	public $uses = array('Promotion','Destination','Country','Region','State','City','Client');
 
 /**
  * index method
@@ -58,8 +59,20 @@ class PromotionsController extends AppController {
 				$this->Session->setFlash(__('The promotion could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
-		$clients = $this->Promotion->Client->find('list');
-		$this->set(compact('clients'));
+		$clients = $this->Client->find('list');
+		$countries = $this->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
+		$this->set(compact('clients','countries'));
+	}
+
+
+	public function list_ajax($back, $next, $value){
+		$this->autoRender = false;
+		$back = strtolower($back);
+		$result = $this->$next->find('all', array('recursive'=> -1, 'fields'=>array('id','name'), 'conditions' => array($back.'_id'=>$value)));
+		
+		return json_encode($result);
 	}
 
 /**

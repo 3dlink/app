@@ -6,9 +6,14 @@ App::uses('AppModel', 'Model');
  * @property State $State
  * @property Region $Region
  * @property Country $Country
+ * @property Terminal $Terminal
+ * @property Client $Client
  * @property Destination $Destination
+ * @property Point $Point
+ * @property Promotion $Promotion
  * @property Terminal $Terminal
  * @property User $User
+ * @property Terminal $Terminal
  */
 class City extends AppModel {
 
@@ -48,6 +53,13 @@ class City extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'Terminal' => array(
+			'className' => 'Terminal',
+			'foreignKey' => 'terminal_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 
@@ -57,8 +69,47 @@ class City extends AppModel {
  * @var array
  */
 	public $hasMany = array(
+		'Client' => array(
+			'className' => 'Client',
+			'foreignKey' => 'city_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'Destination' => array(
 			'className' => 'Destination',
+			'foreignKey' => 'city_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Point' => array(
+			'className' => 'Point',
+			'foreignKey' => 'city_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Promotion' => array(
+			'className' => 'Promotion',
 			'foreignKey' => 'city_id',
 			'dependent' => false,
 			'conditions' => '',
@@ -95,6 +146,28 @@ class City extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		)
+	);
+
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Terminal' => array(
+			'className' => 'Terminal',
+			'joinTable' => 'cities_terminals',
+			'foreignKey' => 'city_id',
+			'associationForeignKey' => 'terminal_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
 		)
 	);
 

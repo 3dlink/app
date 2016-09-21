@@ -49,10 +49,10 @@ class ForumqsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Foruma->create();
 			if ($this->Foruma->save($this->request->data)) {
-				$this->Session->setFlash(__('The foruma has been saved.'));
+				$this->Session->setFlash(__('The forum answer has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('Could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		// $commenters = array();
@@ -88,10 +88,10 @@ class ForumqsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Forumq->create();
 			if ($this->Forumq->save($this->request->data)) {
-				$this->Session->setFlash(__('The forumq has been saved.'));
+				$this->Session->setFlash(__('The forum question has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The forumq could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The forum question could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		$destinations = $this->Forumq->Destination->find('list');
@@ -109,14 +109,14 @@ class ForumqsController extends AppController {
 	public function edit($id = null) {
 		$this->layout="admin";
 		if (!$this->Forumq->exists($id)) {
-			throw new NotFoundException(__('Invalid forumq'));
+			throw new NotFoundException(__('Invalid forum question'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Forumq->save($this->request->data)) {
-				$this->Session->setFlash(__('The forumq has been saved.'));
+				$this->Session->setFlash(__('The forum question has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The forumq could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The forum question could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Forumq.' . $this->Forumq->primaryKey => $id));
@@ -137,13 +137,13 @@ class ForumqsController extends AppController {
 	public function delete($id = null) {
 		$this->Forumq->id = $id;
 		if (!$this->Forumq->exists()) {
-			throw new NotFoundException(__('Invalid forumq'));
+			throw new NotFoundException(__('Invalid forum question'));
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->Forumq->delete()) {
-			$this->Session->setFlash(__('The forumq has been deleted.'));
+			$this->Session->setFlash(__('The forum question has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The forumq could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The forum question could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

@@ -45,5 +45,30 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version());
     	<?php echo $this->Session->flash(); ?>	
 		<?php echo $this->fetch('content'); ?>
     </section>
+
+
+  <script type="text/javascript">
+    
+    $('.error_message').click(function(event) {
+        $(this).fadeOut(1000);      
+      //$(this).css('display', 'none');
+    });
+    $('.success_message').click(function(event) {
+        $(this).fadeOut(1000);
+    });
+
+    $(document).ready(function() {
+      // fade out flash 'success' messages
+       setTimeout(function() {$('.success_message').fadeOut(1000);}, 3000); // <-- time in milliseconds
+    });
+
+    $(document).ready(function() {
+      // fade out flash 'success' messages
+       setTimeout(function() {$('.error_message').fadeOut(1000);}, 3000); // <-- time in milliseconds
+    });
+
+  </script>
+
+
   </body>
 </html>

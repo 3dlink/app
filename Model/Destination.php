@@ -15,6 +15,7 @@ App::uses('AppModel', 'Model');
  * @property Forumq $Forumq
  * @property Group $Group
  * @property Point $Point
+ * @property Promotion $Promotion
  * @property Activity $Activity
  * @property Client $Client
  * @property Terminal $Terminal
@@ -142,6 +143,19 @@ class Destination extends AppModel {
 		),
 		'Point' => array(
 			'className' => 'Point',
+			'foreignKey' => 'destination_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Promotion' => array(
+			'className' => 'Promotion',
 			'foreignKey' => 'destination_id',
 			'dependent' => false,
 			'conditions' => '',

@@ -31,6 +31,7 @@
                   <th>Name</th>
                   <th>Price</th>
                   <th>Client</th>
+                  <th>Destination</th>
                   <th></th>
                   
                   <th></th>
@@ -41,6 +42,7 @@
 	           <td><?php echo h($item['Promotion']['name']); ?>&nbsp;</td>
 	           <td><?php echo h($item['Promotion']['price']); ?>&nbsp;</td>
 	           <td><?php echo h($item['Client']['name']); ?>&nbsp;</td>
+             <td><?php echo h($item['Destination']['name']); ?>&nbsp;</td>
 						
                         <td>
 		                    <div style="display: block; width: 80px; margin: 0 auto;">

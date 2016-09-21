@@ -88,7 +88,9 @@
               <table class="table table-striped">
                 <tr>
                   <th>Subject</th>
+                  <th>Destination</th>
                   <th>By</th>
+                  <th>Date</th>
                   <th></th>
                   
                   <th></th>
@@ -97,7 +99,9 @@
                 <?php foreach ($forumqs as $item): ?>
 					<tr>
 	           <td><?php echo h($item['Forumq']['question']); ?>&nbsp;</td>
+	           <td><?php echo h($item['Destination']['name']); ?>&nbsp;</td>
 	           <td><?php echo h($item['User']['username']); ?>&nbsp;</td>
+	           <td><?php echo h($item['Forumq']['qdate']); ?>&nbsp;</td>
 						
                         <td>
 		                    <div style="display: block; width: 80px; margin: 0 auto;">

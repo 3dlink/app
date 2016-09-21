@@ -53,10 +53,10 @@ class ClientsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Client->create();
 			if ($this->Client->save($this->request->data)) {
-				$this->Session->setFlash(__('The client has been saved.'));
+				$this->Session->setFlash(__('The client has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The client could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The client could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
 		$services = $this->Client->Service->find('list');
@@ -80,10 +80,10 @@ class ClientsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Client->save($this->request->data)) {
-				$this->Session->setFlash(__('The client has been saved.'));
+				$this->Session->setFlash(__('The client has been saved.'), 'default', array('class' => 'success_message'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The client could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The client could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		} else {
 			$options = array('conditions' => array('Client.' . $this->Client->primaryKey => $id));
@@ -110,9 +110,9 @@ class ClientsController extends AppController {
 		}
 		//$this->request->allowMethod('post', 'delete');
 		if ($this->Client->delete()) {
-			$this->Session->setFlash(__('The client has been deleted.'));
+			$this->Session->setFlash(__('The client has been deleted.'), 'default', array('class' => 'success_message'));
 		} else {
-			$this->Session->setFlash(__('The client could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The client could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

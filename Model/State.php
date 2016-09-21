@@ -6,7 +6,10 @@ App::uses('AppModel', 'Model');
  * @property Region $Region
  * @property Country $Country
  * @property City $City
+ * @property Client $Client
  * @property Destination $Destination
+ * @property Point $Point
+ * @property Promotion $Promotion
  * @property Terminal $Terminal
  * @property User $User
  */
@@ -63,8 +66,47 @@ class State extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
+		'Client' => array(
+			'className' => 'Client',
+			'foreignKey' => 'state_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'Destination' => array(
 			'className' => 'Destination',
+			'foreignKey' => 'state_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Point' => array(
+			'className' => 'Point',
+			'foreignKey' => 'state_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Promotion' => array(
+			'className' => 'Promotion',
 			'foreignKey' => 'state_id',
 			'dependent' => false,
 			'conditions' => '',

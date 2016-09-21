@@ -22,11 +22,19 @@
   					
   					
   					<table class="table table-striped">
+
+                  <th>Answer</th>
+                  <th>By</th>
+                  <th>Date</th>
+                  <th></th>
+                  
+                  <th></th>
   									  						
         				<?php foreach ($answers as $item): ?>
         				<tr>
         				<td><?php echo h($item['answer']); ?>&nbsp;</td>
-  						<td><?php echo h($item['User']['username']); ?>&nbsp;</td>
+  						  <td><?php echo h($item['User']['username']); ?>&nbsp;</td>
+                <td><?php echo h($item['adate']); ?>&nbsp;</td>
   						</tr>
   						<?php endforeach; ?>
 	
@@ -40,6 +48,13 @@
 			        <div class="form-group">
 			          <label>Answer to this question</label>
 			          <?php echo $this->Form->input('answer',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'Name')); ?>
+
+
+                <?php
+                  $today = date("F j, Y, g:i a");
+                ?>
+
+                <?php echo $this->Form->input('adate',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$today)); ?>
 
 
 	      			  <?php echo $this->Form->input('user_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$this->UserAuth->getUserId())); ?>

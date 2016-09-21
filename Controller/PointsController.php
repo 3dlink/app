@@ -68,6 +68,8 @@ class PointsController extends AppController {
 			}
 		}
 		$countries = $this->Point->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
 		//$destinations = $this->Point->Destination->find('list');
 		$this->set(compact('countries'));
 	}

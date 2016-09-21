@@ -16,6 +16,7 @@ class CityFixture extends CakeTestFixture {
 		'state_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'unsigned' => false),
 		'region_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'unsigned' => false),
 		'country_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'unsigned' => false),
+		'terminal_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'unsigned' => false),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -33,7 +34,8 @@ class CityFixture extends CakeTestFixture {
 			'name' => 'Lorem ipsum dolor sit amet',
 			'state_id' => 1,
 			'region_id' => 1,
-			'country_id' => 1
+			'country_id' => 1,
+			'terminal_id' => 1
 		),
 	);
 
