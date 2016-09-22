@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-09-2016 a las 22:05:38
+-- Tiempo de generación: 22-09-2016 a las 22:36:16
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -200,7 +200,7 @@ CREATE TABLE IF NOT EXISTS `commentaries` (
   `security` float NOT NULL,
   `environment` float NOT NULL,
   `budget` float NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `commentaries`
@@ -253,7 +253,8 @@ INSERT INTO `commentaries` (`id`, `comment`, `destination_id`, `user_id`, `secur
 (44, '<3 <3 <3 ', 13, 1, 2, 2, 2),
 (45, '<3', 14, 1, 1, 1, 1),
 (46, '<3 <3', 14, 1, 2, 2, 2),
-(47, ':)', 9, 1, 5, 5, 5);
+(47, ':)', 9, 1, 5, 5, 5),
+(48, 'Un comment', 14, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -318,7 +319,7 @@ INSERT INTO `destinations` (`id`, `name`, `description`, `schedule`, `type_id`, 
 (10, 'Prueba', '5', NULL, 2, 1, 4, 1, 1, 0, 0, 0, '1', '1', '', 3.5, 3.5, 3.5, 3.5, 5, 5, 5, 5, 345),
 (12, 'Nueva', '5', NULL, 3, 3, 2, 1, 2, 1, 0, 0, '1', '1', '', 5, 5, 5, 5, 5, 5, 5, 5, 5),
 (13, 'TestNewCheck', '5', NULL, 3, 3, 2, 1, 2, 2, 0, 0, '12', '12', '', 2.66667, 2.66667, 2.66667, 2.66667, 5, 5, 5, 5, 12),
-(14, 'Beauty', '5', '5', 1, 3, 2, 1, 2, 0, 0, 0, '1', '1', 'img1474404477ATQ.jpg', 2.66667, 2.66667, 2.66667, 2.66667, 5, 5, 5, 5, 1);
+(14, 'Beauty', '5', '5', 1, 3, 2, 1, 2, 0, 0, 0, '1', '1', 'img1474404477ATQ.jpg', 2.25, 2.25, 2.25, 2.25, 5, 5, 5, 5, 1);
 
 -- --------------------------------------------------------
 
@@ -335,7 +336,16 @@ CREATE TABLE IF NOT EXISTS `destinations_terminals` (
   `hours` int(10) NOT NULL,
   `payment` varchar(255) NOT NULL,
   `company` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `destinations_terminals`
+--
+
+INSERT INTO `destinations_terminals` (`id`, `destination_id`, `terminal_id`, `price`, `schedule`, `hours`, `payment`, `company`) VALUES
+(1, 10, 1, 0, '', 0, '', ''),
+(2, 12, 1, 0, '', 0, '', ''),
+(3, 13, 1, 0, '', 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -496,13 +506,13 @@ CREATE TABLE IF NOT EXISTS `points` (
   `longitude` varchar(255) NOT NULL,
   `country_id` int(10) NOT NULL,
   `state_id` int(10) NOT NULL,
-  `city_id` int(10) NOT NULL,
+  `city_id` int(10) DEFAULT NULL,
   `destination_id` int(10) DEFAULT NULL,
   `terminal_id` int(10) DEFAULT NULL,
   `price` float NOT NULL,
   `schedule` text NOT NULL,
   `payment` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `points`
@@ -513,7 +523,10 @@ INSERT INTO `points` (`id`, `name`, `lat`, `longitude`, `country_id`, `state_id`
 (2, 'Cuarto', '0min', '0sec', 0, 0, 0, 1, 0, 0, 'Nights Only', 'credit card'),
 (8, 'TestDRIVE', '3', '4', 1, 1, 1, 1, NULL, 12, 'asdsadasd', '0'),
 (9, 'Anotherasd', '3', '2', 1, 3, 2, NULL, 2, 2314310, 'asdfasdasd', 'Debit'),
-(10, 'EL PUTO PUNTO', '12', '12', 1, 1, 1, 1, NULL, 364567, 'dasd', '0');
+(10, 'EL PUTO PUNTO', '12', '12', 1, 1, 1, 1, NULL, 364567, 'dasd', '0'),
+(11, 'Alirio', '1', '1', 1, 3, 2, 14, NULL, 1, '1', 'All'),
+(12, 'Alirio 2', '2', '2', 1, 1, 1, NULL, NULL, 2, '2', 'All'),
+(13, 'Alirio3', '3', '3', 1, 1, 1, NULL, 1, 3, '3', 'All');
 
 -- --------------------------------------------------------
 
@@ -1251,7 +1264,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `commentaries`
 --
 ALTER TABLE `commentaries`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
 --
 -- AUTO_INCREMENT de la tabla `countries`
 --
@@ -1266,7 +1279,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 -- AUTO_INCREMENT de la tabla `destinations_terminals`
 --
 ALTER TABLE `destinations_terminals`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `foruma`
 --
@@ -1306,7 +1319,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `points`
 --
 ALTER TABLE `points`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT de la tabla `points_terminals`
 --
