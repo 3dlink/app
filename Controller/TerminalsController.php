@@ -42,6 +42,17 @@ class TerminalsController extends AppController {
 		}
 		$options = array('conditions' => array('Terminal.' . $this->Terminal->primaryKey => $id));
 		$this->set('terminal', $this->Terminal->find('first', $options));
+		if ($this->request->is('post')) {
+			$this->Point->create();
+			if ($this->Point->save($this->request->data)) {
+				$this->Session->setFlash(__('The point has been saved.'), 'default', array('class' => 'success_message'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The point could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
+			}
+		}
+		$points = $this->Terminal->Point->find('all', array('conditions' => array(array('Terminal.' . $this->Terminal->primaryKey => $id))));
+		$this->set('points',$points);
 	}
 
 /**

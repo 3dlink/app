@@ -58,21 +58,16 @@
 		<li><?php echo $this->Html->link(__('New Destination'), array('controller' => 'destinations', 'action' => 'add')); ?> </li>
 	</ul>
 </div> -->
+<!-- 
 <div class="Country index">
- <!--List  Open-->
       <article class="card shadow-1">
           <fieldset>
             <legend>Points</legend>
-            <!--Search Open-->
             <div class="margenesHorizontales">
               <div class="col-md-6">
                 <div class=" margenesVerticales">
 	              	<form class="right" role="search" method="get">
 	                 <div class="input-group">
-	                    <!-- <input type="text" class="form-control" placeholder="Buscar categories..." name="filtro">
-	                    <span class="input-group-btn">
-	                      <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-	                    </span> -->
 	                  </div>  
 									</form>            
                 </div>
@@ -84,7 +79,6 @@
               </div>
               <div style="clear:both;"></div>
             </div>
-            <!--Search Close-->
             <div class="margenesHorizontales">
               <table class="table table-striped">
                 <tr>
@@ -136,4 +130,4 @@
 ?>
 </ul>
 
-</div>	
+</div>	 -->

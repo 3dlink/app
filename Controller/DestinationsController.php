@@ -87,38 +87,63 @@ class DestinationsController extends AppController {
 
 		//////////////////////////////
 		if ($this->request->is('post')) {
-			$this->Commentary->create();
-			// debug($destination['Destination']['ranking']);
-			// debug($ranked);die;
-			if ($this->Commentary->save($this->request->data)) {
-				$this->Session->setFlash(__('The commentary has been saved.'), 'default', array('class' => 'success_message'));
-				$data = $this->request->data;
-				debug($data);
-				$securyval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.security) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
-				$num = $securyval[0]['num'] + 1;
-				$securyval = ($securyval[0]['sum'] + $destination['Destination']['fi_security'])/$num;
+			
+			debug($this->request->data);
+			if($this->request->data['Commentary']['security']!=null && $this->request->data['Commentary']['budget']!=null && $this->request->data['Commentary']['environment']!=null)
+			{
+				$this->Commentary->create();
+				if ($this->Commentary->save($this->request->data['Commentary']))
+				{
+					$this->Session->setFlash(__('The commentary has been saved.'), 'default', array('class' => 'success_message'));
+					$data = $this->request->data;
+					debug($data);
+					$securyval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.security) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
+					$num = $securyval[0]['num'] + 1;
+					$securyval = ($securyval[0]['sum'] + $destination['Destination']['fi_security'])/$num;
 
-				$budval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.budget) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
-				$num = $budval[0]['num'] + 1;
-				$budval = ($budval[0]['sum'] + $destination['Destination']['fi_budget'])/$num;
-				
+					$budval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.budget) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
+					$num = $budval[0]['num'] + 1;
+					$budval = ($budval[0]['sum'] + $destination['Destination']['fi_budget'])/$num;
+					
 
-				$envval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.environment) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
-				$num = $envval[0]['num'] + 1;
-				$envval = ($envval[0]['sum'] + $destination['Destination']['fi_security'])/$num;
-				
-				$ranked = ($envval+$securyval+$budval)/3;
+					$envval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.environment) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
+					$num = $envval[0]['num'] + 1;
+					$envval = ($envval[0]['sum'] + $destination['Destination']['fi_security'])/$num;
+					
+					$ranked = ($envval+$securyval+$budval)/3;
 
-				$destination['Destination']['ranking'] = $ranked;
-				$destination['Destination']['budget'] = $budval;
-				$destination['Destination']['security'] = $securyval;
-				$destination['Destination']['environment'] = $envval;
+					$destination['Destination']['ranking'] = $ranked;
+					$destination['Destination']['budget'] = $budval;
+					$destination['Destination']['security'] = $securyval;
+					$destination['Destination']['environment'] = $envval;
 
-				$this->Destination->create();
-				$this->Destination->save($destination);
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The commentary could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
+					$this->Destination->create();
+					$this->Destination->save($destination);
+					return $this->redirect(array('action' => 'index'));
+				}
+				else 
+				{
+					$this->Session->setFlash(__('The commentary could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
+				}
+			}
+			else
+			{
+				unset($this->request->data['Commentary']);
+			}
+
+			if($this->request->data['Point']['name']!=null && $this->request->data['Point']['lat']!=null && $this->request->data['Point']['longitude']!=null && $this->request->data['Point']['price']!=null && $this->request->data['Point']['payment']!=null && $this->request->data['Point']['schedule']!=null) 
+			{
+				$this->Point->create();
+				if ($this->Point->save($this->request->data['Point'])) {
+					$this->Session->setFlash(__('The point has been saved.'), 'default', array('class' => 'success_message'));
+					return $this->redirect(array('action' => 'index'));
+				} else {
+					$this->Session->setFlash(__('The point could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
+				}
+			}
+			else
+			{
+				unset($this->request->data['Point']);
 			}
 		}
 

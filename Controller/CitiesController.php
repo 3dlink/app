@@ -14,7 +14,7 @@ class CitiesController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
-	public $uses = array('City','State','Country','Region');
+	public $uses = array('City','State','Country','Region','Point');
 
 /**
  * index method
@@ -41,6 +41,17 @@ class CitiesController extends AppController {
 		}
 		$options = array('conditions' => array('City.' . $this->City->primaryKey => $id));
 		$this->set('city', $this->City->find('first', $options));
+		if ($this->request->is('post')) {
+			$this->Point->create();
+			if ($this->Point->save($this->request->data)) {
+				$this->Session->setFlash(__('The point has been saved.'), 'default', array('class' => 'success_message'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The point could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
+			}
+		}
+		$points = $this->City->Point->find('all', array('conditions' => array(array('City.' . $this->City->primaryKey => $id))));
+		$this->set('points',$points);
 	}
 
 /**

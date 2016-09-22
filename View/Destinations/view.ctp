@@ -162,10 +162,88 @@
               ?>
           </table>
           </div>
+
+          <div>
+            <?php echo $this->Form->create('Point'); ?>
+            <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Add a point of interest in this destination</label>
+                  </div>
+                <div class="col-md-12">
+
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Latitude</label>
+                        <?php echo $this->Form->input('lat',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Longitude</label>
+                        <?php echo $this->Form->input('longitude',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Price</label>
+                        <?php echo $this->Form->input('price',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Payment</label>
+                        <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'','options'=>array('0'=>'Select','Cash'=>'Cash','Debit'=>'Debit','Credit Card'=>'Credit Card','All'=>'All'))); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Schedule</label>
+                        <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+
+
+                <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$destination['Destination']['country_id'])); ?>
+
+
+                <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$destination['Destination']['region_id'])); ?>
+
+
+                <?php echo $this->Form->input('state_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$destination['Destination']['state_id'])); ?>
+
+
+                <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$destination['Destination']['city_id'])); ?>
+
+                <?php echo $this->Form->input('destination_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$destination['Destination']['id'])); ?>
+
+                  
+                <button type="submit" class="btn btn-primary">
+                          Submit
+                </button>
+                <div style="clear:both;"></div>
+                    
+                </div>
+            </div>
+          </div>
+
+
           <div style="clear:both;"></div>
 
   		<div class="col-md-6">
-  			<div class="form-group">
+  			<div class="form-group" style="margin-top:50px;">
   				  <label>Some comments about this destination from other users: </label>
             </div>
   		</div>
@@ -193,7 +271,7 @@
 
 
 
-  				<div>
+  			<div>
 				<?php echo $this->Form->create('Commentary'); ?>
 				<div class="col-md-12">
 			        <div class="form-group">
@@ -240,8 +318,8 @@
                 <div style="clear:both;"></div>
 			          
 			        </div>
-	      		</div>
-	      		</div>
+	      </div>
+	      </div>
 
 
 

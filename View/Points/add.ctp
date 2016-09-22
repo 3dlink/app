@@ -24,7 +24,8 @@
 	</ul>
 </div>
  -->
-<article class="card shadow-1">
+
+<!-- <article class="card shadow-1">
 <?php echo $this->Form->create('Point');?>
     <fieldset>
       <legend>Add Point</legend>
@@ -103,7 +104,7 @@
         <div class="col-md-6">
               <div class="form-group">
                 <label>Payment</label>
-                <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'','options'=>array('0'=>'Select','Cash'=>'Cash','Debit'=>'Debit','Credit Card'=>'Credit Card'))); ?>
+                <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'','options'=>array('0'=>'Select','Cash'=>'Cash','Debit'=>'Debit','Credit Card'=>'Credit Card','All'=>'All'))); ?>
               </div>
         </div>
 
@@ -212,4 +213,4 @@
   
 
 
-</script>
+</script> -->

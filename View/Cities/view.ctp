@@ -246,10 +246,111 @@
           
         </div>
       		<div style="clear:both;"></div>
-      	</div> 
+      	</div>
+
+
+
+      <div class="col-md-6">
+        <div class="form-group">
+            <label>Some points of interests on this city: </label>
+            </div>
+      </div>
+
+
+          <div class="margenesHorizontales">
+            <table class="table table-striped">
+                  <th>Name</th>
+                  <th>Schedule</th>
+                  <th>Price</th>
+              <?php foreach ($points as $item): ?>
+                <tr>
+                <?php if(is_array($item)){ ?>  
+                <td><?php echo h($item['Point']['name']); ?>&nbsp;</td>
+                <td><?php echo h($item['Point']['schedule']); ?>&nbsp;</td>
+                <td><?php echo h($item['Point']['price']); ?>&nbsp;</td>
+                </tr>
+              <?php }
+              endforeach; 
+              ?>
+          </table>
+          </div>
+
+      	<div>
+            <?php echo $this->Form->create('Point'); ?>
+            <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Add a point of interest in this destination</label>
+                  </div>
+                <div class="col-md-12">
+
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <?php echo $this->Form->input('name',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Latitude</label>
+                        <?php echo $this->Form->input('lat',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Longitude</label>
+                        <?php echo $this->Form->input('longitude',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Price</label>
+                        <?php echo $this->Form->input('price',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Payment</label>
+                        <?php echo $this->Form->input('payment',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'','options'=>array('0'=>'Select','Cash'=>'Cash','Debit'=>'Debit','Credit Card'=>'Credit Card','All'=>'All'))); ?>
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Schedule</label>
+                        <?php echo $this->Form->input('schedule',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>'')); ?>
+                      </div>
+                </div>
+
+
+
+                <?php echo $this->Form->input('country_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$city['City']['country_id'])); ?>
+
+
+                <?php echo $this->Form->input('region_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$city['City']['region_id'])); ?>
+
+
+                <?php echo $this->Form->input('state_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$city['City']['state_id'])); ?>
+
+
+                <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'type'=>'hidden','value'=>$city['City']['id'])); ?>
+
+                  
+                <button type="submit" class="btn btn-primary">
+                          Submit
+                </button>
+                <div style="clear:both;"></div>
+                    
+                </div>
+            </div>
+          </div> 
 
       	<div class="col-md-6">
-            <div class="form-group">
+            <div class="form-group" style="margin-top:50px;">
               <label>Terminals Available:</label>
 
               <table class="table table-striped">

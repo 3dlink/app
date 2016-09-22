@@ -26,7 +26,8 @@
 	</ul>
 </div>
  -->
-<article class="card shadow-1">
+ 
+<!-- <article class="card shadow-1">
 <?php echo $this->Form->create('Point'); echo $this->Form->input('id');?>
     <fieldset>
       <legend>Edit Point</legend>
@@ -214,4 +215,4 @@
   
 
 
-</script>
+</script> -->
