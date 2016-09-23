@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * @property City $City
  * @property Client $Client
  * @property Destination $Destination
+ * @property Park $Park
  * @property Point $Point
  * @property Promotion $Promotion
  * @property Region $Region
@@ -59,6 +60,19 @@ class Country extends AppModel {
 		),
 		'Destination' => array(
 			'className' => 'Destination',
+			'foreignKey' => 'country_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Park' => array(
+			'className' => 'Park',
 			'foreignKey' => 'country_id',
 			'dependent' => false,
 			'conditions' => '',

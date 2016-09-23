@@ -8,6 +8,7 @@ App::uses('AppModel', 'Model');
  * @property City $City
  * @property Destination $Destination
  * @property Terminal $Terminal
+ * @property Park $Park
  * @property Destination $Destination
  * @property Terminal $Terminal
  */
@@ -60,6 +61,13 @@ class Point extends AppModel {
 		'Terminal' => array(
 			'className' => 'Terminal',
 			'foreignKey' => 'terminal_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Park' => array(
+			'className' => 'Park',
+			'foreignKey' => 'park_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

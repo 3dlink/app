@@ -3,7 +3,10 @@ App::uses('AppModel', 'Model');
 /**
  * Park Model
  *
+ * @property Country $Country
+ * @property State $State
  * @property Destination $Destination
+ * @property Point $Point
  */
 class Park extends AppModel {
 
@@ -18,6 +21,28 @@ class Park extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Country' => array(
+			'className' => 'Country',
+			'foreignKey' => 'country_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'State' => array(
+			'className' => 'State',
+			'foreignKey' => 'state_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+
+/**
  * hasMany associations
  *
  * @var array
@@ -25,6 +50,19 @@ class Park extends AppModel {
 	public $hasMany = array(
 		'Destination' => array(
 			'className' => 'Destination',
+			'foreignKey' => 'park_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Point' => array(
+			'className' => 'Point',
 			'foreignKey' => 'park_id',
 			'dependent' => false,
 			'conditions' => '',

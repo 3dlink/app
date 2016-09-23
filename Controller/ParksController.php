@@ -15,6 +15,8 @@ class ParksController extends AppController {
  */
 	public $components = array('Paginator');
 
+	public $uses = array('Park','Country','State','Point');
+
 /**
  * index method
  *
@@ -40,6 +42,17 @@ class ParksController extends AppController {
 		}
 		$options = array('conditions' => array('Park.' . $this->Park->primaryKey => $id));
 		$this->set('park', $this->Park->find('first', $options));
+		if ($this->request->is('post')) {
+			$this->Point->create();
+			if ($this->Point->save($this->request->data)) {
+				$this->Session->setFlash(__('The point has been saved.'), 'default', array('class' => 'success_message'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The point could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
+			}
+		}
+		$points = $this->Park->Point->find('all', array('conditions' => array(array('Park.' . $this->Park->primaryKey => $id))));
+		$this->set('points',$points);
 	}
 
 /**
@@ -58,6 +71,10 @@ class ParksController extends AppController {
 				$this->Session->setFlash(__('The park could not be saved. Please, try again.'), 'default', array('class' => 'error_message'));
 			}
 		}
+		$countries = $this->Park->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
+		$this->set('countries',$countries);
 	}
 
 /**
@@ -83,6 +100,11 @@ class ParksController extends AppController {
 			$options = array('conditions' => array('Park.' . $this->Park->primaryKey => $id));
 			$this->request->data = $this->Park->find('first', $options);
 		}
+		$countries = $this->Point->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
+
+		$states = $this->State->find('list', array('conditions'=> array('State.country_id = '.$this->request->data['Country']['id'])));
 	}
 
 /**

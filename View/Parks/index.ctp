@@ -46,10 +46,12 @@
 		                    <div style="display: block; width: 80px; margin: 0 auto;">
 	                        <?php if($this->UserAuth->getGroupId() == 1){ ?>
 	  	                      <a href="<?php echo $this->webroot;?>parks/edit/<?php echo $item['Park']['id'];?>" title="Editar Item" class="menuTable">
-	  	                        <span class="glyphicon glyphicon-pencil"></span>
+	  	                      <span class="glyphicon glyphicon-pencil"></span>
 	  	                      </a>
 	  	                      <a href="<?php echo $this->webroot;?>parks/delete/<?php echo $item['Park']['id'];?>" onclick="if (confirm(&quot;Are you sure you want to delete the park?&quot;)) { return true; } return false;" class="menuTable">
-	  	                        <span class="glyphicon glyphicon-remove"></span></a>
+	  	                      <span class="glyphicon glyphicon-remove"></span></a>
+                            <a href="<?php echo $this->webroot;?>parks/view/<?php echo $item['Park']['id'];?>" title="Watch detail" class="menuTable">
+                            <span class="glyphicon glyphicon-eye-open"></span></a>
                             <?php } ?>
 		                    </div>                  
 		                </td>

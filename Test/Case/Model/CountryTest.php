@@ -17,6 +17,9 @@ class CountryTest extends CakeTestCase {
 		'app.city',
 		'app.state',
 		'app.region',
+		'app.client',
+		'app.service',
+		'app.promotion',
 		'app.destination',
 		'app.type',
 		'app.park',
@@ -26,10 +29,6 @@ class CountryTest extends CakeTestCase {
 		'app.terminal',
 		'app.cities_terminal',
 		'app.points_terminal',
-		'app.client',
-		'app.service',
-		'app.promotion',
-		'app.clients_destination',
 		'app.clients_terminal',
 		'app.destinations_terminal',
 		'app.commentary',
@@ -41,7 +40,8 @@ class CountryTest extends CakeTestCase {
 		'app.groups_user',
 		'app.login_token',
 		'app.types_user',
-		'app.photo'
+		'app.photo',
+		'app.clients_destination'
 	);
 
 /**
