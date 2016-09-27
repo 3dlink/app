@@ -239,7 +239,11 @@ class DestinationsController extends AppController {
 		$regions = $this->Region->find('list', array('conditions'=> array('Region.country_id = '.$this->request->data['Country']['id'])));
 		$states = $this->State->find('list', array('conditions'=> array('State.region_id = '.$this->request->data['Country']['id'])));
 		$cities = $this->City->find('list', array('conditions'=> array('City.region_id = '.$this->request->data['Country']['id'])));
+		$cities[0] = "--None--";
+		ksort($cities);
 		$parks = $this->Destination->Park->find('list', array('conditions'=> array('Park.country_id = '.$this->request->data['Country']['id'])));
+		$parks[0] = "--None--";
+		ksort($parks);
 
 		$this->set(compact('types', 'countries', 'parks', 'activities', 'clients', 'terminals','regions','states','cities'));
 	}
