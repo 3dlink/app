@@ -103,7 +103,6 @@
     $('#select_dest').multipleSelect();
     $('#select_city').multipleSelect();
 
-    $('#Country').val("");
 
 	$(document).ready(function(){
 

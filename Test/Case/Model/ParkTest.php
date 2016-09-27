@@ -23,6 +23,7 @@ class ParkTest extends CakeTestCase {
 		'app.promotion',
 		'app.destination',
 		'app.type',
+		'app.destinations_park',
 		'app.activity',
 		'app.activities_destination',
 		'app.point',

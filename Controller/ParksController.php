@@ -105,6 +105,8 @@ class ParksController extends AppController {
 		ksort($countries);
 
 		$states = $this->State->find('list', array('conditions'=> array('State.country_id = '.$this->request->data['Country']['id'])));
+
+		$this->set(compact('countries', 'states'));
 	}
 
 /**

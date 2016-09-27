@@ -88,7 +88,7 @@ class DestinationsController extends AppController {
 		//////////////////////////////
 		if ($this->request->is('post')) {
 			
-			debug($this->request->data);
+			//debug($this->request->data);
 			if($this->request->data['Commentary']['security']!=null && $this->request->data['Commentary']['budget']!=null && $this->request->data['Commentary']['environment']!=null)
 			{
 				$this->Commentary->create();
@@ -96,7 +96,7 @@ class DestinationsController extends AppController {
 				{
 					$this->Session->setFlash(__('The commentary has been saved.'), 'default', array('class' => 'success_message'));
 					$data = $this->request->data;
-					debug($data);
+					//debug($data);
 					$securyval = $this->Commentary->find('first', array('fields' => array('sum(Commentary.security) as sum, count(Commentary.id) as num'),'conditions' => array('Destination.id ='.$id)));
 					$num = $securyval[0]['num'] + 1;
 					$securyval = ($securyval[0]['sum'] + $destination['Destination']['fi_security'])/$num;
@@ -230,7 +230,8 @@ class DestinationsController extends AppController {
 		$countries = $this->Destination->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
-		$parks = $this->Destination->Park->find('list');
+		//$parks = $this->Destination->Park->find('list');
+		//$parks = $this->Park->find('list', array('conditions'=> array('Park.id = '.$this->request->data['Destination']['park_id'])));
 		$activities = $this->Destination->Activity->find('list');
 		$clients = $this->Destination->Client->find('list');
 		$terminals = $this->Destination->Terminal->find('list');
@@ -238,6 +239,7 @@ class DestinationsController extends AppController {
 		$regions = $this->Region->find('list', array('conditions'=> array('Region.country_id = '.$this->request->data['Country']['id'])));
 		$states = $this->State->find('list', array('conditions'=> array('State.region_id = '.$this->request->data['Country']['id'])));
 		$cities = $this->City->find('list', array('conditions'=> array('City.region_id = '.$this->request->data['Country']['id'])));
+		$parks = $this->Destination->Park->find('list', array('conditions'=> array('Park.country_id = '.$this->request->data['Country']['id'])));
 
 		$this->set(compact('types', 'countries', 'parks', 'activities', 'clients', 'terminals','regions','states','cities'));
 	}

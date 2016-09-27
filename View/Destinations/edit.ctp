@@ -144,7 +144,6 @@
 	  }
 	});
 
-	$('#park').val("")
 	$('#Country').val("")
     $(document).ready(function(){
 

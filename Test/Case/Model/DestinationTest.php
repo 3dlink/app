@@ -23,6 +23,7 @@ class DestinationTest extends CakeTestCase {
 		'app.cities_terminal',
 		'app.point',
 		'app.points_terminal',
+		'app.park',
 		'app.client',
 		'app.service',
 		'app.promotion',
@@ -39,7 +40,7 @@ class DestinationTest extends CakeTestCase {
 		'app.groups_user',
 		'app.login_token',
 		'app.types_user',
-		'app.park',
+		'app.destinations_park',
 		'app.activity',
 		'app.activities_destination'
 	);

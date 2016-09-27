@@ -18,6 +18,7 @@ App::uses('AppModel', 'Model');
  * @property Promotion $Promotion
  * @property Activity $Activity
  * @property Client $Client
+ * @property Park $Park
  * @property Terminal $Terminal
  */
 class Destination extends AppModel {
@@ -194,6 +195,19 @@ class Destination extends AppModel {
 			'joinTable' => 'clients_destinations',
 			'foreignKey' => 'destination_id',
 			'associationForeignKey' => 'client_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
+		'Park' => array(
+			'className' => 'Park',
+			'joinTable' => 'destinations_parks',
+			'foreignKey' => 'destination_id',
+			'associationForeignKey' => 'park_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

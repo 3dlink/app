@@ -117,7 +117,16 @@ class TerminalsController extends AppController {
 		$countries = $this->Terminal->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
-		$this->set(compact('clients', 'destinations','destcities','states','countries'));
+		//$regions = $this->Terminal->Region->find('list');
+		$states = $this->Terminal->State->find('list');
+		$cities = $this->Terminal->City->find('list');
+
+		// $regions = $this->Region->find('list', array('conditions'=> array('Region.country_id = '.$this->request->data['Country']['id'])));
+		// $states = $this->State->find('list', array('conditions'=> array('State.region_id = '.$this->request->data['Country']['id'])));
+		// $cities = $this->City->find('list', array('conditions'=> array('City.region_id = '.$this->request->data['Country']['id'])));
+		
+
+		$this->set(compact('clients', 'destinations','destcities','states','countries','regions','states','cities'));
 	}
 
 /**

@@ -7,6 +7,7 @@ App::uses('AppModel', 'Model');
  * @property State $State
  * @property Destination $Destination
  * @property Point $Point
+ * @property Destination $Destination
  */
 class Park extends AppModel {
 
@@ -73,6 +74,28 @@ class Park extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		)
+	);
+
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Destination' => array(
+			'className' => 'Destination',
+			'joinTable' => 'destinations_parks',
+			'foreignKey' => 'park_id',
+			'associationForeignKey' => 'destination_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
 		)
 	);
 
