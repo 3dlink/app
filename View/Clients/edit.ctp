@@ -147,7 +147,7 @@
 	  }
 	});
 
-	$('#Country').val("")
+
     $(document).ready(function(){
 
 

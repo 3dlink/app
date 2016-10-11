@@ -75,19 +75,49 @@
 			        </div>
 	      		</div>
 
-				<div class="col-md-6">
-			        <div class="form-group">
-			          <label>Cities</label>
-			          <?php echo $this->Form->input('City',array('div'=>false,'multiple'=>true,'label'=>false,'class'=>'form-control','type'=>'select','placeholder'=>' ','id'=>'select_city','options'=>$destcities)); ?>
-			        </div>
-	      		</div>
 
-				<div class="col-md-6">
-			        <div class="form-group">
-			          <label>Destinations</label>
-			          <?php echo $this->Form->input('Destination',array('div'=>false,'multiple'=>true,'label'=>false,'class'=>'form-control','type'=>'select','placeholder'=>' ','id'=>'select_dest','options'=>$destinations)); ?>
+              <div style="clear:both;"></div>
+
+              <div class="form-group col-md-12">
+              		<div class="form-group">
+              			<label>Add Cities to travel to</label>
+              		</div>
+			        <div class="form-group col-md-4">
+			          <label>Cities</label>
+			          <?php echo $this->Form->input('city_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ','options'=>$destcities)); ?>
 			        </div>
-	      		</div>
+			        <div class="form-group col-md-4">
+			          <label>Trip hours</label>
+			          <?php echo $this->Form->input('hours',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
+			        </div>
+			        <div class="form-group col-md-4">
+			          <label>Price</label>
+			          <?php echo $this->Form->input('price',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
+			        </div>
+              </div>
+
+
+              <div style="clear:both;"></div>
+
+              <div class="form-group col-md-12">
+              		<div class="form-group">
+              			<label>Add Destinations</label>
+              		</div>
+			        <div class="form-group col-md-4">
+			          <label>Destinations</label>
+			          <?php echo $this->Form->input('destination_id',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
+			        </div>
+			        <div class="form-group col-md-4">
+			          <label>Trip hours</label>
+			          <?php echo $this->Form->input('hours',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
+			        </div>
+			        <div class="form-group col-md-4">
+			          <label>Price</label>
+			          <?php echo $this->Form->input('price',array('div'=>false,'label'=>false,'class'=>'form-control','placeholder'=>' ')); ?>
+			        </div>
+              </div>
+
+              <div style="clear:both;"></div>
 
         <div class="margenesVerticales" style="text-align:right;margin-top:30px;float:right;">
           <input type = "button" class="btn btn-primary" onclick="window.location.href = WEBROOT+'terminals';" title="Go Back" value = "Back" style="width: 79px;">
@@ -100,11 +130,6 @@
 </article>
 
 <script type="text/javascript">
-
-    $('#select_dest').multipleSelect();
-    $('#select_city').multipleSelect();
-
-    $('#Country').val("");
 
 	$(document).ready(function(){
 

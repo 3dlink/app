@@ -74,9 +74,12 @@ class TerminalsController extends AppController {
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
 		$destcities = $this->Terminal->City->find('list');
+		$destcities[0] = "--Select--";
+		ksort($destcities);
 		$countries = $this->Terminal->Country->find('list');
 		$countries[0] = "--Select--";
 		ksort($countries);
+		// $cities = $this->Terminal->City->find('list');
 		$this->set(compact('clients', 'destinations','destcities','states','countries'));
 	}
 

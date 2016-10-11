@@ -66,6 +66,14 @@ class ClientsController extends AppController {
 		$this->set(compact('services', 'destinations', 'terminals', 'countries'));
 	}
 
+	public function list_ajax($back, $next, $value){
+		$this->autoRender = false;
+		$back = strtolower($back);
+		$result = $this->$next->find('all', array('recursive'=> -1, 'fields'=>array('id','name'), 'conditions' => array($back.'_id'=>$value)));
+		
+		return json_encode($result);
+	}
+
 /**
  * edit method
  *
@@ -93,7 +101,14 @@ class ClientsController extends AppController {
 		$countries = $this->Client->Country->find('list');
 		$destinations = $this->Client->Destination->find('list');
 		$terminals = $this->Client->Terminal->find('list');
-		$this->set(compact('services', 'destinations', 'terminals', 'countries'));
+
+		$regions = $this->Region->find('list', array('conditions'=> array('Region.country_id = '.$this->request->data['Country']['id'])));
+		$states = $this->State->find('list', array('conditions'=> array('State.region_id = '.$this->request->data['Country']['id'])));
+		$cities = $this->City->find('list', array('conditions'=> array('City.region_id = '.$this->request->data['Country']['id'])));
+
+
+
+		$this->set(compact('services', 'destinations', 'terminals', 'countries','regions','states','cities'));
 	}
 
 /**

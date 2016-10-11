@@ -99,7 +99,18 @@ class PromotionsController extends AppController {
 			$this->request->data = $this->Promotion->find('first', $options);
 		}
 		$clients = $this->Promotion->Client->find('list');
-		$this->set(compact('clients'));
+		$countries = $this->Country->find('list');
+		$countries[0] = "--Select--";
+		ksort($countries);
+		
+
+		$regions = $this->Region->find('list', array('conditions'=> array('Region.country_id = '.$this->request->data['Country']['id'])));
+		$states = $this->State->find('list', array('conditions'=> array('State.region_id = '.$this->request->data['Country']['id'])));
+		$cities = $this->City->find('list', array('conditions'=> array('City.region_id = '.$this->request->data['Country']['id'])));
+		$destinations = $this->Destination->find('list', array('conditions'=> array('Destination.region_id = '.$this->request->data['Country']['id'])));
+
+
+		$this->set(compact('clients','regions','states','cities','destinations','countries'));
 	}
 
 /**
