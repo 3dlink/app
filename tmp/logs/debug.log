@@ -44,3 +44,6 @@ Dispatcher::dispatch() - APP\cakephp\lib\Cake\Routing\Dispatcher.php, line 167
 2016-09-22 14:01:00 Debug: permission: actionUrl-promotions/index
 2016-09-23 10:10:00 Debug: permission: actionUrl-destinations/index
 2016-10-11 17:23:21 Debug: permission: actionUrl-terminals/edit
+2016-10-13 16:21:44 Debug: permission: actionUrl-terminals/index
+2016-10-13 16:38:18 Debug: permission: actionUrl-terminals/add
+2016-10-14 12:42:59 Debug: permission: actionUrl-terminals/index

@@ -73,7 +73,7 @@ class TerminalsController extends AppController {
 		}
 		$clients = $this->Terminal->Client->find('list');
 		$destinations = $this->Terminal->Destination->find('list');
-		$destcities = $this->Terminal->City->find('list');
+		$destcities = $this->City->find('list');
 		$destcities[0] = "--Select--";
 		ksort($destcities);
 		$countries = $this->Terminal->Country->find('list');
@@ -152,5 +152,18 @@ class TerminalsController extends AppController {
 			$this->Session->setFlash(__('The terminal could not be deleted. Please, try again.'), 'default', array('class' => 'error_message'));
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+
+	public function deleteDest(){
+		$this->autoRender=false;
+
+		if(isset($_POST['data'])){
+			$data=$_POST['data'];
+			if($this->Curso->delete($data['id_course'],true)){
+				return true;
+			}else{
+				return false;
+			}
+		}
 	}
 }
